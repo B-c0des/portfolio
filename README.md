@@ -1,4 +1,4 @@
-# developer-portfolio <a href="https://github.com/B-c0des/developer-portfolio/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/B-c0des/developer-portfolio"></a><a href="https://github.com/B-c0des/developer-portfolio/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/B-c0des/developer-portfolio"></a><a href="https://github.com/B-c0des/developer-portfolio/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/B-c0des/developer-portfolio"></a> <a href="https://github.com/B-c0des/developer-portfolio/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/B-c0des/developer-portfolio"></a> 
+# developer-portfolio <a href="https://github.com/brian-reed-software/developer-portfolio/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/brian-reed-software/developer-portfolio"></a><a href="https://github.com/brian-reed-software/developer-portfolio/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/brian-reed-software/developer-portfolio"></a><a href="https://github.com/brian-reed-software/developer-portfolio/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/brian-reed-software/developer-portfolio"></a> <a href="https://github.com/brian-reed-software/developer-portfolio/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/brian-reed-software/developer-portfolio"></a> 
 ## Software Developer Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.
 
 <p align="center">
@@ -11,10 +11,10 @@
 
 Just Edit `src/portfolio.js` to get your personal portfolio. Feel free to use it as-is or customize it as much as you want.
 
-But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/B-c0des/developer-portfolio/issues).
+But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/brian-reed-software/developer-portfolio/issues).
 
 
-If you created something awesome and want to contribute then feel free to open an [pull request](https://github.com/B-c0des/developer-portfolio/pulls).
+If you created something awesome and want to contribute then feel free to open an [pull request](https://github.com/brian-reed-software/developer-portfolio/pulls).
 
 
 ## Table of Contents

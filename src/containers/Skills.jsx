@@ -50,8 +50,8 @@ const Skills = () => {
                             })
                         }
                     </div>
-                    <ExternalLink href="https://github.com/B-c0des">
-                    <img className="container-fluid" src="https://ghchart.rshah.org/B-c0des" alt="" />
+                    <ExternalLink href="https://github.com/brian-reed-software">
+                    <img className="container-fluid" src="https://ghchart.rshah.org/brian-reed-software" alt="" />
                     </ExternalLink>
                 </Col>
             </Row>
