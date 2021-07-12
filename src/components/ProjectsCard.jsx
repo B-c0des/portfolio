@@ -53,14 +53,14 @@ const ProjectsCard = ({data}) => {
           resizeHandles={["e"]}
         > */}
         <Fade left duration={1000} distance="40px">
-            <ExternalLink href="http://brian-reed-portfolio.herokuapp.com/">
+            <ExternalLink href="https://brian-reed-networking-app.herokuapp.com/">
             <Card style={{flex: 1}} className="card-lift--hover card2 justify-content-center shadow-lg--hover shadow border-0 text-center rounded">
                 <CardHeader style={{background: rgb(colorArrays)}} >
-                    <h5 className="title text-white"><a href="http://brian-reed-portfolio.herokuapp.com/">{'Networking App'}</a></h5>
+                    <h5 className="title text-white"><a href="https://brian-reed-networking-app.herokuapp.com/">{'Networking App'}</a></h5>
                     {/* data.company  */}
                 </CardHeader>
                 <CardBody className="py-5">
-                <a href="http://brian-reed-portfolio.herokuapp.com/"><img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{ width: "100%" }} onLoad={() => getColorArrays()} alt=""/></a>
+                <a href="https://brian-reed-networking-app.herokuapp.com/"><img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{ width: "100%" }} onLoad={() => getColorArrays()} alt=""/></a>
                     <CardTitle tag="h5">{data.role}</CardTitle>
                     <CardSubtitle>{data.date}</CardSubtitle>
                     <CardText className="description my-3 text-left">
