@@ -1,5 +1,5 @@
 # <a href="https://github.com/brian-reed-software/developer-portfolio/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/brian-reed-software/developer-portfolio"></a><a href="https://github.com/brian-reed-software/developer-portfolio/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/brian-reed-software/developer-portfolio"></a><a href="https://github.com/brian-reed-software/developer-portfolio/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/brian-reed-software/developer-portfolio"></a> <a href="https://github.com/brian-reed-software/developer-portfolio/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/brian-reed-software/developer-portfolio"></a> 
-## Software Developer Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.
+# Brian Reed's Portfolio
 
 <p align="center">
   <kbd>
