@@ -1,4 +1,4 @@
-# developer-portfolio <a href="https://github.com/brian-reed-software/developer-portfolio/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/brian-reed-software/developer-portfolio"></a><a href="https://github.com/brian-reed-software/developer-portfolio/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/brian-reed-software/developer-portfolio"></a><a href="https://github.com/brian-reed-software/developer-portfolio/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/brian-reed-software/developer-portfolio"></a> <a href="https://github.com/brian-reed-software/developer-portfolio/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/brian-reed-software/developer-portfolio"></a> 
+# <a href="https://github.com/brian-reed-software/developer-portfolio/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/brian-reed-software/developer-portfolio"></a><a href="https://github.com/brian-reed-software/developer-portfolio/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/brian-reed-software/developer-portfolio"></a><a href="https://github.com/brian-reed-software/developer-portfolio/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/brian-reed-software/developer-portfolio"></a> <a href="https://github.com/brian-reed-software/developer-portfolio/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/brian-reed-software/developer-portfolio"></a> 
 ## Software Developer Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.
 
 <p align="center">
@@ -8,76 +8,6 @@
 </p>
 
 ### To view a live example, **[click here](https://brian-reed-software.herokuapp.com/)**.
-
-Just Edit `src/portfolio.js` to get your personal portfolio. Feel free to use it as-is or customize it as much as you want.
-
-But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/brian-reed-software/developer-portfolio/issues).
-
-
-If you created something awesome and want to contribute then feel free to open an [pull request](https://github.com/brian-reed-software/developer-portfolio/pulls).
-
-
-## Table of Contents
-- [Sections](#sections)
-- [Getting Started](#getting-started)
-- [How to Use](#how-to-use)
-- [Linking portfolio to Github](#linking-portfolio-to-github)
-- [Change and Customize](#change-and-customize-every-section-according-to-your-need)
-- [Technologies Used](#technologies-used)
-- [Illustrations](#illustrations)
-- [For the Future](#for-the-future)
-- [Contributors](#project-maintainers)
-
-## Sections
-✔️ Summary and About me\
-✔️ Skills\
-✔️ Education\
-✔️ Work Experience\
-✔️ Projects\
-✔️ Github Profile
-
-
-
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
-
-```
-node@v10.16.0 or higher
-npm@6.9.0 or higher
-git@2.17.1 or higher
-```
-## How To Use 
-
-From your command line, clone and run developerFolio:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/1Brian Reed100/developer-portfolio.git
-
-# Go into the repository
-$ cd developer-portfolio
-
-# Install dependencies
-$ npm install
-
-#Start's development server
-$ npm start
-```
-
-## Linking Portfolio to Github
-
-```javascript
-  // portfolio.js
-  githubUserName: 'YOUR GITHUB USERNAME HERE',
-```
-
-#### Using Emojis
-
-For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` function and pass the text you need as an argument. This would help in keeping emojis compatible across different browsers and platforms.
 
 ## Technologies Used 
 
@@ -97,5 +27,3 @@ For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` functi
 
 - Enable Dark Mode
 
-- Add More Sections
-# portfolio
