@@ -32,10 +32,7 @@ const GithubProfileCard = ({prof}) => {
                       <h2 id="contact" className="text-white">
                         Reach Out to me &#128071;
                       </h2>
-                      <p className="lead text-white mt-3">
-                     
-                      </p>
-                      <div class="mighty-form" className="rounded" id="mf-e9b1f4b8-0f47-41c1-a114-0c1eac9921d5"></div> 
+                      <div class="mighty-form" id="mf-e9b1f4b8-0f47-41c1-a114-0c1eac9921d5"></div> 
                     </Col>                    
                   </Row>
                 </div>
