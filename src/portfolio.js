@@ -1,10 +1,10 @@
 import emoji from 'react-easy-emoji';
 
-import brian-reed-portfolio from './assets/img/icons/common/100devs.jpg'
+import at100devs from './assets/img/icons/common/100devs.jpg'
 import socialNetworkingApp from './assets/img/icons/common/sna.jpg'
 import github from './assets/img/icons/common/github.svg'
 import airbnb from './assets/img/icons/common/airbnbLogo.png'
- let myLink = "http://brian-reed-portfolio.herokuapp.com/"
+ let myLink = "http://at100devs.herokuapp.com/"
 
 export const greetings = {
     "name": "Brian Reed",
@@ -147,7 +147,7 @@ export const experience = [
   {
     role: 'Software Engineer',
     company: '100 Devs',
-    companylogo: brian-reed-portfolio,
+    companylogo: at100devs,
     date: '2020 – Present',
     desc:
       ' Whether you need a single web app, or a full-stack web app, we develop it at 100 Devs through collaboration with over 100 developers. Creating custom web apps is what we do. ',
