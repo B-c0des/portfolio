@@ -44,18 +44,6 @@ export const skillsSection = {
     
     softwareSkills: [
       {
-        skillName: 'html-5',
-        fontAwesomeClassname: 'vscode-icons:file-type-html',
-      },
-      {
-        skillName: 'css3',
-        fontAwesomeClassname: 'vscode-icons:file-type-css',
-      },
-      {
-        skillName: 'sass',
-        fontAwesomeClassname: 'logos:sass',
-      },
-      {
         skillName: 'JavaScript',
         fontAwesomeClassname: 'logos:javascript',
       },
@@ -70,6 +58,18 @@ export const skillsSection = {
       {
         skillName: 'nodejs',
         fontAwesomeClassname: 'logos:nodejs-icon',
+      },
+      {
+        skillName: 'html-5',
+        fontAwesomeClassname: 'vscode-icons:file-type-html',
+      },
+      {
+        skillName: 'css3',
+        fontAwesomeClassname: 'vscode-icons:file-type-css',
+      },
+      {
+        skillName: 'sass',
+        fontAwesomeClassname: 'logos:sass',
       },
       // {
       //   skillName: 'flutter',
