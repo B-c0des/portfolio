@@ -107,10 +107,6 @@ export const skillsSection = {
         skillName: 'git',
         fontAwesomeClassname: 'logos:git-icon',
       },
-      {
-        skillName: 'docker',
-        fontAwesomeClassname: 'logos:docker-icon',
-      },
     ],
 }
 
