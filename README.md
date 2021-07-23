@@ -6,7 +6,7 @@
   </kbd>
 </p>
 
-### To view a live example, **[click here](https://brian-reed-software.herokuapp.com/)**.
+### To view a live example, **[click here](https://brian-reed-portfolio.herokuapp.com/)**.
 
 ## Technologies Used 
 
