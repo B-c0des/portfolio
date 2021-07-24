@@ -27,6 +27,7 @@ const GithubProfileCard = ({prof}) => {
                         {"Remote"}
                         {/* {prof.location} */}
                         </div>
+                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="brian-reed-software" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/brian-reed-software?trk=profile-badge">Brian Reed</a></div>
                     </Col>
                     <Col lg="8" className="order-lg-1">
                       <h2 id="contact" className="text-white">
