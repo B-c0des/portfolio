@@ -2,11 +2,11 @@
 
 <p align="center">
   <kbd>
-    <img src="https://api.apiflash.com/v1/urltoimage?access_key=d34cca0d6f784ec2a6abcb263f308015&url=http://http://brian-reed.me/"></img>
+    <img src="https://api.apiflash.com/v1/urltoimage?access_key=d34cca0d6f784ec2a6abcb263f308015&url=http://https://brian-reed.me/"></img>
   </kbd>
 </p>
 
-### To view a live example, **[click here](https://http://brian-reed.me//)**.
+### To view a live example, **[click here](https://brian-reed.me//)**.
 
 ## Technologies Used 
 
