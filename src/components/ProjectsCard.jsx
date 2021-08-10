@@ -54,7 +54,38 @@ const ProjectsCard = ({data}) => {
         > */}
         <Fade left duration={1000} distance="40px">
             <ExternalLink href="https://social-again.herokuapp.com/">
-            <Card style={{flex: 1}} className="card-lift--hover card2 justify-content-center shadow-lg--hover shadow border-0 text-center rounded">
+            <Card style={{flex: 1}} className="card-lift--hover card1 justify-content-center shadow-lg--hover shadow border-0 text-center rounded">
+                <CardHeader style={{background: rgb(colorArrays)}} >
+                    <h5 className="title text-white"><a href="https://social-again.herokuapp.com/">{'Networking App'}</a></h5>
+                    {/* data.company  */}
+                </CardHeader>
+                <CardBody className="py-5">
+                <a href="https://social-again.herokuapp.com/"><img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{ width: "100%" }} onLoad={() => getColorArrays()} alt=""/></a>
+                    <CardTitle tag="h5">{data.role}</CardTitle>
+                    <CardSubtitle>{data.date}</CardSubtitle>
+                    <CardText className="description my-3 text-left">
+                        {data.desc}
+                        <ul>
+                            {
+                                data.descBullets ? 
+                                data.descBullets.map((desc) => {
+                                    return <li key={desc}>{desc}</li>
+                                }) : null
+                            }
+                        </ul>
+                    </CardText>
+                    <div>
+                    </div>
+                </CardBody>
+            </Card>
+            </ExternalLink>
+            {/* </ResizableBox>
+            </Draggable> */}
+        </Fade>
+        
+        <Fade left duration={1000} distance="40px">
+            <ExternalLink href="https://social-again.herokuapp.com/">
+            <Card style={{flex: 2}} className="card-lift--hover card2 justify-content-center shadow-lg--hover shadow border-0 text-center rounded">
                 <CardHeader style={{background: rgb(colorArrays)}} >
                     <h5 className="title text-white"><a href="https://social-again.herokuapp.com/">{'Networking App'}</a></h5>
                     {/* data.company  */}
@@ -83,7 +114,7 @@ const ProjectsCard = ({data}) => {
             </Draggable> */}
         </Fade>
         </Col>
-     );
+     )
 }
  
 export default ProjectsCard;
