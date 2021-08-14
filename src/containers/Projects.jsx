@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Tilt from 'react-parallax-tilt';
 import { projects } from "../portfolio";
 import {
     Container,
@@ -10,6 +10,7 @@ import { Fade } from 'react-reveal';
 
 const Projects = () => {
     return ( 
+      
         <section
         style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2021/05/Svg-Background-1.svg")` }} 
         className="section pb-0 my-5">

@@ -47,6 +47,8 @@
     "react-external-link": "^1.2.2",
     "react-headroom": "^3.0.0",
     "react-lottie": "^1.2.3",
+    "react-parallax-hover": "^2.0.1",
+    "react-parallax-tilt": "^1.5.54",
     "react-resizable": "^3.0.4",
     "react-reveal": "^1.2.2",
     "react-router": "5.1.2",

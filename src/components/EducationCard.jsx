@@ -6,7 +6,7 @@ import {
     CardBody,
     Badge
 } from "reactstrap";
-
+import Tilt from 'react-parallax-tilt';
 
 import { Fade } from 'react-reveal';
 
@@ -15,6 +15,13 @@ const EducationCard = ({education}) => {
         
         <Fade right duration={1000} distance="40px">
             <ExternalLink href="https://catalog.pcc.edu/programsanddisciplines/computerscience/">
+            <Tilt
+    className="parallax-effect-glare-scale"
+    perspective={1000}
+    glareEnable={true}
+    glareMaxOpacity={.75}
+    scale={1.02}
+  >
             <Card className="card-lift--hover shadow mt-4">
                 <CardBody>
                     <div className="d-flex px-3">
@@ -41,6 +48,7 @@ const EducationCard = ({education}) => {
                     </div>
                 </CardBody>
             </Card>
+            </Tilt>
             </ExternalLink>
         </Fade>
      );

@@ -3,7 +3,7 @@ import {Link} from 'react-scroll'
 import Draggable from "react-draggable";
 import { ResizableBox } from "react-resizable";
 import { ExternalLink } from 'react-external-link';
-
+import Tilt from 'react-parallax-tilt';
 import {
     Card,
     CardBody,
@@ -55,7 +55,15 @@ const ProjectsCard = ({data}) => {
         > */}
         <Fade left duration={1000} distance="40px">
             <ExternalLink href={data.myLink}>
-            <Card style={{flex: 1}} className="card-lift--hover card1 justify-content-center shadow-lg--hover shadow border-0 text-center rounded">
+            <Tilt
+    className="parallax-effect-glare-scale"
+    perspective={1000}
+    glareEnable={true}
+    glareMaxOpacity={.75}
+    scale={1.02}
+  >
+    <div className="inner-element">
+            <Card style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card-lift--hover card1 justify-content-center shadow-lg--hover shadow border-0 text-center rounded">
                 <CardHeader style={{background: rgb(colorArrays)}} >
                 <CardTitle tag="h5" style={{color: rgb(colorArrays), filter: "invert(100%)"}} >{data.name}</CardTitle>
                     {/* data.company  */}
@@ -66,6 +74,7 @@ const ProjectsCard = ({data}) => {
                     <CardSubtitle>{data.date}</CardSubtitle>
                     <CardText className="description my-3 text-left">
                         {data.desc}
+                        
                         <ul>
                             {
                                 data.descBullets ? 
@@ -79,6 +88,8 @@ const ProjectsCard = ({data}) => {
                     </div>
                 </CardBody>
             </Card>
+            </div>
+            </Tilt>
             </ExternalLink>
             {/* </ResizableBox>
             </Draggable> */}
