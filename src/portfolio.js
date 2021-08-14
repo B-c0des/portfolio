@@ -183,7 +183,7 @@ export const projects = [
     companylogo: fizzBuzz,
     myLink: "https://fizzbuzz-checker.herokuapp.com/",
     desc:
-    ' An application that checks if a number is divisible by 2, 3 or both and returns, "Fizz", "Buzz", or "Fizz Buzz".',
+    ' An application that checks if a number is divisible by 2, 3 or both and returns, "Fizz", "Buzz", or "Fizz Buzz"',
   descBullets: [
     'JavaScript',
     'CSS',
