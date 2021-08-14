@@ -132,8 +132,8 @@ export const educationInfo = [
     {
       schoolName: 'Portland Community College',
       subHeader: 'Associate of Science in Computer Science',
-      duration: 'in progress',
-      desc: '',
+      duration: '',
+      desc: 'Expected Graduation 2022',
       descBullets: [
         // '',
         // '',
