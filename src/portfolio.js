@@ -2,9 +2,11 @@ import emoji from 'react-easy-emoji';
 
 import at100devs from './assets/img/icons/common/100devs.jpg'
 import socialNetworkingApp from './assets/img/icons/common/sna.jpg'
+import fizzBuzz from './assets/img/icons/common/fizzbuzz.jpg'
 import github from './assets/img/icons/common/github.svg'
 import airbnb from './assets/img/icons/common/airbnbLogo.png'
  let myLink = "http://at100devs.herokuapp.com/"
+ 
 
 export const greetings = {
     "name": "Brian Reed",
@@ -163,7 +165,7 @@ export const projects = [
   {
     name: "Social Networking App",
     companylogo: socialNetworkingApp,
-    myLink2: myLink,
+    myLink: "https://social-again.herokuapp.com/",
     desc:
     ' Advanced Social Media Website 🌍 for your clients or customers ',
   descBullets: [
@@ -174,6 +176,18 @@ export const projects = [
     'Mongo DB',
     'CSS3',
     'HTML5'
+  ],
+  },
+  {
+    name: "Fizz Buzz Checker",
+    companylogo: fizzBuzz,
+    myLink: "https://fizzbuzz-checker.herokuapp.com/",
+    desc:
+    ' An application that checks if a number is divisible by 2, 3 or both and returns, "Fizz", "Buzz", or "Fizz Buzz".',
+  descBullets: [
+    'JavaScript',
+    'CSS',
+    'HTML',
   ],
   },
   // {
