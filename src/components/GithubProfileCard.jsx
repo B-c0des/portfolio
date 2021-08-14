@@ -11,7 +11,9 @@ import SocialLinks from "../components/SocialLinks";
 
 const GithubProfileCard = ({prof}) => {
     return ( 
-            <Card className="section-lg bg-gradient-info shadow-lg border-0">
+            <Card 
+            style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2019/12/Live-Background-1.svg")` }} 
+            className="section-lg shadow-lg border-0">
                 <Container className="">
                 <div className="p-2">
                   <Row className="justify-content-center">

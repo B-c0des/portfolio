@@ -26,8 +26,21 @@ const Greetings = () => {
     <Fade top duration={1000} distance="40px">
         <main ref="main">
           <div className="position-relative">
-            <section className="section section-lg section-shaped pb-250">
+            <section style={{ 
+      backgroundImage: `url("https://flevix.com/wp-content/uploads/2021/05/Svg-Background-1.svg")` }} className="section section-lg section-shaped pb-250">
               <div className="shape shape-style-1 bg-gradient-info">
+              <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
                 <span />
                 <span />
                 <span />
