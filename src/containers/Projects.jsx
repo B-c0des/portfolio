@@ -25,7 +25,7 @@ const Projects = () => {
                         <h4 className="display-3 text-info">Projects</h4>
                     </div>
                 </div>
-                <Row className="row-grid align-items-center justify-content-center">
+                <Row className="row-grid justify-content-center">
                     {
                         projects.map(data => {
                             return <ProjectsCard data={data} />
