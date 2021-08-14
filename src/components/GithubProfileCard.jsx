@@ -18,13 +18,13 @@ const GithubProfileCard = ({prof}) => {
                 <div className="p-2">
                   <Row className="justify-content-center">
                   <Col className=" justify-content-center order-lg-2" lg="4">
-                      <img src={prof.avatar_url} style={{width: "200px"}} alt="" className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4"/>
+                      <img src={prof.avatar_url} style={{width: "200px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-4"/>
                       
                         <SocialLinks />
-                      <p className="justify-content-center text-white mt-3">
+                      <p className="justify-content-center text-black mt-3 ml-5">
                           {prof.bio}
                       </p>
-                      <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
+                      <div className="my-3 icon-shape ml-5 bg-gradient-white shadow rounded text-info">
                         <i className="ni ni-pin-3 text-info mr-2" />
                         {"Remote"}
                         {/* {prof.location} */}
