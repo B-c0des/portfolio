@@ -54,6 +54,7 @@ const Navigation = () => {
                 <div className="navbar-collapse-header">
                   <Row>
                     <Col className="collapse-brand" xs="6">
+                      
                       <Link to="/">
                         <h3 className="text-black" id="nav-title">{greetings.name}</h3>
                       </Link>
@@ -93,7 +94,7 @@ const Navigation = () => {
                   </NavItem> */}
                   <NavItem>
                     <NavLink
-                    size="lg"
+                      size="lg"
                       className="nav-link-icon"
                       href={socialLinks.twitter}
                       target="_blank"

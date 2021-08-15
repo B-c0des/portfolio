@@ -8,6 +8,7 @@ import {
 import ProjectsCard from "../components/ProjectsCard";
 import { Fade } from 'react-reveal';
 
+
 const Projects = () => {
     return ( 
       

@@ -40,6 +40,7 @@
     "node-sass": "^6.0.1",
     "nouislider": "14.1.1",
     "react": "16.12.0",
+    "react-backdrop-filter": "^2.1.0",
     "react-datetime": "2.16.3",
     "react-dom": "16.12.0",
     "react-draggable": "^4.4.3",
@@ -55,6 +56,7 @@
     "react-router-dom": "5.1.2",
     "react-scripts": "^4.0.1",
     "react-scroll": "^1.8.2",
+    "react-simple-parallax": "^0.2.6",
     "reactstrap": "8.4.1"
   },
   "devDependencies": {

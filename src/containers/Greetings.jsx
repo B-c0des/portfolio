@@ -26,6 +26,7 @@ const Greetings = () => {
     <Fade top duration={1000} distance="40px">
         <main ref="main">
           <div className="position-relative">
+          
             <section 
             style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2021/05/Svg-Background-1.svg")` }} 
             className="section section-lg section-shaped pb-250">
@@ -50,8 +51,10 @@ const Greetings = () => {
                 <div className="col px-0">
                   <Row>
                     <Col lg="6">
+                    
+
                       <h1 className="display-1 text-white">
-                        {greetings.title + " "}
+                      {greetings.title}
                       </h1>
                       <p className="lead text-white">{greetings.description}</p>
                       <SocialLinks />

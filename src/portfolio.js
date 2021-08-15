@@ -11,7 +11,7 @@ import airbnb from './assets/img/icons/common/airbnbLogo.png'
 export const greetings = {
     "name": "Brian Reed",
     "title": "Brian Reed",
-    "description": "A Full Stack Desktop and Mobile App Developer. Experienced building Web applications with JavaScript / Reactjs / Nodejs / PWA's / SWR / and using  NPM libraries and frameworks. Creating Cool Cross Platform Mobile Apps is my passion.",
+    "description": "A Full Stack Desktop and Mobile App Developer. Experienced building Web applications with JavaScript, Reactjs, Nodejs, Express, EJS, Mongoose, MongoDb, and NPM libraries and frameworks. Creating Cool Cross Platform Mobile Apps is my passion.",
     "resumeLink": "contact.me"
 }
 
@@ -33,7 +33,7 @@ export const socialLinks = {
 
 export const skillsSection = {
     title: '',
-    title: 'Tech Used',
+    title: 'Software Tech:',
     skills: [
       emoji(
         '⚡ Developing interactive User Interfaces for your web and mobile applications'
