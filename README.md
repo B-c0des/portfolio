@@ -17,7 +17,7 @@
 - [react-lottie](https://www.npmjs.com/package/react-lottie)
 - [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
 - [react-headroom](https://github.com/KyleAMathews/react-headroom)
-- [color-thief](https://github.com/lokesh/color-thief)
+- [color-thief](https://github.com/lokesh/color-template)
 
 ## Illustrations
 - [Lottie File Source](https://lottiefiles.com)
