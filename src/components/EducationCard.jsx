@@ -17,7 +17,7 @@ const EducationCard = ({education}) => {
             <ExternalLink href="https://catalog.pcc.edu/programsanddisciplines/computerscience/">
             <Tilt
     className="parallax-effect-glare-scale"
-    perspective={1000}
+    perspective={3000}
     glareEnable={true}
     glareMaxOpacity={.75}
     scale={1.02}

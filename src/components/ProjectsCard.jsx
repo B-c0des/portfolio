@@ -57,7 +57,7 @@ const ProjectsCard = ({data}) => {
             <ExternalLink href={data.myLink}>
             <Tilt
     className="parallax-effect-glare-scale"
-    perspective={1000}
+    perspective={2000}
     glareEnable={true}
     glareMaxOpacity={.75}
     scale={1.02}

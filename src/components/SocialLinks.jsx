@@ -4,8 +4,10 @@ import {  Button } from "reactstrap";
 
 import { socialLinks } from "../portfolio";
 
+
 const SocialLinks = () => {
     return ( 
+      
         <div className="btn-wrapper size-lg text-lg">
             <Button
                   className="btn-icon-only"
@@ -58,6 +60,18 @@ const SocialLinks = () => {
                 >
                   <span className="btn-inner--icon">
                     <i className="fa fa-linkedin" />
+                  </span>
+                </Button>
+                <Button
+                  className="btn-icon-only  ml-1"
+                  size="lg"
+                  color="twitter"
+                  href={'https://bit.ly/brian-reed-resume'}
+                  target="_blank"
+                  style={{width:'100px'}}
+                >
+                  <span className="btn">
+                    <div>Resume</div>
                   </span>
                 </Button>
         </div>

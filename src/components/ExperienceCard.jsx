@@ -35,7 +35,7 @@ const ExperienceCard = ({data}) => {
         <ExternalLink href="https://www.linkedin.com/company/100devs/">
         <Tilt
     className="parallax-effect-glare-scale"
-    perspective={1000}
+    perspective={2000}
     glareEnable={true}
     glareMaxOpacity={0.75}
     scale={1.02}
