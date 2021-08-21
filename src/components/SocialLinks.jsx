@@ -70,8 +70,8 @@ const SocialLinks = () => {
                   target="_blank"
                   style={{width:'100px'}}
                 >
-                  <span className="btn">
-                    <div>Resume</div>
+                  <span className="btn-icon-only  ml-1">
+                    Resume
                   </span>
                 </Button>
         </div>
