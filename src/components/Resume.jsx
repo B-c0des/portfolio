@@ -12,14 +12,6 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: {
       flex: '1',
     },
-    root: {
-      backgroundColor: '#3c52b2',
-      color: '#fff',
-      '&:hover': {
-        backgroundColor: '#fff',
-        color: '#3c52b2',
-    }},
-    
     twitter: {
       background: 'linear-gradient(45deg, #2196F3 30%, #80e5ff 90%)',
       '&:hover': {

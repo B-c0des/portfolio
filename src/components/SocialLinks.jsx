@@ -12,17 +12,6 @@ const useStyles = makeStyles((theme) => ({
   flexGrow: {
     flex: '1',
   },
-  root: {
-    backgroundColor: '#3c52b2',
-    color: '#fff',
-    '&:hover': {
-      backgroundColor: '#fff',
-      color: '#3c52b2',
-      flexGrow: {
-        flex: '2',
-      },
-  }},
-  
   twitter: {
     background: 'linear-gradient(45deg, #2196F3 30%, #80e5ff 90%)',
     '&:hover': {
@@ -89,7 +78,8 @@ const useStyles = makeStyles((theme) => ({
     background: 'linear-gradient(45deg, #2196F3 30%, #80e5ff 90%)',
     '&:hover': {
       background: 'linear-gradient(45deg,  #2196F3 0%, #b3f0ff 100%)',
-        boxShadow: '-1px -1px 1px 1px rgba(13, 13, 13, .3)'},
+        boxShadow: '-1px -1px 1px 1px rgba(13, 13, 13, .3)',
+        color: '#3c52b2'},
     boxShadow: '-1px -1px 4px 1px rgba(13, 13, 13, .3)',
     border: 0,
     fontSize: 16,
