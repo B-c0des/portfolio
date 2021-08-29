@@ -1,81 +1,152 @@
 import React from 'react';
 
-import {  Button } from "reactstrap";
+//import {  Button } from "reactstrap";
 
 import { socialLinks } from "../portfolio";
+import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
+import { Button } from '@material-ui/core';
+
+import {Link} from 'react-scroll'
+// import ThemeNesting from './Button';
+const useStyles = makeStyles((theme) => ({
+  flexGrow: {
+    flex: '1',
+  },
+  root: {
+    backgroundColor: '#3c52b2',
+    color: '#fff',
+    '&:hover': {
+      backgroundColor: '#fff',
+      color: '#3c52b2',
+      flexGrow: {
+        flex: '2',
+      },
+  }},
+  
+  twitter: {
+    background: 'linear-gradient(45deg, #2196F3 30%, #80e5ff 90%)',
+    '&:hover': {
+      background: 'linear-gradient(45deg,  #2196F3 10%, #b3f0ff 90%)',
+      color: '#3c52b2',
+      boxShadow: '-1px -1px 1px 1px rgba(13, 13, 13, .3)',
+      filter: 'drop-shadow(2px -2px 5px aqua, -2px 2px 5px deeppink)',
+    },
+      boxShadow: '-1px -1px 4px 1px rgba(13, 13, 13, .3)',
+    border: 0,
+    fontSize: 16,
+    borderRadius: 3,
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+    margin:'2px'
+  },
+  linkedin: {
+    background: 'linear-gradient(45deg, #2196F3 30%, #80e5ff 90%)',
+    '&:hover': {
+      background: 'linear-gradient(45deg,  #2196F3 10%, #b3f0ff 90%)',
+      color: '#3c52b2',
+      boxShadow: '-1px -1px 1px 1px rgba(13, 13, 13, .3)'},
+      boxShadow: '-1px -1px 4px 1px rgba(13, 13, 13, .3)',
+    border: 0,
+    fontSize: 16,
+    borderRadius: 3,
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+    margin:'2px'
+  },
+  github: {
+    background: 'linear-gradient(45deg, #1a1a1a 30%, #005266 90%)',
+    '&:hover': {
+      background: 'linear-gradient(45deg,  #1a1a1a 10%, #008fb3 90%)',
+      color: 'black',
+      boxShadow: '-1px -1px 1px 1px rgba(13, 13, 13, .3)'},
+      boxShadow: '-1px -1px 4px 1px rgba(13, 13, 13, .3)',
+    border: 0,
+    fontSize: 16,
+    borderRadius: 3,
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+    margin:'2px'
+  },
+  resume: {
+    background: 'linear-gradient(45deg, #2196F3 30%, #80e5ff 90%)',
+    '&:hover': {
+      background: 'linear-gradient(45deg,  #2196F3 10%, #b3f0ff 90%)',
+      color: '#3c52b2',
+      boxShadow: '-1px -1px 1px 1px rgba(13, 13, 13, .3)'},
+      boxShadow: '-1px -1px 4px 1px rgba(13, 13, 13, .3)',
+    border: 0,
+    fontSize: 16,
+    borderRadius: 3,
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+    margin:'2px'
+  },
+  contact: {
+    background: 'linear-gradient(45deg, #2196F3 30%, #80e5ff 90%)',
+    '&:hover': {
+      background: 'linear-gradient(45deg,  #2196F3 0%, #b3f0ff 100%)',
+        boxShadow: '-1px -1px 1px 1px rgba(13, 13, 13, .3)'},
+    boxShadow: '-1px -1px 4px 1px rgba(13, 13, 13, .3)',
+    border: 0,
+    fontSize: 16,
+    borderRadius: 3,
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+    margin:'2px'
+  },
+  location: {
+      background: 'linear-gradient(45deg, #2196F3 30%, #80e5ff 90%)',
+      '&:hover': {
+        background: 'linear-gradient(45deg,  #2196F3 0%, #b3f0ff 100%)',
+        color: '#3c52b2',
+        boxShadow: '-1px -1px 1px 1px rgba(13, 13, 13, .3)'},
+    boxShadow: '-1px -1px 4px 1px rgba(13, 13, 13, .3)',
+    border: 0,
+    fontSize: 16,
+    borderRadius: 3,
+    color: 'black',
+    height: 48,
+    padding: '0 30px',
+    margin:'2px'
+  },
+}));
+
 
 
 const SocialLinks = () => {
+  const classes = useStyles();
     return ( 
-      
-        <div className="btn-wrapper size-lg text-lg">
-            <Button
-                  className="btn-icon-only"
-                  size="lg"
-                  color="twitter"
-                  href={socialLinks.twitter}
-                  target="_blank"
-                >
-                  <span className="btn-inner--icon">
-                    <i className="fa fa-twitter" />
-                  </span>
-                </Button>
-                {/* <Button
-                  className="btn-icon-only rounded-circle ml-1"
-                  color="facebook"
-                  href={socialLinks.facebook}
-                  target="_blank"
-                >
-                  <span className="btn-inner--icon">
-                    <i className="fa fa-facebook-square" />
-                  </span>
-                </Button>
-                <Button
-                  className="btn-icon-only rounded-circle ml-1"
-                  color="instagram"
-                  href={socialLinks.instagram}
-                  target="_blank"
-                >
-                  <span className="btn-inner--icon">
-                    <i className="fa fa-instagram" />
-                  </span>
-                </Button> */}
-                <Button
-                  className="btn-icon-only ml-1"
-                  size="lg"
-                  color="github"
-                  href={socialLinks.github}
-                  target="_blank"
-                >
-                  <span className="btn-inner--icon">
-                    <i className="fa fa-github" />
-                  </span>
-                </Button>
-                <Button
-                  className="btn-icon-only  ml-1"
-                  size="lg"
-                  color="twitter"
-                  href={socialLinks.linkedin}
-                  target="_blank"
-                >
-                  <span className="btn-inner--icon">
-                    <i className="fa fa-linkedin" />
-                  </span>
-                </Button>
-                <Button
-                  className="btn-icon-only  ml-1"
-                  size="lg"
-                  color="twitter"
-                  href={'https://bit.ly/brian-reed-resume'}
-                  target="_blank"
-                  style={{width:'100px'}}
-                >
-                  <span className="btn-icon-only  ml-1">
-                    Resume
-                  </span>
-                </Button>
-        </div>
+      <div className="btn-wrapper size-lg text-lg" style={{width: "440px"}}>
+      <Button type="button" href={socialLinks.twitter} className={classes.twitter}>
+      <i className="fa fa-twitter" />
+      </Button>
+        <Button type="button" href={socialLinks.linkedin} className={classes.linkedin}>
+        <i className="fa fa-linkedin" />
+        </Button>
+        <Button type="button" href={socialLinks.github} className={classes.github}>
+        <i className="fa fa-github" />
+        </Button>
+        <Button type="button" href={'https://bit.ly/brian-reed-resume'} className={classes.resume}>
+        Resume
+        </Button>
+        <Link  to="contact" spy={true} smooth={true}>
+        <Button type="button" style={{width: "367px"}} className={classes.contact}>
+        <span className="btn-inner--icon mr-1">
+        <i className="fa fa-file" />
+      </span>
+      <Link  to="contact" spy={true} smooth={true}>Contact Me &#128071;
+      </Link>
+      </Button>
+      </Link>
+      </div>
      );
 }
  
+
+
 export default SocialLinks;

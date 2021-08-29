@@ -57,24 +57,10 @@ const Greetings = () => {
                       {greetings.title}
                       </h1>
                       <p className="lead text-white">{greetings.description}</p>
+                      <h1 className="" style={{width: "700px"}}>
                       <SocialLinks />
-                      <div className="btn-wrapper my-4">
-                        
-                        <Button
-                          onclick="document.getElementById('mf-e9b1f4b8-0f47-41c1-a114-0c1eac9921d5').scrollIntoView()"
-                          className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                          color="default"
-                          // href={greetings.resumeLink}
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="fa fa-file" />
-                          </span>
-                          <span className="btn-inner--text">
-                          <Link  to="contact" spy={true} smooth={true}>Contact Me &#128071;</Link>
-                          </span>
-                        </Button>                        
-                      </div>
-                    </Col>
+                      </h1>
+                      </Col>
                     <Col lg="6">
                       <GreetingLottie animationData={code}/>
                     </Col>
