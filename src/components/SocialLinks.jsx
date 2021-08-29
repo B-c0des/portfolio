@@ -1,17 +1,9 @@
 import React from 'react';
-
-//import {  Button } from "reactstrap";
-
 import { socialLinks } from "../portfolio";
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
-
 import {Link} from 'react-scroll'
-// import ThemeNesting from './Button';
 const useStyles = makeStyles((theme) => ({
-  flexGrow: {
-    flex: '1',
-  },
   twitter: {
     background: 'linear-gradient(45deg, #2196F3 30%, #80e5ff 90%)',
     '&:hover': {
