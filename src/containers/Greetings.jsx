@@ -31,7 +31,7 @@ const Greetings = () => {
             style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2021/05/Svg-Background-1.svg")` }} 
             className="section section-lg section-shaped pb-250">
               <div className="shape shape-style-1 bg-gradient-info">
-              {/* <span />
+              <span />
                 <span />
                 <span />
                 <span />
@@ -45,7 +45,7 @@ const Greetings = () => {
                 <span />
                 <span />
                 <span />
-                <span /> */}
+                <span />
               </div>
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
