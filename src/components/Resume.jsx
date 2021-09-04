@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
         color: '#3c52b2',
         boxShadow: '-1px -1px 1px 1px rgba(13, 13, 13, .3)'},
         boxShadow: '-1px -1px 4px 1px rgba(13, 13, 13, .3)',
+        marginTop: '-10px',
       border: 0,
       fontSize: 16,
       borderRadius: 3,
