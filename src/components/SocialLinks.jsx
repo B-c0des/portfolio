@@ -6,11 +6,11 @@ import {Link} from 'react-scroll'
 const useStyles = makeStyles((theme) => ({
   twitter: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(13, 113, 213, .3)',
+    boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .3)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
-      boxShadow: '0px 2px 1px 1px rgba(13, 113, 213, .3)',
+      boxShadow: '0px  1px 1px 1px rgba(113, 213, 213, .5)',
       marginTop: '0px',},
     border: 0,
     fontSize: 16,
@@ -22,11 +22,11 @@ const useStyles = makeStyles((theme) => ({
   },
   linkedin: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(13, 113, 213, .8)',
+    boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .5)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
-      boxShadow: '0px 2px 1px 1px rgba(13, 113, 213, .3)',
+      boxShadow: '0px  2px 1px 1px rgba(113, 213, 213, .3)',
       marginTop: '0px',},
     border: 0,
     fontSize: 16,
@@ -38,11 +38,11 @@ const useStyles = makeStyles((theme) => ({
   },
   github: {
     background: 'linear-gradient(85deg, #1a1a1a 30%, #005266 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(13, 113, 213, .8)',
+    boxShadow: '0px 1px 1px 1px rgba(13, 53, 53, .5)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #1a1a1a 10%, #008fb3 90%)',
       color: '#fff',
-      boxShadow: '0px 2px 1px 1px rgba(13, 113, 213, .3)',
+      boxShadow: '0px 2px 1px 1px rgba(13, 53, 53, .3)',
       marginTop: '0px',
     padding:'5px 30px'},
     border: 0,
@@ -55,11 +55,11 @@ const useStyles = makeStyles((theme) => ({
   },
   resume: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(13, 113, 213, .8)',
+    boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .5)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
-      boxShadow: '0px 2px 1px 1px rgba(13, 113, 213, .3)',
+      boxShadow: '0px  2px 1px 1px rgba(113, 213, 213, .3)',
       marginTop: '0px',},
     border: 0,
     fontSize: 16,
@@ -71,11 +71,11 @@ const useStyles = makeStyles((theme) => ({
   },
   contact: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(13, 113, 213, .8)',
+    boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .5)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
-      boxShadow: '0px 2px 1px 1px rgba(13, 113, 213, .3)',
+      boxShadow: '0px  2px 1px 1px rgba(113, 213, 213, .3)',
       marginTop: '0px',},
     border: 0,
     fontSize: 16,
@@ -86,19 +86,20 @@ const useStyles = makeStyles((theme) => ({
     margin:'3px'
   },
   location: {
-      background: 'linear-gradient(45deg, #2196F3 30%, #80e5ff 90%)',
-      boxShadow: '0px 1px 1px 1px rgba(13, 113, 213, .8)',
-      '&:hover': {
-        background: 'linear-gradient(45deg,  #2196F3 0%, #b3f0ff 100%)',
-        color: '#3c52b2',
-        boxShadow: '-1px -1px 1px 1px rgba(13, 213, 113, .3)'},
+    background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
+    boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .5)',
+    '&:hover': {
+      background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
+      color: 'white',
+      boxShadow: '0px  2px 1px 1px rgba(113, 213, 213, .3)',
+      marginTop: '0px',},
     border: 0,
     fontSize: 16,
-    borderRadius: 3,
-    color: 'black',
+    borderRadius: 5,
+    color: 'white',
     height: 48,
     padding: '0 30px',
-    margin:'2px'
+    margin:'3px'
   },
 }));
 

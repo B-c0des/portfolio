@@ -11,7 +11,7 @@ import airbnb from './assets/img/icons/common/airbnbLogo.png'
 export const greetings = {
     "name": "Brian Reed",
     "title": "Brian Reed",
-    "description": "I'm a Software Engineer focused on Full-Stack Web Development. I am proficient in both Front-End and Back-End development. I have knowledge in Javascript, React, Node.js, MongoDB, CSS, HTML and GitHub. As a software engineer I aspire to help bring projects to life and demonstrate my commitment to developing world-class software solutions for companies and customers. I am also open to learning new languages, libraries and frameworks whichever enhances the customers experience. Creating Cool Cross Platform Mobile Apps is my passion.",
+    "description": "     I'm a Software Engineer focused on Full-Stack Web Development. I am proficient in both Front-End and Back-End development. I have knowledge in Javascript, React, Node.js, MongoDB, CSS, HTML and GitHub. As a software engineer I aspire to help bring projects to life and demonstrate my commitment to developing world-class software solutions for companies and customers. I am also open to learning new languages, libraries and frameworks whichever enhances the customers experience. Creating Cool Cross Platform Mobile Apps is my passion.",
     "resumeLink": "contact.me"
 }
 
