@@ -120,7 +120,7 @@ const SocialLinks = () => {
         <i className="fa fa-github" />
         </Button>
         
-        <Button type="button" href={'https://bit.ly/brian-reed-resume'} className={classes.resume}>
+        <Button type="button" href={'https://bit.ly/brian-reed-resumes'} className={classes.resume}>
         Resume
         </Button>
         <Link  to="contact" spy={true} smooth={true}>
