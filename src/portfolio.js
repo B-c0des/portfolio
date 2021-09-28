@@ -4,6 +4,7 @@ import at100devs from './assets/img/icons/common/100devs.jpg'
 import socialNetworkingApp from './assets/img/icons/common/sna.jpg'
 import fizzBuzz from './assets/img/icons/common/fizzbuzz.jpg'
 import github from './assets/img/icons/common/github.svg'
+import socialagain from './assets/img/icons/common/social-again.svg'
 import airbnb from './assets/img/icons/common/airbnbLogo.png'
  let myLink = "http://at100devs.herokuapp.com/"
  
@@ -131,9 +132,9 @@ export const SkillBars = [
 export const educationInfo = [
     {
       schoolName: 'Portland Community College',
-      subHeader: 'Associate of Science in Computer Science',
-      duration: '',
-      desc: 'Expected Graduation 2022',
+      subHeader: 'Computer Science Degree',
+      duration: '2021',
+      desc: 'Computer science is the study of information systems, their representation, architecture, and implementation, used for a variety of practical and theoretical purposes. Computer science addresses methods by which data is accessed, stored, and retrieved, which include areas such as representational computation, programming languages, algorithmic modeling, and software design, testing and development. Computer scientists apply their knowledge of mathematics, physics, and logic to solve a variety of problems using diverse technology.',
       descBullets: [
         // '',
         // '',
@@ -148,12 +149,17 @@ export const experience = [
     companylogo: at100devs,
     date: '2020 – Present',
     desc:
-      ' Whether you need a single web app, or a full-stack web app, we develop it at 100 Devs through collaboration with over 100 developers. Creating custom web apps is what we do. ',
+      ' Whether you need a pogressive web application, or a full-stack web application, we develop it at 100 Devs through collaboration with over 100 developers. Creating unique custom web apps for customers and clients is what we do. ',
     descBullets: [
+      'MERN stack:',
       'JavaScript',
       'React',
       'Node',
+      'Styled Componants',
+      'Material UI',
+      'Mongoose',
       'Express',
+      'NoSQL / Mongo Database',
       'EJS',
       'CSS3',
       'HTML5'
@@ -163,33 +169,35 @@ export const experience = [
 
 export const projects = [
   {
-    name: "Social Networking App",
+    companyname: socialagain,
     companylogo: socialNetworkingApp,
     myLink: "https://social-again.herokuapp.com/",
     desc:
-    ' Advanced Social Media Website 🌍 for your clients or customers ',
+    ' A social networking application for software technology enthusiasts to be social again. It allows users to create a profile, upload a photo, share software tech stack, share contact information and share comments. ',
   descBullets: [
     'JavaScript',
     'Node',
     'EJS',
     'Express',
-    'Mongo DB',
+    'Mongoose',
+    'NoSQL / Mongo DB',
     'CSS3',
     'HTML5'
   ],
-  },
-  {
-    name: "Fizz Buzz Checker",
-    companylogo: fizzBuzz,
-    myLink: "https://fizzbuzz-checker.herokuapp.com/",
-    desc:
-    ' An application that checks if a number is divisible by 2, 3 or both and returns, "Fizz", "Buzz", or "Fizz Buzz"',
-  descBullets: [
-    'JavaScript',
-    'CSS',
-    'HTML',
-  ],
-  },
+}
+  // },
+  // {
+  //   name: "Fun App",
+  //   companylogo: fizzBuzz,
+  //   myLink: "https://fizzbuzz-checker.herokuapp.com/",
+  //   desc:
+  //   ' An application that checks if a number is divisible by 2, 3 or both and returns, "Fizz", "Buzz", or "Fizz Buzz"',
+  // descBullets: [
+  //   'JavaScript',
+  //   'CSS',
+  //   'HTML',
+  // ],
+  // },
   // {
   //   name: "lorem ipsum",
   //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",

@@ -66,13 +66,13 @@ const ProjectsCard = ({data}) => {
             <Card style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card-lift--hover card1 justify-content-center shadow-lg--hover shadow border-0 text-center rounded">
             
                 <CardHeader style={{background: rgb(colorArrays)}} >
-                <CardTitle tag="h5" style={{color: rgb(colorArrays), filter: "invert(100%)"}} >{data.name}</CardTitle>
+                <img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid " top src={data.companyname} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>
                     {/* data.company  */}
                 </CardHeader>
                 <CardBody className="py-5">
                 
                 {/* style={{borderRadius: "100%" }} */}
-                <img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>
+                <img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid" top src={data.companylogo} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>
                     <CardSubtitle style={{background: rgb(colorArrays)}}>{data.date}</CardSubtitle>
                     <CardText className="description my-3 text-left">
                         {data.desc}
