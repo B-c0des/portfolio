@@ -41,6 +41,7 @@ const ExperienceCard = ({data}) => {
             transitionSpeed={9500}
             scale={1.08}
             gyroscope={true}
+            glareEnable={true}
         >
             <Card style={{flex: 1}} className="shadow-lg--hover bg-black shadow border-1 text-center rounded">
                 <CardHeader style={{background: rgb(colorArrays)}} >

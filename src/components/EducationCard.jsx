@@ -23,6 +23,7 @@ const EducationCard = ({education}) => {
     transitionSpeed={9500}
     scale={1.1}
     gyroscope={true}
+    glareEnable={true}
   >
             <Card className="shadow-lg--hover bg-black shadow border-1 text-center rounded card">
                 <CardBody>

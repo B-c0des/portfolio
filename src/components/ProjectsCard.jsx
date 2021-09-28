@@ -63,6 +63,7 @@ const ProjectsCard = ({data}) => {
     transitionSpeed={9500}
     scale={1.1}
     gyroscope={true}
+    glareEnable={true}
   >
     <div className="inner-element">
             <Card style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card1 justify-content-center shadow-lg--hover border-1 shadow text-center rounded">

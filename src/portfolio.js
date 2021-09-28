@@ -146,7 +146,7 @@ export const SkillBars = [
 export const educationInfo = [
     {
       schoolName: 'Portland Community College',
-      subHeader: 'Computer Science Degree',
+      subHeader: 'Computer Science',
       duration: '2022',
       desc: 'Computer science is the study of information systems, their representation, architecture, and implementation, used for a variety of practical and theoretical purposes. Computer science addresses methods by which data is accessed, stored, and retrieved, which include areas such as representational computation, programming languages, algorithmic modeling, and software design, testing and development. Computer scientists apply their knowledge of mathematics, physics, and logic to solve a variety of problems using diverse technology.',
       descBullets: [
@@ -184,7 +184,7 @@ export const experience = [
     companylogo: brws,
     date: '2017 – Present',
     desc:
-      ' I work with local clients and businesses creating customer focused, user friendly, responsive websites for many different types of businesses. • Using modern frameworks and Libraries such as React, Node, JavaScript, MongoDB and various other NPM Libraries. • Iterative improvement researching various NPM libraries and frameworks for customer focused websites.',
+      ' I work with local clients and businesses creating customer focused, user friendly, responsive websites for many different types of businesses. Iterative improvement researching various NPM libraries and frameworks for customer focused websites.',
     descBullets: [
       'JavaScript',
       'React',

@@ -78,6 +78,7 @@ const Skills = () => {
                         transitionSpeed={2500}
                         scale={1.1}
                         gyroscope={true}
+                        glareEnable={true}
                     >
                     <ExternalLink href="https://github.com/brian-reed-software">
                     <img className="container-fluid mt-1" src="https://ghchart.rshah.org/brian-reed-software" alt="" />
