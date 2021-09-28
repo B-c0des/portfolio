@@ -11,7 +11,7 @@ const Education = () => {
     return ( 
         <section
         style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2021/05/Svg-Background-1.svg")` }} 
-        className="section pb-0 my-5">
+        className="section pb-0 my-5 section-profile-cover">
             <Container>
                 <div className="d-flex px-3">
                     <div>

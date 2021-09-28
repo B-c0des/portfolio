@@ -14,7 +14,7 @@ const GithubProfileCard = ({prof}) => {
     return ( 
             <Card 
             style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2019/12/Live-Background-1.svg")` }} 
-            className="section-lg shadow-lg border-0">
+            className="section-lg shadow-lg border-0 section-profile-cover">
                 <Container className="">
                 <div className="p-2">
                   <Row className="justify-content-center">

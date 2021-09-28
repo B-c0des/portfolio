@@ -29,7 +29,7 @@ const Greetings = () => {
           
             <section 
             style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2021/05/Svg-Background-1.svg")` }} 
-            className="section section-lg section-shaped pb-250">
+            className="section section-lg section-shaped pb-250 section-profile-cover">
               <div className="shape shape-style-1 bg-gradient-info">
               <span />
                 <span />
