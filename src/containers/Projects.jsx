@@ -36,7 +36,7 @@ const Projects = () => {
                 </Row>
               </Fade>
             </Container>
-            <div className="separator separator-bottom separator-skew">
+            <div className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
