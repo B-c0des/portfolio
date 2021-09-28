@@ -20,16 +20,16 @@ const GithubProfileCard = ({prof}) => {
                   <Row className="justify-content-center">
                   <Col className=" justify-content-center order-lg-2" lg="4">
                   <Tilt
-    className="parallax-effect-img"
-    tiltMaxAngleX={18}
-    tiltMaxAngleY={18}
-    perspective={2000}
-    transitionSpeed={9500}
-    scale={1.2}
-    gyroscope={true}
-  >
-                      <img src={prof.avatar_url} style={{width: "200px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-4"/>
-</Tilt>
+                        className="parallax-effect-img"
+                        tiltMaxAngleX={18}
+                        tiltMaxAngleY={18}
+                        perspective={2000}
+                        transitionSpeed={2500}
+                        scale={.9}
+                        gyroscope={true}
+                      >
+                      <img src={prof.avatar_url} style={{width: "200px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
+                      </Tilt>
                       <h3 className="justify-content-center text-black">
                           {prof.bio}
                       </h3>
