@@ -7,6 +7,7 @@ import github from './assets/img/icons/common/github.svg'
 import socialagain from './assets/img/icons/common/social-again.svg'
 import airbnb from './assets/img/icons/common/airbnbLogo.png'
 import brws from './assets/img/icons/common/brian-reed-web-solutions.png'
+import mayflower from './assets/img/icons/common/mayflower.jpg'
 
  let myLink = "http://at100devs.herokuapp.com/"
  
@@ -146,7 +147,7 @@ export const educationInfo = [
     {
       schoolName: 'Portland Community College',
       subHeader: 'Computer Science Degree',
-      duration: '2021',
+      duration: '2022',
       desc: 'Computer science is the study of information systems, their representation, architecture, and implementation, used for a variety of practical and theoretical purposes. Computer science addresses methods by which data is accessed, stored, and retrieved, which include areas such as representational computation, programming languages, algorithmic modeling, and software design, testing and development. Computer scientists apply their knowledge of mathematics, physics, and logic to solve a variety of problems using diverse technology.',
       descBullets: [
         // '',
@@ -156,27 +157,6 @@ export const educationInfo = [
 ]
 
 export const experience = [
-  {
-    role: '',
-    company: 'Brian Reed Web Solutions',
-    companylogo: brws,
-    date: '2017 – Present',
-    desc:
-      ' I spend my time working with local clients and businesses creating responsive focused, user friendly, modern websites for many different types of businesses. • Using modern frameworks and Libraries such as React, Node, JavaScript, MongoDB and various other NPM Libraries. • Iterative improvement researching various NPM libraries and frameworks to implement it into customers websites.',
-    descBullets: [
-      'JavaScript',
-      'React',
-      'Node',
-      'Styled Componants',
-      'Material UI',
-      'Mongoose',
-      'Express',
-      'NoSQL / Mongo Database',
-      'EJS',
-      'CSS3',
-      'HTML5'
-    ],
-  },
   {
     role: 'Software Engineer',
     company: '100 Devs',
@@ -196,6 +176,42 @@ export const experience = [
       'EJS',
       'CSS3',
       'HTML5'
+    ],
+  },
+    {
+    role: 'Web Developer',
+    company: 'Brian Reed Web Solutions',
+    companylogo: brws,
+    date: '2017 – Present',
+    desc:
+      ' I work with local clients and businesses creating customer focused, user friendly, responsive websites for many different types of businesses. • Using modern frameworks and Libraries such as React, Node, JavaScript, MongoDB and various other NPM Libraries. • Iterative improvement researching various NPM libraries and frameworks for customer focused websites.',
+    descBullets: [
+      'JavaScript',
+      'React',
+      'Node',
+      'Styled Componants',
+      'Material UI',
+      'Mongoose',
+      'Express',
+      'NoSQL / Mongo Database',
+      'EJS',
+      'CSS3',
+      'HTML5'
+    ],
+  },
+
+  {
+    role: 'Route Manager',
+    company: 'Mayflower',
+    companylogo: mayflower,
+    date: '2015 - 2017',
+    desc:
+      ' Managing routes to make sure customer time needs are met. Driving a Semi-Truck to customer locations safely. Moving customers personal items who are relocating for work purposes. Using software to inventory and load items carefully into a trailer for transport. Managing teams to coordinate relocation.',
+    descBullets: [
+      'Using electronic time management software.',
+      'Using GPS software to navigate route.',
+      'Using Inventory software to inventory product.',
+      'Effective communication with moving coordinators.',
     ],
   },
 
