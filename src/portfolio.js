@@ -8,6 +8,7 @@ import socialagain from './assets/img/icons/common/social-again.svg'
 import airbnb from './assets/img/icons/common/airbnbLogo.png'
 import brws from './assets/img/icons/common/brian-reed-web-solutions.png'
 import mayflower from './assets/img/icons/common/mayflower.jpg'
+import schoollogo from './assets/img/icons/common/school-logo.png'
 
  let myLink = "http://at100devs.herokuapp.com/"
  
@@ -145,6 +146,7 @@ export const SkillBars = [
 
 export const educationInfo = [
     {
+      schoolLogo: schoollogo,
       schoolName: 'Portland Community College',
       subHeader: 'Computer Science',
       duration: '2022',
@@ -161,6 +163,7 @@ export const experience = [
     role: 'Software Engineer',
     company: '100 Devs',
     companylogo: at100devs,
+    url: "https://www.linkedin.com/company/100devs/",
     date: '2020 – Present',
     desc:
       ' Whether you need a pogressive web application, or a full-stack web application, we develop it at 100 Devs through collaboration with over 100 developers. Creating unique custom web apps for customers and clients is what we do. ',
@@ -182,6 +185,7 @@ export const experience = [
     role: 'Web Developer',
     company: 'Brian Reed Web Solutions',
     companylogo: brws,
+    url: "https://www.linkedin.com/company/brian-reed-web-solutions/",
     date: '2017 – Present',
     desc:
       ' I work with local clients and businesses creating customer focused, user friendly, responsive websites for many different types of businesses. Iterative improvement researching various NPM libraries and frameworks for customer focused websites.',
@@ -204,6 +208,7 @@ export const experience = [
     role: 'Route Manager',
     company: 'Mayflower',
     companylogo: mayflower,
+    url: "https://www.linkedin.com/company/mayflower/",
     date: '2015 - 2017',
     desc:
       ' Managing routes to make sure customer time needs are met. Driving a Semi-Truck to customer locations safely. Moving customers personal items who are relocating for work purposes. Using software to inventory and load items carefully into a trailer for transport. Managing teams to coordinate relocation.',

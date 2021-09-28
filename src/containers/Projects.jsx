@@ -24,7 +24,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="pl-4">
-                        <h4 className="display-3 text-white">Applications</h4>
+                        <h4 className="display-3 text-white text-shadows">Applications</h4>
                     </div>
                 </div>
                 <Row className="row-grid justify-content-center">

@@ -65,18 +65,18 @@ const ProjectsCard = ({data}) => {
     gyroscope={true}
     glareEnable={true}
   >
-    <div className="inner-element">
-            <Card style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card1 justify-content-center shadow-lg--hover border-1 shadow text-center rounded">
+    <div className="inner-element shadow">
+            <Card className="shadow" style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card1 justify-content-center  shadow shadow-lg--hover  shadow text-center rounded">
             
-                <CardHeader style={{background: rgb(colorArrays)}} >
-                <img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid " top src={data.companyname} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>
+                <Card className="shadow" style={{background: rgb(colorArrays)}} >
+                <img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid" top src={data.companyname} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>
                     {/* data.company  */}
-                </CardHeader>
-                <CardBody className="py-5">
+                </Card>
+                <CardBody className="py-1 shadow">
                 
                 {/* style={{borderRadius: "100%" }} */}
-                <img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid" top src={data.companylogo} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>
-                    <CardSubtitle style={{background: rgb(colorArrays)}}>{data.date}</CardSubtitle>
+                <img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid" top src={data.companylogo} style={{borderRadius: "10px" }} onLoad={() => getColorArrays()} alt=""/>
+                    <CardSubtitle className="shadow" style={{background: rgb(colorArrays)}}>{data.date}</CardSubtitle>
                     <CardText className="description my-3 text-left">
                         {data.desc}
                         

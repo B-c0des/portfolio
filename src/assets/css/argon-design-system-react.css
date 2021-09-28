@@ -10283,6 +10283,9 @@ button.bg-darker:focus {
 .text-white {
   color: #fff !important; }
 
+.text-shadows{
+  text-shadow: 1px 1px 10px black !important; }
+
 .text-primary {
   color: #5e72e4 !important; }
 
@@ -10340,6 +10343,9 @@ a.text-default:hover, a.text-default:focus {
 .text-white {
   color: #fff !important; }
 
+.text-shadows{
+    text-shadow: 1px 1px 10px black !important; }
+  
 a.text-white:hover, a.text-white:focus {
   color: #d9d9d9 !important; }
 
@@ -11564,6 +11570,10 @@ a.text-cyan:hover, a.text-cyan:focus {
 
 .text-white {
   color: #fff !important; }
+
+.text-shadows{
+    text-shadow: 1px 1px 10px black !important; }
+  
 
 a.text-white:hover, a.text-white:focus {
   color: #d9d9d9 !important; }
@@ -14918,7 +14928,7 @@ span.flatpickr-weekday {
       color: #dee2e6;
       cursor: default; }
     .datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover {
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+      text-shadow: 0 5px 0 rgba(0, 0, 0, 0.25); }
     .datepicker table tr td span.old, .datepicker table tr td span.new {
       color: #8898aa; }
   .datepicker .datepicker-switch {
@@ -17041,5 +17051,7 @@ td.rdtYear:hover {
   margin-bottom: 0;
   flex: 1 1 auto;
   width: 1%; }
+
+
 
 /*# sourceMappingURL=argon-design-system-react.css.map */
