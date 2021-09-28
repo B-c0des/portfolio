@@ -65,7 +65,7 @@ const ProjectsCard = ({data}) => {
     gyroscope={true}
     glareEnable={true}
   >
-    <div className="inner-element shadow">
+    <div className="inner-element">
             <Card className="shadow" style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card1 justify-content-center  shadow shadow-lg--hover  shadow text-center rounded">
             
                 <Card className="shadow" style={{background: rgb(colorArrays)}} >
@@ -75,9 +75,9 @@ const ProjectsCard = ({data}) => {
                 <CardBody className="py-1 shadow">
                 
                 {/* style={{borderRadius: "100%" }} */}
-                <img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid" top src={data.companylogo} style={{borderRadius: "10px" }} onLoad={() => getColorArrays()} alt=""/>
-                    <CardSubtitle className="shadow" style={{background: rgb(colorArrays)}}>{data.date}</CardSubtitle>
-                    <CardText className="description my-3 text-left">
+                <img className=" bg-black  mb-3 img-center img-fluid" top src={data.companylogo} style={{borderRadius: "10px" }}  alt=""/>
+                {data.date}
+                    <CardText className="description my-3 text-left" style={{color: rgb(colorArrays)}}>
                         {data.desc}
                         
                         <ul>
