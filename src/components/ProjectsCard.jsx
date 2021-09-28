@@ -56,11 +56,13 @@ const ProjectsCard = ({data}) => {
         <Fade left duration={1000} distance="40px">
             <ExternalLink href={data.myLink}>
             <Tilt
-    className="parallax-effect-glare-scale"
+    className="parallax-effect-img"
+    tiltMaxAngleX={12}
+    tiltMaxAngleY={12}
     perspective={2000}
-    glareEnable={true}
-    glareMaxOpacity={.75}
-    scale={1.02}
+    transitionSpeed={9500}
+    scale={1.1}
+    gyroscope={true}
   >
     <div className="inner-element">
             <Card style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card-lift--hover card1 justify-content-center shadow-lg--hover shadow border-0 text-center rounded">

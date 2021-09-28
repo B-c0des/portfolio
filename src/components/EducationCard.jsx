@@ -16,11 +16,13 @@ const EducationCard = ({education}) => {
         <Fade right duration={1000} distance="40px">
             <ExternalLink href="https://catalog.pcc.edu/programsanddisciplines/computerscience/">
             <Tilt
-    className="parallax-effect-glare-scale"
-    perspective={3000}
-    glareEnable={true}
-    glareMaxOpacity={.75}
-    scale={1.02}
+    className="parallax-effect-img"
+    tiltMaxAngleX={12}
+    tiltMaxAngleY={12}
+    perspective={2000}
+    transitionSpeed={9500}
+    scale={1.1}
+    gyroscope={true}
   >
             <Card className="card-lift--hover shadow mt-4">
                 <CardBody>
@@ -29,10 +31,12 @@ const EducationCard = ({education}) => {
                         <h5 className="text-info">
                         {education.schoolName}
                         </h5>
-                        <h6>{education.subHeader}</h6>
-                        <Badge color="info" className="mr-1">
+                        <h6>{education.subHeader}
+                        <Badge color="info" className="ml-4">
                         {education.duration}
-                    </Badge>
+                        </Badge>
+                        </h6>
+
                         <p className="description mt-3">
                             {education.desc}
                             <ul>

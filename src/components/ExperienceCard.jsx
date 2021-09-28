@@ -34,11 +34,13 @@ const ExperienceCard = ({data}) => {
         <Fade left duration={1000} distance="40px">
         <ExternalLink href="https://www.linkedin.com/company/100devs/">
         <Tilt
-    className="parallax-effect-glare-scale"
+    className="parallax-effect-img"
+    tiltMaxAngleX={12}
+    tiltMaxAngleY={12}
     perspective={2000}
-    glareEnable={true}
-    glareMaxOpacity={0.75}
-    scale={1.02}
+    transitionSpeed={9500}
+    scale={1.1}
+    gyroscope={true}
   >
             <Card style={{flex: 1}} className="card-lift--hover shadow-lg--hover shadow border-0 text-center rounded">
                 <CardHeader style={{background: rgb(colorArrays)}} >

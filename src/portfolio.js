@@ -6,6 +6,8 @@ import fizzBuzz from './assets/img/icons/common/fizzbuzz.jpg'
 import github from './assets/img/icons/common/github.svg'
 import socialagain from './assets/img/icons/common/social-again.svg'
 import airbnb from './assets/img/icons/common/airbnbLogo.png'
+import brws from './assets/img/icons/common/brian-reed-web-solutions.png'
+
  let myLink = "http://at100devs.herokuapp.com/"
  
 
@@ -33,13 +35,23 @@ export const socialLinks = {
 }
 
 export const skillsSection = {
-    title: '',
-    title: 'Software Tech:',
+    title: 'Focus of Software Technologies:',
+    portfolioName: '⚡Portfolio Built With⚡', 
+    github: 'GitHub Stats',
     skills: [
-      emoji(
-        '⚡ Developing interactive User Interfaces for your web and mobile applications'
-      ),
-      emoji('⚡ Progressive Web Applications ( PWA )'),
+      emoji('React'),
+      emoji('Apollo'),
+      emoji('Axios'),
+      emoji('Reactstrap'),
+      emoji('GraphQL'),
+      emoji('React Router'),
+      emoji('React Lottie'),
+      emoji('React External Link'),
+      emoji('Node Sass'),
+      emoji('React Router Dom'),
+      emoji('React Parallax'),
+      emoji('React Classnames'),
+      
       // emoji(
       //   '⚡ Integration of Firebase/ AWS / Digital Ocean'
       // ),
@@ -55,23 +67,15 @@ export const skillsSection = {
       //   fontAwesomeClassname: 'logos:typescript-icon',
       // },
       {
-        skillName: 'reactjs',
+        skillName: 'REACT',
         fontAwesomeClassname: 'vscode-icons:file-type-reactjs',
       },
       {
-        skillName: 'nodejs',
+        skillName: 'NODE',
         fontAwesomeClassname: 'logos:nodejs-icon',
       },
       {
-        skillName: 'html-5',
-        fontAwesomeClassname: 'vscode-icons:file-type-html',
-      },
-      {
-        skillName: 'css3',
-        fontAwesomeClassname: 'vscode-icons:file-type-css',
-      },
-      {
-        skillName: 'sass',
+        skillName: 'SASS',
         fontAwesomeClassname: 'logos:sass',
       },
       // {
@@ -83,7 +87,7 @@ export const skillsSection = {
       //   fontAwesomeClassname: 'vscode-icons:file-type-swift',
       // },
       {
-        skillName: 'npm',
+        skillName: 'NPM',
         fontAwesomeClassname: 'vscode-icons:file-type-npm',
       },
       // {
@@ -91,7 +95,7 @@ export const skillsSection = {
       //   fontAwesomeClassname: 'vscode-icons:file-type-sql',
       // },
       {
-        skillName: 'mongoDB',
+        skillName: 'MongoDB',
         fontAwesomeClassname: 'vscode-icons:file-type-mongo',
       },
       // {
@@ -107,9 +111,18 @@ export const skillsSection = {
       //   fontAwesomeClassname: 'logos:python',
       // },
       {
-        skillName: 'git',
+        skillName: 'Github',
         fontAwesomeClassname: 'logos:git-icon',
       },
+      {
+        skillName: 'CSS3',
+        fontAwesomeClassname: 'vscode-icons:file-type-css',
+      },
+      {
+        skillName: 'HTML5',
+        fontAwesomeClassname: 'vscode-icons:file-type-html',
+      },
+
     ],
 }
 
@@ -144,14 +157,13 @@ export const educationInfo = [
 
 export const experience = [
   {
-    role: 'Software Engineer',
-    company: '100 Devs',
-    companylogo: at100devs,
-    date: '2020 – Present',
+    role: '',
+    company: 'Brian Reed Web Solutions',
+    companylogo: brws,
+    date: '2017 – Present',
     desc:
-      ' Whether you need a pogressive web application, or a full-stack web application, we develop it at 100 Devs through collaboration with over 100 developers. Creating unique custom web apps for customers and clients is what we do. ',
+      ' I spend my time working with local clients and businesses creating responsive focused, user friendly, modern websites for many different types of businesses. • Using modern frameworks and Libraries such as React, Node, JavaScript, MongoDB and various other NPM Libraries. • Iterative improvement researching various NPM libraries and frameworks to implement it into customers websites.',
     descBullets: [
-      'MERN stack:',
       'JavaScript',
       'React',
       'Node',
@@ -165,6 +177,28 @@ export const experience = [
       'HTML5'
     ],
   },
+  {
+    role: 'Software Engineer',
+    company: '100 Devs',
+    companylogo: at100devs,
+    date: '2020 – Present',
+    desc:
+      ' Whether you need a pogressive web application, or a full-stack web application, we develop it at 100 Devs through collaboration with over 100 developers. Creating unique custom web apps for customers and clients is what we do. ',
+    descBullets: [
+      'JavaScript',
+      'React',
+      'Node',
+      'Styled Componants',
+      'Material UI',
+      'Mongoose',
+      'Express',
+      'NoSQL / Mongo Database',
+      'EJS',
+      'CSS3',
+      'HTML5'
+    ],
+  },
+
 ]
 
 export const projects = [

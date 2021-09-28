@@ -111,7 +111,7 @@ const useStyles = makeStyles((theme) => ({
 const Resume = () => {
   const classes = useStyles();
     return ( 
-      <div className="btn-wrapper size-lg text-lg" style={{width: "300px"}}>
+      <div className="btn-wrapper size-lg text-lg" style={{}}>
       <Button type="button" href={socialLinks.twitter} className={classes.twitter}>
       <i className="fa fa-twitter" />
       </Button>

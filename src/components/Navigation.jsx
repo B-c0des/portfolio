@@ -14,7 +14,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
-
+import Tilt from 'react-parallax-tilt';
 import './Navigation.css'
 
 const Navigation = () => {

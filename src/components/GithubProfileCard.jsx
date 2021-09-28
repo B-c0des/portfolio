@@ -6,7 +6,7 @@ import {
     Row,
     Container,
 } from "reactstrap";
-
+import Tilt from 'react-parallax-tilt';
 
 import Resume from "../components/Resume";
 
@@ -20,9 +20,9 @@ const GithubProfileCard = ({prof}) => {
                   <Row className="justify-content-center">
                   <Col className=" justify-content-center order-lg-2" lg="4">
                       <img src={prof.avatar_url} style={{width: "200px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-4"/>
-                      <p className="justify-content-center text-black mt-3 ml-5">
+                      <h3 className="justify-content-center text-black">
                           {prof.bio}
-                      </p>
+                      </h3>
                       <Resume />
                       </Col>
                     <Col lg="8" className="order-lg-1">

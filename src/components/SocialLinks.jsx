@@ -3,6 +3,8 @@ import { socialLinks } from "../portfolio";
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import {Link} from 'react-scroll'
+import Tilt from 'react-parallax-tilt';
+
 const useStyles = makeStyles((theme) => ({
   twitter: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
@@ -103,11 +105,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
-
 const SocialLinks = () => {
   const classes = useStyles();
     return ( 
+      
       <div className="btn-wrapper size-lg text-lg" style={{width: "440px"}}>
       <Button type="button" href={socialLinks.twitter} className={classes.twitter}>
       <i className="fa fa-twitter" />
@@ -118,6 +119,7 @@ const SocialLinks = () => {
         <Button type="button" href={socialLinks.github} className={classes.github}>
         <i className="fa fa-github" />
         </Button>
+        
         <Button type="button" href={'https://bit.ly/brian-reed-resume'} className={classes.resume}>
         Resume
         </Button>
