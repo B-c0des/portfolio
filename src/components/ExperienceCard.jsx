@@ -33,22 +33,22 @@ const ExperienceCard = ({data}) => {
         <Col lg="4">
         <Fade left duration={1000} distance="40px">
         <ExternalLink href="https://www.linkedin.com/company/100devs/">
-        <Tilt
-    className="parallax-effect-img"
-    tiltMaxAngleX={12}
-    tiltMaxAngleY={12}
-    perspective={2000}
-    transitionSpeed={9500}
-    scale={1.1}
-    gyroscope={true}
-  >
-            <Card style={{flex: 1}} className="card-lift--hover shadow-lg--hover shadow border-0 text-center rounded">
+                <Tilt
+            className="parallax-effect-img"
+            tiltMaxAngleX={12}
+            tiltMaxAngleY={12}
+            perspective={1500}
+            transitionSpeed={9500}
+            scale={1.08}
+            gyroscope={true}
+        >
+            <Card style={{flex: 1}} className="shadow-lg--hover bg-black shadow border-1 text-center rounded">
                 <CardHeader style={{background: rgb(colorArrays)}} >
                     <h5 className="text-white">{data.company}</h5>
                 </CardHeader>
-                <CardBody className="py-5">
+                <CardBody className="py-1">
                 <div className="inner-element">
-                    <img ref={imgRef} className=" bg-white rounded-circle mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{ width: "100px" }} onLoad={() => getColorArrays()} alt=""/>
+                    <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{ width: "100px" }} onLoad={() => getColorArrays()} alt=""/>
                     <CardTitle tag="h5">{data.role}</CardTitle>
                     <div>
                     <CardSubtitle>{data.date}</CardSubtitle>

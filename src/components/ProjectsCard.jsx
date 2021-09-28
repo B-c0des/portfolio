@@ -65,7 +65,7 @@ const ProjectsCard = ({data}) => {
     gyroscope={true}
   >
     <div className="inner-element">
-            <Card style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card-lift--hover card1 justify-content-center shadow-lg--hover shadow border-0 text-center rounded">
+            <Card style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card1 justify-content-center shadow-lg--hover border-1 shadow text-center rounded">
             
                 <CardHeader style={{background: rgb(colorArrays)}} >
                 <img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid " top src={data.companyname} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>

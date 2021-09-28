@@ -24,7 +24,7 @@ const EducationCard = ({education}) => {
     scale={1.1}
     gyroscope={true}
   >
-            <Card className="card-lift--hover shadow mt-4">
+            <Card className="shadow-lg--hover bg-black shadow border-1 text-center rounded card">
                 <CardBody>
                     <div className="d-flex px-3">
                     <div className="pl-4">
