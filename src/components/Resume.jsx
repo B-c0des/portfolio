@@ -121,7 +121,7 @@ const Resume = () => {
         <Button type="button"  href={socialLinks.github} className={classes.github}>
         <i className="fa fa-github" />
         </Button>
-        <Button type="button"  href={'https://bit.ly/brian-reed-resumes'}  style={{width: "233px"}} className={classes.resume}>
+        <Button type="button"  href={'https://bit.ly/brian-reed-software-engineer-resume'}  style={{width: "233px"}} className={classes.resume}>
         Resume
         </Button>
         {/* <Button type="button" style={{width: "233px"}} className={classes.location}>
