@@ -1,24 +1,19 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 //import {  Button } from "reactstrap";
 import { ExternalLink } from 'react-external-link';
 import { socialLinks } from "../portfolio";
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
-import { Transition } from "react-spring/renderprops";
+
 import {Link} from 'react-scroll'
 // import ThemeNesting from './Button';
 const useStyles = makeStyles((theme) => ({
-  root: {
-    animation: "fadeIn .2s ease-in-out",
-    flexGrow: 1,
-    margin: '-8px',
-  },
+  
   twitter: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
     boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .3)',
     '&:hover': {
-      animation: "fadeIn .2s ease-in-out",
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
       boxShadow: '0px  1px 1px 1px rgba(113, 213, 213, .5)',
@@ -30,16 +25,6 @@ const useStyles = makeStyles((theme) => ({
     height: 48,
     padding: '0 30px',
     margin:'3px'
-  },
-  "@keyframes fadeIn": {
-    "0%": {
-      opacity: 0,
-      transform: "translateY(5rem)"
-    },
-    "100%": {
-      opacity: 1,
-      transform: "translateY(0)"
-    }
   },
   linkedin: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
@@ -126,31 +111,25 @@ const useStyles = makeStyles((theme) => ({
 
 const Resume = () => {
   const classes = useStyles();
-  const [show, set] = useState(false);
     return ( 
-
-      <div>
-      <button onClick={() => set(!show)}>toggle</button>
-      <Transition
-        items={show}
-        from={{ opacity: 0 }}
-        enter={{ opacity: 1 }}
-        leave={{ opacity: 0 }}
-      >
-        {(show) =>
-          show &&
-          ((props) => (
-            <div style={props}>
-              <span role="img" aria-label="smile">
-                ✌
-              </span>
-              ️
-            </div>
-          ))
-        }
-      </Transition>
-    </div>
-
+      <div className="btn-wrapper size-lg text-lg" style={{}}>
+      <Button type="button" href={socialLinks.twitter} className={classes.twitter}>
+      <i className="fa fa-twitter" />
+      </Button>
+        <Button type="button" href={socialLinks.linkedin} className={classes.linkedin}>
+        <i className="fa fa-linkedin" />
+        </Button>
+        <Button type="button"  href={socialLinks.github} className={classes.github}>
+        <i className="fa fa-github" />
+        </Button>
+        <Button type="button"  href={'https://bit.ly/brian-reed-resume'}  style={{width: "233px"}} className={classes.resume}>
+        Resume
+        </Button>
+        {/* <Button type="button" style={{width: "233px"}} className={classes.location}>
+        <i className="ni ni-pin-3 text-info mr-2" />
+        {"Remote"}
+        </Button> */}
+        </div>
      );
 }
  
