@@ -1,5 +1,4 @@
 import React, {Fragment} from 'react';
-
 import { Fade } from 'react-reveal';
 import DisplayLottie from '../components/DisplayLottie'
 import webdev from '../assets/lottie/webdev.json';
@@ -12,7 +11,7 @@ import {
     UncontrolledTooltip,
     Badge
 } from "reactstrap";
-
+import {Link} from 'react-scroll'
 import { skillsSection } from "../portfolio";
 
 const Skills = () => {
@@ -70,6 +69,7 @@ const Skills = () => {
                         }
                     </div>
                     <h3 className="mt-5 m-1">{skillsSection.github}</h3>
+                    <ExternalLink href="https://github.com/brian-reed-software">
                     <Tilt
                         className="parallax-effect-img"
                         tiltMaxAngleX={6}
@@ -80,10 +80,9 @@ const Skills = () => {
                         gyroscope={true}
                         glareEnable={true}
                     >
-                    <ExternalLink href="https://github.com/brian-reed-software">
-                    <img className="container-fluid shadow mt-1" src="https://ghchart.rshah.org/brian-reed-software" alt="" />
-                    </ExternalLink>
+                           <img className="container-fluid shadow mt-1" src="https://ghchart.rshah.org/brian-reed-software" alt="" />
                     </Tilt>
+                    </ExternalLink>
                 </Col>
             </Row>
             </Container>

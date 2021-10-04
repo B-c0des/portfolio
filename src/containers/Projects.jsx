@@ -7,7 +7,7 @@ import {
 } from "reactstrap";
 import ProjectsCard from "../components/ProjectsCard";
 import { Fade } from 'react-reveal';
-
+import {Link} from 'react-scroll'
 
 const Projects = () => {
     return ( 
