@@ -16,8 +16,9 @@ import { skillsSection } from "../portfolio";
 
 const Skills = () => {
     return ( 
-        <Fade left duration={1000} distance="40px">
-            <Container className="text-center section ">
+        <div style={{backgroundColor: "black"}}>
+        <Fade left duration={1000} distance="40px" style={{backgroundColor: "black"}}>
+            <Container className="text-center section" style={{backgroundColor: "black"}}>
             
             <span className="lead shadow">{skillsSection.subTitle}</span>
             <Row>
@@ -41,7 +42,7 @@ const Skills = () => {
                         gyroscope={true}
                     >
                         
-                        <div className="icon icon-shape shadow rounded-circle m-1 text-info"  id={skill.skillName}>
+                        <div className="icon icon-shape shadow rounded-circle m-1 text-info "  id={skill.skillName}>
 
                         <span className="iconify " data-icon={skill.fontAwesomeClassname} data-inline="false"></span>
                         
@@ -87,6 +88,7 @@ const Skills = () => {
             </Row>
             </Container>
         </Fade>
+        </div>
      );
 }
  
