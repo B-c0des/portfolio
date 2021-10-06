@@ -9,7 +9,6 @@ import { Button } from '@material-ui/core';
 import {Link} from 'react-scroll'
 // import ThemeNesting from './Button';
 const useStyles = makeStyles((theme) => ({
-  
   twitter: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
     boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .3)',
@@ -122,7 +121,7 @@ const Resume = () => {
         <Button type="button"  href={socialLinks.github} className={classes.github}>
         <i className="fa fa-github" />
         </Button>
-        <Button type="button"  href={'https://bit.ly/brian-reed-resume'}  style={{width: "233px"}} className={classes.resume}>
+        <Button type="button"  href={'https://tinyurl.com/brian-reed-resume2'}  style={{width: "233px"}} className={classes.resume}>
         Resume
         </Button>
         {/* <Button type="button" style={{width: "233px"}} className={classes.location}>
