@@ -13,7 +13,7 @@ const Education = () => {
         style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2021/05/Svg-Background-1.svg")` }} 
         className="section pb-0 my-5 section-profile-cover">
             <Container>
-                <div className="d-flex p-4">
+                <div className="d-flex p-4" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
                     <div>
                         <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
                         <i className="ni ni-books text-info" />
@@ -41,7 +41,7 @@ const Education = () => {
                 y="0"
               >
                 <polygon
-                  className="fill-white"
+                  className="fill-black"
                   points="2560 0 2560 100 0 100"
                 />
               </svg>

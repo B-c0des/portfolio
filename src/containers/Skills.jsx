@@ -19,20 +19,20 @@ const Skills = () => {
         <Fade left duration={1000} distance="40px">
             <Container className="text-center section ">
             
-            <span className="lead">{skillsSection.subTitle}</span>
+            <span className="lead shadow">{skillsSection.subTitle}</span>
             <Row>
                 <Col lg="6">
                     <DisplayLottie animationData={webdev} />
                 </Col>
                 <Col lg="6">
-                <h3 className="h3">{skillsSection.title}</h3>
+                <h3 className="h3 text-info">{skillsSection.title}</h3>
                     <div className="d-flex justify-content-center flex-wrap mb-3">
                     
                         {
                             skillsSection.softwareSkills.map((skill) => {
                                 return <Fragment key={skill.skillName}>
                         <Tilt
-                        className="parallax-effect-img"
+                        className="parallax-effect-img "
                         tiltMaxAngleX={6}
                         tiltMaxAngleY={6}
                         perspective={1000}
@@ -41,9 +41,9 @@ const Skills = () => {
                         gyroscope={true}
                     >
                         
-                        <div className="icon icon-shape shadow rounded-circle m-1"  id={skill.skillName}>
+                        <div className="icon icon-shape shadow rounded-circle m-1 text-info"  id={skill.skillName}>
 
-                        <span className="iconify" data-icon={skill.fontAwesomeClassname} data-inline="false"></span>
+                        <span className="iconify " data-icon={skill.fontAwesomeClassname} data-inline="false"></span>
                         
                             </div>
                            
@@ -59,16 +59,16 @@ const Skills = () => {
                             })
                         }
                     </div>
-                    <h3>{skillsSection.portfolioName}</h3>
+                    <h3 className="text-info">{skillsSection.portfolioName}</h3>
                     <div>
                         
                         {
                             skillsSection.skills.map(skill => {
-                                return <Badge className="flex-wrap m-1" key={skill}>{skill}</Badge>
+                                return <Badge className="flex-wrap m-1 shadow" key={skill}>{skill}</Badge>
                             })
                         }
                     </div>
-                    <h3 className="mt-5 m-1">{skillsSection.github}</h3>
+                    <h3 className="mt-5 m-1 text-info">{skillsSection.github}</h3>
                     <ExternalLink href="https://github.com/brian-reed-software">
                     <Tilt
                         className="parallax-effect-img"

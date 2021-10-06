@@ -9,8 +9,7 @@ import airbnb from './assets/img/icons/common/airbnbLogo.png'
 import brws from './assets/img/icons/common/brian-reed-web-solutions.png'
 import mayflower from './assets/img/icons/common/mayflower.jpg'
 import schoollogo from './assets/img/icons/common/school-logo.png'
-
- let myLink = "http://at100devs.herokuapp.com/"
+let myLink = "http://at100devs.herokuapp.com/"
  
 
 export const greetings = {

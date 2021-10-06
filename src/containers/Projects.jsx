@@ -7,7 +7,7 @@ import {
 } from "reactstrap";
 import ProjectsCard from "../components/ProjectsCard";
 import { Fade } from 'react-reveal';
-import {Link} from 'react-scroll'
+
 
 const Projects = () => {
     return ( 
@@ -17,7 +17,7 @@ const Projects = () => {
         className="section pb-0 my-5 section-profile-cover">
             <Container>
               <Fade bottom duration={1000} distance="40px">
-              <div className="d-flex p-1">
+              <div className="d-flex p-1" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
                     <div>
                         <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
                         <i className="ni ni-laptop text-info" />
@@ -46,7 +46,7 @@ const Projects = () => {
                 y="0"
               >
                 <polygon
-                  className="fill-white"
+                  className="fill-black"
                   points="2560 0 2560 100 0 100"
                 />
               </svg>

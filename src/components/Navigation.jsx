@@ -39,9 +39,9 @@ const Navigation = () => {
           >
             <Container>
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-                <h2 className="text-white" id="nav-title">{greetings.name}</h2>
+                <h2 className="text-white" id="nav-title" style={{filter: "drop-shadow(0px 2px 3px black)"}}>{greetings.name}</h2>
               </NavbarBrand>
-              <button className="navbar-toggler" id="navbar_global">
+              <button className="navbar-toggler" id="navbar_global" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
                 <span className="navbar-toggler-icon" />
               </button>
               <UncontrolledCollapse
@@ -56,11 +56,11 @@ const Navigation = () => {
                     <Col className="collapse-brand" xs="6">
                       
                       <Link to="/">
-                        <h3 className="text-black" id="nav-title">{greetings.name}</h3>
+                        <h3 className="text-black" id="nav-title" style={{filter: "drop-shadow(0px 2px 3px black)"}}>{greetings.name}</h3>
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">
-                      <button className="navbar-toggler" id="navbar_global">
+                      <button className="navbar-toggler" id="navbar_global" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
                         <span />
                         <span />
                       </button>
@@ -98,6 +98,7 @@ const Navigation = () => {
                       className="nav-link-icon"
                       href={socialLinks.twitter}
                       target="_blank"
+                      style={{filter: "drop-shadow(0px 2px 3px black)"}}
                     >
                       <i className="fa fa-twitter-square" />
                       <span size="lg" className="nav-link-inner--text d-lg-none ml-2">
@@ -111,6 +112,7 @@ const Navigation = () => {
                       className="nav-link-icon"
                       href={socialLinks.github}
                       target="_blank"
+                      style={{filter: "drop-shadow(0px 2px 3px black)"}}
                     >
                       <i className="fa fa-github" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
@@ -123,6 +125,7 @@ const Navigation = () => {
                       className="nav-link-icon"
                       href={socialLinks.linkedin}
                       target="_blank"
+                      style={{filter: "drop-shadow(0px 2px 3px black)"}}
                     >
                     <i className="fa fa-linkedin" />
                       <span className="nav-link-inner--text d-lg-none ml-2">

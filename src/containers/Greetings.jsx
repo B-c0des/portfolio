@@ -22,6 +22,8 @@ const Greetings = () => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
   })
+
+  
   return ( 
     <Fade top duration={1000} distance="40px">
         <main ref="main">
@@ -47,22 +49,23 @@ const Greetings = () => {
                 <span />
                 <span />
               </div>
-              <Container className="py-lg-md d-flex">
+              <Container className="py-lg-md d-flex" >
                 <div className="col px-0">
                   <Row>
                     <Col lg="6">
                     
 
-                      <h1 className="display-1 text-white">
+                    <h1 className="display-2 text-white bg-black border-1" style={{filter: "drop-shadow(0px 2px 20px white)"}}>
                       {greetings.title}
                       </h1>
-                      <p className="lead text-white">{greetings.description}</p>
+                      
+                      <p className="lead text-white" style={{filter: "drop-shadow(0px 2px 5px black)"}}>{greetings.description}</p>
                       <h1 className="" style={{width: "700px"}}>
                       <SocialLinks />
                       </h1>
                       </Col>
                     <Col lg="6">
-                      <GreetingLottie animationData={code}/>
+                      <GreetingLottie  animationData={code}/>
                     </Col>
                   </Row>
                 </div>
@@ -79,7 +82,7 @@ const Greetings = () => {
                   y="0"
                 >
                   <polygon
-                    className="fill-white"
+                    className="fill-black"
                     points="2560 0 2560 100 0 100"
                   />
                 </svg>
