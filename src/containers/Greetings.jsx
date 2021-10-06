@@ -64,7 +64,7 @@ const Greetings = () => {
                       <SocialLinks />
                       </h1>
                       </Col>
-                    <Col lg="6" style={{filter: "drop-shadow(0px 5px 30px white)"}}>
+                    <Col lg="6" style={{filter: "drop-shadow(0px 5px 30px black)"}}>
                       <GreetingLottie  animationData={code}/>
                     </Col>
                   </Row>

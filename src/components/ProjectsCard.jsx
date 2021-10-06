@@ -56,15 +56,15 @@ const ProjectsCard = ({data}) => {
         <Fade left duration={1000} distance="40px">
             <ExternalLink href={data.myLink}>
             <Tilt
-    className="parallax-effect-img"
-    tiltMaxAngleX={12}
-    tiltMaxAngleY={12}
-    perspective={2000}
-    transitionSpeed={9500}
-    scale={1.1}
-    gyroscope={true}
-    glareEnable={true}
-  >
+                    className="parallax-effect-img"
+                    tiltMaxAngleX={12}
+                    tiltMaxAngleY={12}
+                    perspective={2000}
+                    transitionSpeed={9500}
+                    scale={1.1}
+                    gyroscope={true}
+                    glareEnable={true}
+                >
     <div className="inner-element">
             <Card className="shadow" style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card1 justify-content-center  shadow shadow-lg--hover  shadow text-center rounded">
             
@@ -77,7 +77,7 @@ const ProjectsCard = ({data}) => {
                 {/* style={{borderRadius: "100%" }} */}
                 <img className=" bg-black  mb-3 img-center img-fluid" top src={data.companylogo} style={{borderRadius: "10px" }}  alt=""/>
                 {data.date}
-                    <CardText className="description my-3 text-left" style={{color: rgb(colorArrays)}}>
+                    <CardText className="description my-3 text-left" >
                         {data.desc}
                         
                         <ul>

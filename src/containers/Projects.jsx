@@ -14,10 +14,10 @@ const Projects = () => {
       
         <section
         style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg")` }} 
-        className="section pb-0 section-profile-cover">
-            <Container>
+        className="pb-0 section-profile-cover">
+            <Container style={{filter: "drop-shadow(0px 2px 3px black)"}}>
               <Fade bottom duration={1000} distance="40px">
-              <div className="d-flex p-1" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
+              <div className="d-flex p-2 pb-6" >
                     <div>
                         <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
                         <i className="ni ni-laptop text-info" />

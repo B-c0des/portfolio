@@ -12,11 +12,11 @@ import Resume from "../components/Resume";
 
 const GithubProfileCard = ({prof}) => {
     return ( 
-            <Card className="section pb-0 section-profile-cover"
+            <Card className="section pb-0 section-profile-cover" 
             style={{backgroundColor: "white", backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")` }} 
             
             >
-                <Container className="">
+                <Container className="" style={{filter: "drop-shadow(0px 2px 3px steelblue)"}}>
                 <div className="p-2">
                   <Row className="justify-content-center">
                   <Col className=" justify-content-center order-lg-2" lg="4">
@@ -31,13 +31,13 @@ const GithubProfileCard = ({prof}) => {
                       >
                       <img src={prof.avatar_url} style={{width: "100px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
                       </Tilt>
-                      <h3 className="justify-content-center text-black" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
+                      <h3 className="justify-content-center text-white" >
                           {prof.bio}
                       </h3>
                       <Resume />
                       </Col>
                     <Col lg="8" className="order-lg-1">
-                      <h2 id="contact" className="text-white" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
+                      <h2 id="contact" className="text-white">
                        Reach Out to me &#128071;
                       </h2>
                       <div data-netlify-recaptcha="true" data-netlify="true" class="mighty-form" id="mf-e9b1f4b8-0f47-41c1-a114-0c1eac9921d5" ></div> 

@@ -30,21 +30,21 @@ const EducationCard = ({education}) => {
         <Fade right duration={1000} distance="40px">
             <ExternalLink href="https://catalog.pcc.edu/programsanddisciplines/computerscience/">
             <Tilt
-    className="parallax-effect-img"
-    tiltMaxAngleX={12}
-    tiltMaxAngleY={12}
-    perspective={2000}
-    transitionSpeed={9500}
-    scale={1.1}
-    gyroscope={true}
-    glareEnable={true}
-  >
+                    className="parallax-effect-img"
+                    tiltMaxAngleX={12}
+                    tiltMaxAngleY={12}
+                    perspective={2000}
+                    transitionSpeed={9500}
+                    scale={1.1}
+                    gyroscope={true}
+                    glareEnable={true}
+                >
             <Card className="shadow-lg--hover bg-black  shadow border-1 text-center rounded card">
                 <Card>
                     <div className="">
                     <div className="">
                     <Card className="shadow" style={{background: rgb(colorArrays)}} >
-                      <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={education.schoolLogo} style={{ width: "100px" }} onLoad={() => getColorArrays()} alt=""/>
+                      <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={education.schoolLogo} style={{ width: "125px" }} onLoad={() => getColorArrays()} alt=""/>
                     <h5 className="text-info" >{education.schoolName}</h5>
                      </Card>
 

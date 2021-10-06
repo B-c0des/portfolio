@@ -18,7 +18,7 @@ const Skills = () => {
     return ( 
         <div style={{backgroundColor: "black"}} className="pb-5"  style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")` }} >
         <Fade left duration={1000} distance="40px">
-            <Container className="align-items-center" >
+            <Container className="align-items-center" style={{filter: "drop-shadow(0px 2px 3px white)"}}>
             
             <span className="lead shadow ">{skillsSection.subTitle}</span>
             <Row>
