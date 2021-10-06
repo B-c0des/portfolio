@@ -35,9 +35,9 @@ const Skills = () => {
                         className="parallax-effect-img"
                         tiltMaxAngleX={6}
                         tiltMaxAngleY={6}
-                        perspective={2000}
+                        perspective={1000}
                         transitionSpeed={1500}
-                        scale={1.2}
+                        scale={1.1}
                         gyroscope={true}
                     >
                         

@@ -11,11 +11,11 @@ import {Link} from 'react-scroll'
 const useStyles = makeStyles((theme) => ({
   twitter: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .3)',
+    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
-      boxShadow: '0px  1px 1px 1px rgba(113, 213, 213, .5)',
+      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
       marginTop: '0px',},
     border: 0,
     fontSize: 16,
@@ -23,15 +23,16 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     height: 48,
     padding: '0 30px',
-    margin:'3px'
+    margin:'3px',
+    textShadow: '0 2px 2px black'
   },
   linkedin: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .5)',
+    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
-      boxShadow: '0px  2px 1px 1px rgba(113, 213, 213, .3)',
+      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
       marginTop: '0px',},
     border: 0,
     fontSize: 16,
@@ -39,15 +40,16 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     height: 48,
     padding: '0 30px',
-    margin:'3px'
+    margin:'3px',
+    textShadow: '0 2px 2px black'
   },
   github: {
     background: 'linear-gradient(85deg, #1a1a1a 30%, #005266 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(13, 53, 53, .5)',
+    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #1a1a1a 10%, #008fb3 90%)',
       color: '#fff',
-      boxShadow: '0px 1px 1px 1px rgba(13, 53, 53, .3)',
+      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
       marginTop: '0px',
     padding:'5px 30px'},
     border: 0,
@@ -56,15 +58,16 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     height: 48,
     padding: '0 30px',
-    margin:'2px'
+    margin:'2px',
+    textShadow: '0 2px 2px black'
   },
   resume: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .5)',
+    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
-      boxShadow: '0px  2px 1px 1px rgba(113, 213, 213, .3)',
+      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
       marginTop: '0px',},
     border: 0,
     fontSize: 16,
@@ -72,15 +75,16 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     height: 48,
     padding: '0 30px',
-    margin:'3px'
+    margin:'3px',
+    textShadow: '0 2px 2px black'
   },
   contact: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .5)',
+    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
-      boxShadow: '0px  2px 1px 1px rgba(113, 213, 213, .3)',
+      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
       marginTop: '0px',},
     border: 0,
     fontSize: 16,
@@ -88,15 +92,16 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     height: 48,
     padding: '0 30px',
-    margin:'3px'
+    margin:'3px',
+    textShadow: '0 2px 2px black'
   },
   location: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 1px 1px 1px rgba(113, 213, 213, .5)',
+    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
-      boxShadow: '0px  2px 1px 1px rgba(113, 213, 213, .3)',
+      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
       marginTop: '0px',},
     border: 0,
     fontSize: 16,
@@ -104,7 +109,8 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     height: 48,
     padding: '0 30px',
-    margin:'3px'
+    margin:'3px',
+    textShadow: '0 2px 2px black'
   },
 }));
 
@@ -121,7 +127,7 @@ const Resume = () => {
         <Button type="button"  href={socialLinks.github} className={classes.github}>
         <i className="fa fa-github" />
         </Button>
-        <Button type="button"  href={'https://tinyurl.com/brian-reed-resume2'}  style={{width: "233px"}} className={classes.resume}>
+        <Button type="button"  href={socialLinks.resume}  style={{width: "233px"}} className={classes.resume}>
         Resume
         </Button>
         {/* <Button type="button" style={{width: "233px"}} className={classes.location}>

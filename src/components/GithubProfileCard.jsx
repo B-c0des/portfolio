@@ -25,7 +25,7 @@ const GithubProfileCard = ({prof}) => {
                         tiltMaxAngleY={18}
                         perspective={2000}
                         transitionSpeed={2500}
-                        scale={.9}
+                        scale={1}
                         gyroscope={true}
                       >
                       <img src={prof.avatar_url} style={{width: "200px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
