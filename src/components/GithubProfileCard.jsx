@@ -12,7 +12,7 @@ import Resume from "../components/Resume";
 
 const GithubProfileCard = ({prof}) => {
     return ( 
-            <Card className="section pb-0 my-5 section-profile-cover"
+            <Card className="section pb-0 section-profile-cover"
             style={{backgroundColor: "black", backgroundImage: `url("https://flevix.com/wp-content/uploads/2019/12/Live-Background-1.svg")` }} 
             >
                 <Container className="">

@@ -17,8 +17,8 @@ import { skillsSection } from "../portfolio";
 const Skills = () => {
     return ( 
         <div style={{backgroundColor: "black"}}>
-        <Fade left duration={1000} distance="40px" style={{backgroundColor: "black"}}>
-            <Container className="text-center section" style={{backgroundColor: "black"}}>
+        <Fade left duration={1000} distance="40px">
+            <Container className="" >
             
             <span className="lead shadow">{skillsSection.subTitle}</span>
             <Row>
