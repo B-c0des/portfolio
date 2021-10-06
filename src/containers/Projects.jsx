@@ -13,7 +13,7 @@ const Projects = () => {
     return ( 
       
         <section
-        style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2021/05/Svg-Background-1.svg")` }} 
+        style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg")` }} 
         className="section pb-0 section-profile-cover">
             <Container>
               <Fade bottom duration={1000} distance="40px">
@@ -46,7 +46,7 @@ const Projects = () => {
                 y="0"
               >
                 <polygon
-                  className="fill-black"
+                  style={{fill: "#212122"}}
                   points="2560 0 2560 100 0 100"
                 />
               </svg>

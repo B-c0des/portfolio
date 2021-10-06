@@ -13,7 +13,8 @@ import Resume from "../components/Resume";
 const GithubProfileCard = ({prof}) => {
     return ( 
             <Card className="section pb-0 section-profile-cover"
-            style={{backgroundColor: "black", backgroundImage: `url("https://flevix.com/wp-content/uploads/2019/12/Live-Background-1.svg")` }} 
+            style={{backgroundColor: "white", backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")` }} 
+            
             >
                 <Container className="">
                 <div className="p-2">
@@ -28,7 +29,7 @@ const GithubProfileCard = ({prof}) => {
                         scale={1}
                         gyroscope={true}
                       >
-                      <img src={prof.avatar_url} style={{width: "200px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
+                      <img src={prof.avatar_url} style={{width: "100px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
                       </Tilt>
                       <h3 className="justify-content-center text-black" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
                           {prof.bio}

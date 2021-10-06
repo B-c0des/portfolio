@@ -16,16 +16,16 @@ import { skillsSection } from "../portfolio";
 
 const Skills = () => {
     return ( 
-        <div style={{backgroundColor: "black"}}>
+        <div style={{backgroundColor: "black"}} className="pb-5"  style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")` }} >
         <Fade left duration={1000} distance="40px">
-            <Container className="" >
+            <Container className="align-items-center" >
             
-            <span className="lead shadow">{skillsSection.subTitle}</span>
+            <span className="lead shadow ">{skillsSection.subTitle}</span>
             <Row>
                 <Col lg="6">
                     <DisplayLottie animationData={webdev} />
                 </Col>
-                <Col lg="6">
+                <Col lg="6" className="text-center">
                 <h3 className="h3 text-info">{skillsSection.title}</h3>
                     <div className="d-flex justify-content-center flex-wrap mb-3">
                     

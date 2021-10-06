@@ -10,8 +10,8 @@ import {
 const Education = () => {
     return ( 
         <section
-        style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2021/05/Svg-Background-1.svg")` }} 
-        className="section pb-0 section-profile-cover">
+        style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg")` }} 
+        className="section-profile-cover">
             <Container>
                 <div className="d-flex p-4" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
                     <div>
@@ -41,7 +41,7 @@ const Education = () => {
                 y="0"
               >
                 <polygon
-                  className="fill-black"
+                  style={{fill: "#212122"}}
                   points="2560 0 2560 100 0 100"
                 />
               </svg>

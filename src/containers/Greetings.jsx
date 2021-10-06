@@ -26,12 +26,12 @@ const Greetings = () => {
   
   return ( 
     <Fade top duration={1000} distance="40px">
-        <main ref="main">
+        <main ref="main" >
           <div className="position-relative">
           
             <section 
             style={{backgroundImage: `url("")` }} 
-            className="section section-lg section-shaped pb-250 section-profile-cover">
+            className="section section-lg section-shaped pb-5 section-profile-cover">
               <div className="shape shape-style-1 bg-gradient-info">
               <span />
                 <span />
@@ -55,7 +55,7 @@ const Greetings = () => {
                     <Col lg="6">
                     
 
-                    <h1 className="display-2 text-white bg-black border-1" style={{filter: "drop-shadow(0px 2px 20px white)"}}>
+                    <h1 className="display- text-white bg-black border-1" style={{filter: "drop-shadow(0px 5px 3px black)"}}>
                       {greetings.title}
                       </h1>
                       
@@ -64,7 +64,7 @@ const Greetings = () => {
                       <SocialLinks />
                       </h1>
                       </Col>
-                    <Col lg="6">
+                    <Col lg="6" style={{filter: "drop-shadow(0px 5px 30px white)"}}>
                       <GreetingLottie  animationData={code}/>
                     </Col>
                   </Row>
@@ -82,7 +82,7 @@ const Greetings = () => {
                   y="0"
                 >
                   <polygon
-                    className="fill-black"
+                  style={{fill: "#212122"}}
                     points="2560 0 2560 100 0 100"
                   />
                 </svg>
