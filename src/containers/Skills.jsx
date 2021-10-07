@@ -60,7 +60,7 @@ const Skills = () => {
                             })
                         }
                     </div>
-                    <h3 className="text-info">{skillsSection.portfolioName}</h3>
+                    {/* <h3 className="text-info">{skillsSection.portfolioName}</h3>
                     <div>
                         
                         {
@@ -68,7 +68,7 @@ const Skills = () => {
                                 return <Badge className="flex-wrap m-1 shadow" key={skill}>{skill}</Badge>
                             })
                         }
-                    </div>
+                    </div> */}
                     <h3 className="mt-5 m-1 text-info">{skillsSection.github}</h3>
                     <ExternalLink href="https://github.com/brian-reed-software">
                     <Tilt
