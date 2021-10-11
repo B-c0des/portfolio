@@ -13,7 +13,7 @@ const GreetingLottie = ({animationData}) => {
         <Suspense fallback={<Loading />}>
           {/* To override default onClick pause by Lottie */}
           <div onClick={() => null}>
-            <Lottie style={{filter: "drop-shadow(2px 4px 10px black)"}}
+            <Lottie style={{filter: "drop-shadow(-300px 100px 140px black)", filter: 'drop-shadow(white -200px -200px 140px)'}}
               options={defaultOptions}
             />
           </div>

@@ -55,7 +55,7 @@ const ExperienceCard = ({data}) => {
                     <CardTitle tag="h5" >{data.role}</CardTitle>
                     <div>
                     <CardSubtitle style={{color: rgb(colorArrays)}} >{data.date}</CardSubtitle>
-                    <CardText className="description my-1 text-left" style={{color: rgb(colorArrays),filter: `drop-shadow(0px 2px 50px ${rgb(colorArrays)})`}}>
+                    <CardText className="description my-1 text-left" style={{color: rgb(colorArrays)}}>
                         {data.desc}
                         <ul>
                             {

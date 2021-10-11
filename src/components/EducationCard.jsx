@@ -39,9 +39,9 @@ const EducationCard = ({education}) => {
                     gyroscope={true}
                     glareEnable={true}
                 >
-            <Card className="shadow-lg--hover bg-black  shadow border-1 text-center rounded card">
+            <Card className="shadow-lg--hover bg-black  shadow border-1 text-center rounded card" style={{boxShadow: `inset 0px -2px 5px 10px ${rgb(colorArrays)}`}}>
                 <Card>
-                    <div className="">
+                    <div className="" >
                     <div className="">
                     <Card className="shadow" style={{background: rgb(colorArrays)}} >
                       <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={education.schoolLogo} style={{ width: "125px" }} onLoad={() => getColorArrays()} alt=""/>
@@ -54,7 +54,7 @@ const EducationCard = ({education}) => {
                         </Badge>
                         </h5>
 
-                        <p className="description mt-3" style={{color: rgb(colorArrays),filter: `drop-shadow(0px 2px 50px ${rgb(colorArrays)})`}}>
+                        <p className="description mt-3" style={{color: rgb(colorArrays)}}>
                             {education.desc}
                             <ul>
                             {
