@@ -77,7 +77,7 @@ const ProjectsCard = ({data}) => {
                 {/* style={{borderRadius: "100%" }} */}
                 <img className=" bg-black  mb-3 img-center img-fluid" top src={data.companylogo} style={{borderRadius: "10px" }}  alt=""/>
                 {data.date}
-                    <CardText className="description my-3 text-left" >
+                    <CardText className="description my-3 text-left" style={{filter: `drop-shadow(0px 2px 3px ${rgb(colorArrays)})`}}>
                         {data.desc}
                         
                         <ul>

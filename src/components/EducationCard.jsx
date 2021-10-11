@@ -54,7 +54,7 @@ const EducationCard = ({education}) => {
                         </Badge>
                         </h5>
 
-                        <p className="description mt-3" style={{color: rgb(colorArrays)}}>
+                        <p className="description mt-3" style={{color: rgb(colorArrays),filter: `drop-shadow(0px 2px 50px ${rgb(colorArrays)})`}}>
                             {education.desc}
                             <ul>
                             {

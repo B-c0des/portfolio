@@ -47,14 +47,15 @@ const ExperienceCard = ({data}) => {
             <Card style={{flex: 1}} className="shadow-lg--hover bg-black shadow border-1 text-center rounded">
                 <Card style={{background: rgb(colorArrays)}} >
                 <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{ width: "125px" }} onLoad={() => getColorArrays()} alt=""/>
-                    <h5 className="text-white" style={{color: rgb(colorArrays)}}>{data.company}</h5>
+                    <h5 className="text-white" style={{color: rgb(colorArrays), filter: `drop-shadow(0px 2px 3px ${rgb(colorArrays)})`}}>{data.company}</h5>
+
                 </Card>
                 <CardBody className="py-1">
                 <div className="inner-element">
                     <CardTitle tag="h5" >{data.role}</CardTitle>
                     <div>
                     <CardSubtitle style={{color: rgb(colorArrays)}} >{data.date}</CardSubtitle>
-                    <CardText className="description my-1 text-left" style={{color: rgb(colorArrays)}}>
+                    <CardText className="description my-1 text-left" style={{color: rgb(colorArrays),filter: `drop-shadow(0px 2px 50px ${rgb(colorArrays)})`}}>
                         {data.desc}
                         <ul>
                             {
