@@ -10,13 +10,16 @@ import {Link} from 'react-scroll'
 // import ThemeNesting from './Button';
 const useStyles = makeStyles((theme) => ({
   twitter: {
-    background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
+ background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
+     boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+  
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
-      color: 'white',
-      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
-      marginTop: '0px',},
+      color: 'cyan',
+      textShadow: '0 2px 10px cyan',
+      boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+      marginTop: '',
+      filter: 'drop-shadow(0px 0px 5px white)'},
     border: 0,
     fontSize: 16,
     borderRadius: 5,
@@ -27,13 +30,16 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '0 2px 2px black'
   },
   linkedin: {
-    background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
+ background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
+     boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+  
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
-      color: 'white',
-      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
-      marginTop: '0px',},
+      color: 'cyan',
+      textShadow: '0 2px 10px cyan',
+      boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+      marginTop: '',
+      filter: 'drop-shadow(0px 0px 5px white)'},
     border: 0,
     fontSize: 16,
     borderRadius: 5,
@@ -45,12 +51,15 @@ const useStyles = makeStyles((theme) => ({
   },
   github: {
     background: 'linear-gradient(85deg, #1a1a1a 30%, #005266 90%)',
-    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
-    '&:hover': {
+  boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+  
+     '&:hover': {
       background: 'linear-gradient(145deg,  #1a1a1a 10%, #008fb3 90%)',
       color: '#fff',
-      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
-      marginTop: '0px',
+       boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+      marginTop: '',
+          textShadow: '0 2px 10px cyan',
+    filter: 'drop-shadow(0px 0px 5px white)',
     padding:'5px 30px'},
     border: 0,
     fontSize: 16,
@@ -63,12 +72,15 @@ const useStyles = makeStyles((theme) => ({
   },
   resume: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
+     boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+  
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
-      color: 'white',
-      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
-      marginTop: '0px',},
+      color: 'cyan',
+      textShadow: '0 2px 10px cyan',
+      boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+      marginTop: '',
+      filter: 'drop-shadow(0px 0px 5px white)'},
     border: 0,
     fontSize: 16,
     borderRadius: 5,
@@ -79,13 +91,16 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '0 2px 2px black'
   },
   contact: {
-    background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
+     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
+     boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+  
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
-      color: 'white',
-      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
-      marginTop: '0px',},
+      color: 'cyan',
+      textShadow: '0 2px 10px cyan',
+      boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+      marginTop: '',
+      filter: 'drop-shadow(0px 0px 5px white)'},
     border: 0,
     fontSize: 16,
     borderRadius: 5,
@@ -97,12 +112,15 @@ const useStyles = makeStyles((theme) => ({
   },
   location: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-    boxShadow: '0px 7px 9px 0px rgba(13, 23, 23, .3)',
+     boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+  
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
-      color: 'white',
-      boxShadow: '0px  8px 13px -1px rgba(13, 23, 23, .5)',
-      marginTop: '0px',},
+      color: 'cyan',
+      textShadow: '0 2px 10px cyan',
+      boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+      marginTop: '',
+      filter: 'drop-shadow(0px 0px 5px white)'},
     border: 0,
     fontSize: 16,
     borderRadius: 5,

@@ -52,19 +52,19 @@ const Greetings = () => {
               <Container className="py-lg-md d-flex" >
                 <div className="col px-0">
                   <Row>
-                    <Col lg="6">
+                    <Col lg="6" style={{filter: "drop-shadow(white 0px 0px 50px)"}}>
                     
 
-                    <h1 className="display- text-white bg-black border-1" style={{filter: "drop-shadow(0px 5px 3px black)"}}>
+                    <h1 className="display- text-white bg-black border-1" style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black"}}>
                       {greetings.title}
                       </h1>
                       
-                      <p className="lead text-white" style={{filter: "drop-shadow(0px 2px 5px black)"}}>{greetings.description}</p>
+                      <p className="lead text-white" style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black"}}>{greetings.description}</p>
                       <h1 className="" style={{width: "700px"}}>
                       <SocialLinks />
                       </h1>
                       </Col>
-                    <Col lg="6" style={{filter: "drop-shadow(0px 5px 30px aqua)"}}>
+                    <Col lg="6" style={{filter: "drop-shadow(0px 5px 150px white)"}}>
                       <GreetingLottie  animationData={code}/>
                     </Col>
                   </Row>
@@ -72,8 +72,9 @@ const Greetings = () => {
                 
               </Container>
               {/* SVG separator */}
-              <div className="separator separator-bottom separator-skew">
+              <div className="separator separator-bottom separator-skew" style={{filter: "drop-shadow(0px 5px 5px black)"}}>
                 <svg
+                  
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="none"
                   version="1.1"

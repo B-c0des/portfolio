@@ -16,8 +16,8 @@ const GithubProfileCard = ({prof}) => {
             style={{backgroundColor: "white", backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")` }} 
             
             >
-                <Container className="" style={{filter: "drop-shadow(0px 2px 3px steelblue)"}}>
-                <div className="p-2">
+                <Container className="" style={{filter: "drop-shadow(0px 0px 50px steelblue)"}}>
+                <div className="p-2" style={{filter: "drop-shadow(0px 0px 10px black)"}}>
                   <Row className="justify-content-center">
                   <Col className=" justify-content-center order-lg-2" lg="4">
                   <Tilt
