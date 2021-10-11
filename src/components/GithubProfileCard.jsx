@@ -31,8 +31,16 @@ const GithubProfileCard = ({prof}) => {
                       >
                       <img src={prof.avatar_url} style={{width: "100px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
                       </Tilt>
-                      <h3 className="justify-content-center text-white" style={{filter: 'drop-shadow(0px 0px 5px white)'}}>
-                          {prof.bio}
+                      <h3 className="justify-content-center align-items-center text-white" style={{filter: 'drop-shadow(0px 0px 5px white)'}}>
+                          
+                          <span className="text-white">{prof.name}</span>
+                          <br/>
+                          <h3 className="text-white">{prof.bio}</h3>
+                          <br/>
+                          <h3 className="text-white">{prof.location}</h3>
+                          <br/>
+                          <h5 className="text-white">{'Github Last Updated:'}</h5>
+                          <h5 className="text-white">{prof.updated_at}</h5>
                       </h3>
                       <Resume />
                       </Col>
