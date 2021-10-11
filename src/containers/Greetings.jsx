@@ -32,7 +32,9 @@ const Greetings = () => {
             <section 
             style={{backgroundImage: `url("")` }} 
             className="section section-lg section-shaped pb-5 section-profile-cover">
-              <div className="shape shape-style-1 bg-gradient-info">
+              <div className="shape shape-style-1 bg-gradient-info" style={{
+                    // boxShadow: "inset 0px 0px 20px lightsteelblue, 0px 0px 20px steelblue; filter: drop-shadow(white 0px 0px 50px); backdrop-filter: blur(10px); border-radius: 15px;"
+              }}>
               <span />
                 <span />
                 <span />

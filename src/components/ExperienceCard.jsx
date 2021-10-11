@@ -34,6 +34,7 @@ const ExperienceCard = ({data}) => {
         <Fade left duration={1000} exit={true}  distance="40px">
         <ExternalLink href={data.url}>
                 <Tilt
+                style={{filter: "drop-shadow(0px 0px 40px black)"}}
             className="parallax-effect-img"
             tiltMaxAngleX={12}
             tiltMaxAngleY={12}
