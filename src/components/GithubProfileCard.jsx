@@ -19,7 +19,7 @@ const GithubProfileCard = ({prof}) => {
                 <Container className="" style={{filter: "drop-shadow(0px 0px 50px steelblue)"}}>
                 <div className="p-2" style={{filter: "drop-shadow(0px 0px 10px black)"}}>
                   <Row className="justify-content-center">
-                  <Col className=" justify-content-center order-lg-2" lg="4">
+                  <Col className=" justify-content-center order-lg-2 text-center" lg="4">
                   <Tilt
                         className="parallax-effect-img"
                         tiltMaxAngleX={18}
@@ -29,11 +29,11 @@ const GithubProfileCard = ({prof}) => {
                         scale={1}
                         gyroscope={true}
                       >
-                      <img src={prof.avatar_url} style={{width: "100px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
+                      <img src={prof.avatar_url} style={{width: "100px"}} alt="" className="text-center rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
                       </Tilt>
-                      <h3 className="justify-content-center align-items-center text-white" style={{filter: 'drop-shadow(0px 0px 5px white)'}}>
+                      <h3 className="justify-content-center align-items-center text-white text-center" style={{filter: 'drop-shadow(0px 0px 5px white)' , textAlign: 'center'}}>
                           
-                          <span className="text-white">{prof.name}</span>
+                          <span className="text-white text-center">{prof.name}</span>
                           <br/>
                           <h3 className="text-white">{prof.bio}</h3>
                           <br/>
