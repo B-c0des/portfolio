@@ -136,24 +136,27 @@ const SocialLinks = () => {
       
       <div className="btn-wrapper size-lg text-lg" style={{width: "440px"}}>
       <Button type="button" href={socialLinks.twitter} className={classes.twitter}>
-      <i className="fa fa-twitter" />
+      <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-twitter" />
       </Button>
         <Button type="button" href={socialLinks.linkedin} className={classes.linkedin}>
-        <i className="fa fa-linkedin" />
+        <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-linkedin" />
         </Button>
         <Button type="button" href={socialLinks.github} className={classes.github}>
-        <i className="fa fa-github" />
+        <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-github" />
         </Button>
         
         <Button type="button" href={socialLinks.resume} className={classes.resume}>
-        Resume
+         <i style={{filter: 'drop-shadow(0px 0px 5px white)'}}>Resume</i>
         </Button>
         <Link  to="contact" spy={true} smooth={true}>
         <Button type="button" style={{width: "367px"}} className={classes.contact}>
         <span className="btn-inner--icon mr-1">
         <i className="fa fa-file" />
       </span>
-      <Link  to="contact" spy={true} smooth={true}>Contact Me &#128071;
+      <Link  to="contact" spy={true} smooth={true}>
+      <i style={{filter: 'drop-shadow(0px 0px 5px white)'}}>
+      Contact Me &#128071;
+      </i>
       </Link>
       </Button>
       </Link>

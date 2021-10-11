@@ -31,7 +31,7 @@ const GithubProfileCard = ({prof}) => {
                       >
                       <img src={prof.avatar_url} style={{width: "100px"}} alt="" className="rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
                       </Tilt>
-                      <h3 className="justify-content-center text-white" >
+                      <h3 className="justify-content-center text-white" style={{filter: 'drop-shadow(0px 0px 5px white)'}}>
                           {prof.bio}
                       </h3>
                       <Resume />

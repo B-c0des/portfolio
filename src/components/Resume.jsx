@@ -137,16 +137,16 @@ const Resume = () => {
     return ( 
       <div className="btn-wrapper size-lg text-lg" style={{}}>
       <Button type="button" href={socialLinks.twitter} className={classes.twitter}>
-      <i className="fa fa-twitter" />
+      <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-twitter" />
       </Button>
         <Button type="button" href={socialLinks.linkedin} className={classes.linkedin}>
-        <i className="fa fa-linkedin" />
+        <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-linkedin" />
         </Button>
         <Button type="button"  href={socialLinks.github} className={classes.github}>
-        <i className="fa fa-github" />
+        <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-github" />
         </Button>
         <Button type="button"  href={socialLinks.resume}  style={{width: "233px"}} className={classes.resume}>
-        Resume
+        <i style={{filter: 'drop-shadow(0px 0px 5px white)'}}>Resume</i>
         </Button>
         {/* <Button type="button" style={{width: "233px"}} className={classes.location}>
         <i className="ni ni-pin-3 text-info mr-2" />
