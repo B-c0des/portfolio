@@ -37,8 +37,8 @@ const GithubProfileCard = ({prof}) => {
                           <br/>
                           <h3 className="text-white">{prof.bio}</h3>
                           <br/>
-                          <h3 className="text-white">{prof.location}</h3>
-                          <br/>
+                          {/* <h3 className="text-white">{prof.location}</h3>
+                          <br/> */}
                           <h5 className="text-white">{'Github Last Updated:'}</h5>
                           <h5 className="text-white">{prof.updated_at}</h5>
                       </h3>
