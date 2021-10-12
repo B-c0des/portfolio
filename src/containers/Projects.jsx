@@ -19,8 +19,8 @@ const Projects = () => {
               <Fade bottom duration={1000} distance="40px">
               <div className="d-flex p-2 pb-6" style={{filter: "drop-shadow(0px 2px 2px white)"}} >
                     <div>
-                        <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-                        <i className="ni ni-laptop text-info" />
+                        <div className="icon icon-lg icon-shape bg-gradient-darker shadow rounded-circle ">
+                        <i className="ni ni-laptop text-white" />
                         </div>
                     </div>
                     <div className="pl-4">

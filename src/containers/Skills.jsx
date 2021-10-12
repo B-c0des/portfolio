@@ -13,36 +13,94 @@ import {
 } from "reactstrap";
 import {Link} from 'react-scroll'
 import { skillsSection } from "../portfolio";
+import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
+import { textSpanIsEmpty } from 'typescript';
+
+
 
 const Skills = () => {
+      const useStyles = makeStyles((theme) => ({
+          card: {
+              display: 'flex',
+              alignItems: 'space-between',
+              justifyContent: 'space-between',
+              flexDirection: "column",
+ background: `linear-gradient(80deg, steelblue 30%, #80e5ff 90%)`,
+     boxShadow: `inset 4px -4px 8px 0px white, 0 0 5px -1px white`,
+    borderTop: '1px solid white;',
+    '&:hover': {
+      
+      cursor: 'grab'},
+    border: 0,
+    fontSize: 16,
+        color: 'white',
+        padding: '10px',
+    margin:'3px',
+    textShadow: '0 2px 2px black',
+    textAlign: 'center',
+        userSelect: "none",
+              borderRadius: '10px',
+          },
+          row: {
+              display: 'flex',
+              justifyContent: 'space-between',
+              flexDirection: 'row',
+              textShadow: '0 2px 2px black'
+          },
+          textStyles: {
+              display: 'flex',
+              justifyContent: 'space-between',
+              flexDirection: 'column',
+              textShadow: '0 2px 2px black',
+
+          },
+          wrapperSkills: {
+              filter: "drop-shadow(white 0px 2px 2px)",
+              margin: "top",
+              marginTop: "30%",
+          }
+ 
+    }));
+    
+
+     const classes = useStyles();
     return ( 
-        <div className="pb-5"  style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")`,backgroundColor: "black"}} >
-        <Fade left duration={1000} distance="40px">
-            <Container className="align-items-center" style={{filter: "drop-shadow(0px 2px 3px white)"}}>
-            
-            <span className="lead shadow ">{skillsSection.subTitle}</span>
-            <Row>
-                <Col lg="6" style={{}}>
+        <div className=" d-flex p-5  "  style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")`,backgroundColor: "black"}} >
+            <Fade left duration={1000} distance="40px">
+                <div lg="6">
                     <DisplayLottie animationData={webdev} />
-                </Col>
-                <Col lg="6" className="text-center">
-                <h3 className="h3 text-info" style={{ textShadow: '0 1px 50px black'}}>{skillsSection.title}</h3>
-                    <div className="d-flex justify-content-center flex-wrap mb-3">
+                </div>
+                
+                <div className={classes.row}>
+                   
+                    <div className={classes.wrapperSkills} >
+                        <ExternalLink href="https://github.com/brian-reed-software">
+                  
+             <Tilt
+                        className="parallax-effect-img"
+                        tiltMaxAngleX={6}
+                        tiltMaxAngleY={6}
+                        perspective={2000}
+                        transitionSpeed={2500}
+                        scale={1.1}
+                        gyroscope={true}
+                        glareEnable={true}
+                        >
+                               
+            <span className="lead shadow ">{skillsSection.subTitle}</span>
+            
+
+                        
+                <div lg="6" className="text-center" className={ classes.card}>
+                <h3 className="h3 text-info" className={ classes.textStyles}>{skillsSection.title}</h3>
+                    <div className="d-flex justify-content-center flex-wrap mb-3" >
                     
                         {
                             skillsSection.softwareSkills.map((skill) => {
                                 return <Fragment key={skill.skillName}>
-                        <Tilt
-                        className="parallax-effect-img "
-                        tiltMaxAngleX={6}
-                        tiltMaxAngleY={6}
-                        perspective={1000}
-                        transitionSpeed={1500}
-                        scale={1.1}
-                        gyroscope={true}
-                    >
+
                         
-                        <div className="icon icon-shape shadow rounded-circle m-1 text-info "  id={skill.skillName}>
+                        <div className="icon icon-shape shadow rounded-circle m-1 "  id={skill.skillName}>
 
                         <span className="iconify " data-icon={skill.fontAwesomeClassname} data-inline="false"></span>
                         
@@ -55,11 +113,11 @@ const Skills = () => {
                                 >
                                 {skill.skillName}
                             </UncontrolledTooltip>
-                            </Tilt>
+                        
                                 </Fragment>
                             })
                         }
-                    </div>
+                    
                     {/* <h3 className="text-info">{skillsSection.portfolioName}</h3>
                     <div>
                         
@@ -69,24 +127,18 @@ const Skills = () => {
                             })
                         }
                     </div> */}
-                    <h3 className="mt-5 m-1 text-info">{skillsSection.github}</h3>
-                    <ExternalLink href="https://github.com/brian-reed-software">
-                    <Tilt
-                        className="parallax-effect-img"
-                        tiltMaxAngleX={6}
-                        tiltMaxAngleY={6}
-                        perspective={2000}
-                        transitionSpeed={2500}
-                        scale={1.1}
-                        gyroscope={true}
-                        glareEnable={true}
-                    >
+                 
+                            </div>
+                               <h3 className="m-1 text-info">{skillsSection.github}</h3>
+                   
                            <img className="container-fluid shadow mt-1" src="https://ghchart.rshah.org/brian-reed-software" alt="" />
-                    </Tilt>
-                    </ExternalLink>
-                </Col>
-            </Row>
-            </Container>
+                
+                               
+                                </div>
+                           
+        </Tilt>  </ExternalLink>
+                </div>
+                   </div>
         </Fade>
         </div>
      );

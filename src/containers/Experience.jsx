@@ -20,7 +20,7 @@ const Experience = () => {
               <div className=" d-flex p-2 pb-6  " style={{ filter: "drop-shadow(0px 2px 3px white)" }}>
                     <div>
                         <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-                        <i className="ni ni-briefcase-24 text-info" />
+                        <i className="ni ni-briefcase-24 text-darker" />
                         </div>
                     </div>
                     <div className="pl-4">
