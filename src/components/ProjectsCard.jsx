@@ -4,6 +4,7 @@ import Draggable from "react-draggable";
 import { ResizableBox } from "react-resizable";
 import { ExternalLink } from 'react-external-link';
 import Tilt from 'react-parallax-tilt';
+import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import {
     Card,
     CardBody,
@@ -18,7 +19,26 @@ import ColorThief from "colorthief";
 import BackdropFilter from "react-backdrop-filter";
 
 import { Fade } from 'react-reveal';
-
+const useStyles = makeStyles((theme) => ({
+  card: {
+ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+     boxShadow: 'inset 4px -4px 8px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+    borderTop: '1px solid white;',
+    '&:hover': {
+      
+      cursor: 'grab'},
+    border: 0,
+    fontSize: 16,
+        color: 'white',
+        padding: '10px',
+    margin:'3px',
+    textShadow: '0 2px 2px black',
+    textAlign: 'justify',
+        userSelect: "none",
+        borderRadius: '10px',
+  },
+ 
+}));
 
 
 const ProjectsCard = ({data}) => {
@@ -35,7 +55,7 @@ const ProjectsCard = ({data}) => {
     }
     const [width, setWidth] = useState(500);
     const [height, setHeight] = useState(800);
-  
+    const classes = useStyles();
 
     return ( 
         <Col lg="4">
@@ -65,19 +85,21 @@ const ProjectsCard = ({data}) => {
                     gyroscope={true}
                     glareEnable={true}
                 >
-    <div className="inner-element">
-            <Card className="shadow" style={{flex: 1}} style={{color: rgb(colorArrays)}} className="card1 justify-content-center  shadow shadow-lg--hover  shadow text-center rounded">
+                        <div className={classes.card} >
+                           
+            <div  style={{flex: 1}} style={{color: 'white'}} className="card1 justify-content-center text-center rounded">
             
-                <Card className="shadow" style={{background: rgb(colorArrays)}} >
-                <img ref={imgRef} className=" bg-black  mb-3 img-center img-fluid" top src={data.companyname} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>
+                                <Card className="shadow" style={{ background: rgb(colorArrays) }} >
+                                    
+                <img ref={imgRef} className="" top src={data.companyname} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>
                     {/* data.company  */}
                 </Card>
-                <CardBody className="py-1 shadow">
-                
+                <div >
                 {/* style={{borderRadius: "100%" }} */}
                 <img className=" bg-black  mb-3 img-center img-fluid" top src={data.companylogo} style={{borderRadius: "10px" }}  alt=""/>
-                {data.date}
-                    <CardText className="description my-3 text-left" >
+                                    {data.date}
+                                    
+                    <CardText style={{textShadow: "0 0 10px black"}} className="description my-3 text-left" >
                         {data.desc}
                         
                         <ul>
@@ -89,8 +111,8 @@ const ProjectsCard = ({data}) => {
                             }
                         </ul>
                     </CardText>
-                </CardBody>
-            </Card>
+                </div>
+            </div>
             </div>
             </Tilt>
             </ExternalLink>

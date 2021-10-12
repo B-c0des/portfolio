@@ -12,9 +12,10 @@ import {
 
 import ColorThief from "colorthief";
 import Tilt from 'react-parallax-tilt';
-
+import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 
 import { Fade } from 'react-reveal';
+
 
 const ExperienceCard = ({data}) => {
     const [colorArrays, setColorArrays] = useState([]);
@@ -29,6 +30,29 @@ const ExperienceCard = ({data}) => {
         return typeof values === "undefined" ? null : "rgb(" + values.join(', ') + ")";
     }
 
+    const useStyles = makeStyles((theme) => ({
+  card: {
+ background: `linear-gradient(80deg, steelblue 30%, #80e5ff 90%)`,
+     boxShadow: `inset 4px -4px 8px 0px white, 0 0 5px -1px white, -2px 2px 4px  ${rgb(colorArrays)}, 2px -2px 4px  ${rgb(colorArrays)};`,
+    borderTop: '1px solid white;',
+    '&:hover': {
+      
+      cursor: 'grab'},
+    border: 0,
+    fontSize: 16,
+        color: 'white',
+        padding: '10px',
+    margin:'3px',
+    textShadow: '0 2px 2px black',
+    textAlign: 'justify',
+        userSelect: "none",
+        borderRadius: '10px',
+  },
+ 
+    }));
+    
+
+     const classes = useStyles();
     return ( 
         <Col lg="4">
         <Fade left duration={1000} exit={true}  distance="40px">
@@ -44,18 +68,18 @@ const ExperienceCard = ({data}) => {
             gyroscope={true}
             glareEnable={true}
         >
-            <Card style={{flex: 1}} className="shadow-lg--hover bg-black shadow border-1 text-center rounded">
+            <div className={classes.card}  >
                 <Card style={{background: rgb(colorArrays)}} >
                 <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{ width: "125px" }} onLoad={() => getColorArrays()} alt=""/>
-                    <h5 className="text-white" style={{color: rgb(colorArrays), filter: `drop-shadow(0px 2px 3px ${rgb(colorArrays)})`}}>{data.company}</h5>
+                    <h5 className="text-white text-center" style={{color: rgb(colorArrays), filter: `drop-shadow(0px 2px 3px '${rgb(colorArrays)})'`}}>{data.company}</h5>
 
                 </Card>
                 <CardBody className="py-1">
-                <div className="inner-element">
-                    <CardTitle tag="h5" >{data.role}</CardTitle>
+                <div className="inner-element text-center">
+              <CardTitle style={{textShadow: "0 0 10px white"}} tag="h5" >{data.role}</CardTitle>
                     <div>
                     <CardSubtitle style={{color: rgb(colorArrays)}} >{data.date}</CardSubtitle>
-                    <CardText className="description my-1 text-left" style={{color: rgb(colorArrays)}}>
+                    <CardText className="description my-1 text-left text-white" style={{testShadow: rgb(colorArrays)}}>
                         {data.desc}
                         <ul>
                             {
@@ -69,7 +93,7 @@ const ExperienceCard = ({data}) => {
                     </div>
                     </div>
                 </CardBody>
-            </Card>
+            </div>
             </Tilt>
             </ExternalLink>
             </Fade>
