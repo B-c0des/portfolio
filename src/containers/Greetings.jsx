@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
       cursor: 'grab'},
     border: 0,
     fontSize: 16,
-    borderRadius: 25,
+    borderRadius: 5,
     color: 'white',
     padding: '0 30px',
     margin:'3px',

@@ -13,10 +13,10 @@ import Resume from "../components/Resume";
 const GithubProfileCard = ({prof}) => {
     return ( 
             <Card className="section pb-0 section-profile-cover" 
-            style={{backgroundColor: "white", backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")` }} 
+            style={{backgroundColor: "white", backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")`, boxShadow: 'inset 0px 0px 50px cyan' }} 
             
             >
-                <Container className="" style={{filter: "drop-shadow(0px 0px 50px steelblue)"}}>
+                <Container className="" style={{filter: "drop-shadow(0px 0px 50px cyan)"}}>
                 <div className="p-2" style={{filter: "drop-shadow(0px 0px 10px black)"}}>
                   <Row className="justify-content-center">
                   <Col className=" justify-content-center order-lg-2 text-center" lg="4">

@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
       filter: 'drop-shadow(0px 0px 5px white)'},
     border: 0,
     fontSize: 16,
-    borderRadius: 5,
+    borderRadius: 0,
     color: 'white',
     height: 48,
     padding: '0 30px',
@@ -134,7 +134,7 @@ const SocialLinks = () => {
   const classes = useStyles();
     return ( 
       
-      <div className="" style={{width: "440px"}}>
+      <div className="btn-wrapper size-lg text-lg text-center" style={{width: "390px"}}>
       <Button type="button" href={socialLinks.twitter} className={classes.twitter}>
       <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-twitter" />
       </Button>
