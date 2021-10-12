@@ -31,7 +31,7 @@ const GithubProfileCard = ({prof}) => {
                       >
                       <img src={prof.avatar_url} style={{width: "100px"}} alt="" className="text-center rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
                       </Tilt>
-                      <h3 className="justify-content-center align-items-center text-white text-center" style={{filter: 'drop-shadow(0px 0px 5px white)' , textAlign: 'center'}}>
+                      <h3 className="justify-content-center align-items-center text-white text-center" style={{filter: 'drop-shadow(0px 0px 5px deeppink)' , textAlign: 'center'}}>
                           
                           <span className="text-white text-center">{prof.name}</span>
                           <br/>
