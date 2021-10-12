@@ -19,7 +19,7 @@ import Draggable from 'react-draggable';
 const useStyles = makeStyles((theme) => ({
   description: {
  background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-     boxShadow: 'inset 4px -4px 13px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+     boxShadow: 'inset 4px -4px 8px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
     borderTop: '1px solid white;',
     '&:hover': {
       
