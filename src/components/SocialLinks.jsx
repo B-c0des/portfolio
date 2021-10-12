@@ -7,9 +7,9 @@ import Tilt from 'react-parallax-tilt';
 
 const useStyles = makeStyles((theme) => ({
   twitter: {
- background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-      boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
-   
+background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+  
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'cyan',
