@@ -21,6 +21,7 @@ const EducationCard = ({education}) => {
     }
  const useStyles = makeStyles((theme) => ({
   card: {
+      
  background: `linear-gradient(80deg, steelblue 30%, #80e5ff 90%)`,
      boxShadow: `inset 4px -4px 8px 0px white, 0 0 5px -1px white`,
     borderTop: '1px solid white;',

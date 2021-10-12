@@ -21,24 +21,24 @@ import { textSpanIsEmpty } from 'typescript';
 const Skills = () => {
       const useStyles = makeStyles((theme) => ({
           card: {
+               background: `linear-gradient(85deg, steelblue 30%,#005266 90%)`,
               display: 'flex',
               alignItems: 'space-between',
               justifyContent: 'space-between',
               flexDirection: "column",
- background: `linear-gradient(80deg, steelblue 30%, #80e5ff 90%)`,
-     boxShadow: `inset 4px -4px 8px 0px white, 0 0 5px -1px white`,
-    borderTop: '1px solid white;',
-    '&:hover': {
+                boxShadow: `inset 4px -4px 8px 0px white, 0 0 5px -1px white`,
+                borderTop: '1px solid white;',
+                '&:hover': {
       
-      cursor: 'grab'},
-    border: 0,
-    fontSize: 16,
-        color: 'white',
-        padding: '10px',
-    margin:'3px',
-    textShadow: '0 2px 2px black',
-    textAlign: 'center',
-        userSelect: "none",
+            cursor: 'grab'},
+            border: 0,
+            fontSize: 16,
+                color: 'white',
+                padding: '10px',
+            margin:'3px',
+            textShadow: '0 2px 2px black',
+            textAlign: 'center',
+             userSelect: "none",
               borderRadius: '10px',
           },
           row: {
@@ -51,7 +51,8 @@ const Skills = () => {
               display: 'flex',
               justifyContent: 'space-between',
               flexDirection: 'column',
-              textShadow: '0 2px 2px black',
+              textShadow: '0 2px 2px white',
+              color: 'white'
 
           },
           wrapperSkills: {
@@ -87,7 +88,7 @@ const Skills = () => {
                         glareEnable={true}
                         >
                                
-            <span className="lead shadow ">{skillsSection.subTitle}</span>
+            <span className="lead shadow text-white ">{skillsSection.subTitle}</span>
             
 
                         
@@ -129,7 +130,7 @@ const Skills = () => {
                     </div> */}
                  
                             </div>
-                               <h3 className="m-1 text-info">{skillsSection.github}</h3>
+                               <h3 className={ classes.textStyles}>{skillsSection.github}</h3>
                    
                            <img className="container-fluid shadow mt-1" src="https://ghchart.rshah.org/brian-reed-software" alt="" />
                 

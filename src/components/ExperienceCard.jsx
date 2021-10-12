@@ -32,7 +32,9 @@ const ExperienceCard = ({data}) => {
 
     const useStyles = makeStyles((theme) => ({
   card: {
- background: `linear-gradient(80deg, steelblue 30%, #80e5ff 90%)`,
+ background: `linear-gradient(
+85deg
+, #1a1a1a 30%, #005266 90%)`,
      boxShadow: `inset 4px -4px 8px 0px white, 0 0 5px -1px white`,
     borderTop: '1px solid white;',
     '&:hover': {
@@ -75,8 +77,8 @@ const ExperienceCard = ({data}) => {
 
                 </Card>
                 <CardBody className="py-1">
-                <div className="inner-element text-center">
-              <CardTitle style={{textShadow: "0 0 10px white"}} tag="h5" >{data.role}</CardTitle>
+                <div className="inner-element text-white  text-center">
+              <CardTitle className="inner-element text-white" style={{textShadow: "0 0 10px white"}} tag="h5" >{data.role}</CardTitle>
                     <div>
                     <CardSubtitle style={{color: rgb(colorArrays)}} >{data.date}</CardSubtitle>
                     <CardText className="description my-1 text-left text-white" style={{testShadow: rgb(colorArrays)}}>

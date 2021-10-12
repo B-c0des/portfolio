@@ -81,13 +81,12 @@ const Greetings = () => {
                 <div className="col px-0 text-center">
                   <Row>
                     <Col lg="6" style={{filter: "drop-shadow(white 0px 0px 50px)"}}>
- <Draggable
- 
-        handle=".handle"
-        defaultPosition={{x: 0, y: 0}}
-        position={null}
-        grid={[2, 2]}
-        scale={1}>
+                <Draggable
+                  handle=".handle"
+                  defaultPosition={{x: 0, y: 0}}
+                  position={null}
+                  grid={[2, 2]}
+                  scale={1}>
                 <p className="lead text-white text-center" className={ classes.description}>
                       <h1 className="display- text-white bg-black border-1 handle text-center" style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}>
                       {greetings.title}
