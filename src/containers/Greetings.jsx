@@ -177,7 +177,7 @@ const Greetings = () => {
                     <Col lg="6" style={{filter: "drop-shadow(white 0px 0px 50px)"}}>
                                        
                       <p className="lead text-white" className={classes.description}>
-                                          <h1 className="display- text-white bg-black border-1" style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}>
+                      <h1 className="display- text-white bg-black border-1" style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}>
                       {greetings.title}
                       </h1>{greetings.description}</p>
                       <h1 className="" style={{width: "700px"}}>
