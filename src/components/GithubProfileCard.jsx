@@ -44,7 +44,7 @@ const GithubProfileCard = ({prof}) => {
                       </h3>
                       <Resume />
                       </Col>
-                    <Col lg="8" className="order-lg-1">
+                    <Col lg="8" className="order-lg-0">
                       <h2 id="contact" className="text-white" style={{filter: "drop-shadow(0px 3px 5px black )", textAlign: 'center' }}>
                        Reach Out to me &#128071;
                       </h2>

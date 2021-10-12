@@ -22,7 +22,7 @@ const EducationCard = ({education}) => {
  const useStyles = makeStyles((theme) => ({
   card: {
  background: `linear-gradient(80deg, steelblue 30%, #80e5ff 90%)`,
-     boxShadow: `inset 4px -4px 8px 0px white, 0 0 5px -1px white, -2px 2px 4px  ${rgb(colorArrays)}, 2px -2px 4px  ${rgb(colorArrays)};`,
+     boxShadow: `inset 4px -4px 8px 0px white, 0 0 5px -1px white`,
     borderTop: '1px solid white;',
     '&:hover': {
       
@@ -36,7 +36,27 @@ const EducationCard = ({education}) => {
     textAlign: 'justify',
         userSelect: "none",
         borderRadius: '10px',
-  },
+     },
+     subHeader:{
+    border: 0,
+        padding: '1px',
+    margin:'3px',
+    textShadow: '0 2px 2px black',
+    textAlign: 'center',
+        userSelect: "none",
+        borderRadius: '10px',
+     },
+     duration:{
+    border: 0,
+        padding: '2px',
+         margin: '3px',
+    color: `white`,
+    textShadow: '0 2px 2px black',
+    textAlign: 'center',
+        userSelect: "none",
+         borderRadius: '10px',
+        backgroundColor: `${rgb(colorArrays)}`,
+     }
  
     }));
     
@@ -69,8 +89,8 @@ const EducationCard = ({education}) => {
                     <h5 className="text-info text-center text-white" >{education.schoolName}</h5>
                      </div>
 
-                        <h5 className="ml-4 text-center" >{education.subHeader}
-                        <Badge color="info" className="ml-4 text-center">
+                        <h5 className="ml-4 text-center" className={classes.subHeader} >{education.subHeader}
+                        <Badge color="info" className={classes.duration}>
                         {education.duration}
                         </Badge>
                         </h5>

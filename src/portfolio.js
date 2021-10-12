@@ -28,8 +28,8 @@ export const contact = {
 }
 
 export const socialLinks = {
-  "facebook": "https://www.facebook.com/1Brian Reed100",
-  "instagram": "https://www.instagram.com/1Brian Reed100",
+  "facebook": "",
+  "instagram": "",
   "twitter": "https://twitter.com/brian_software_",
   "github": "https://github.com/brian-reed-software",
   "linkedin": "https://www.linkedin.com/in/brian-reed-software/",

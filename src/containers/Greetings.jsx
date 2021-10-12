@@ -19,7 +19,7 @@ import Draggable from 'react-draggable';
 const useStyles = makeStyles((theme) => ({
   description: {
  background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-     boxShadow: 'inset 4px -4px 8px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+     boxShadow: 'inset 4px -4px 8px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
     borderTop: '1px solid white;',
     '&:hover': {
       
@@ -77,8 +77,8 @@ const Greetings = () => {
                 <span />
                 <span />
               </div>
-              <Container className="py-lg-md d-flex" >
-                <div className="col px-0">
+              <Container className="py-lg-md d-flex " >
+                <div className="col px-0 text-center">
                   <Row>
                     <Col lg="6" style={{filter: "drop-shadow(white 0px 0px 50px)"}}>
  <Draggable
@@ -88,10 +88,10 @@ const Greetings = () => {
         position={null}
         grid={[2, 2]}
         scale={1}>
-                <p className="lead text-white" className={ classes.description}>
-                      <h1 className="display- text-white bg-black border-1 handle" style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}>
+                <p className="lead text-white text-center" className={ classes.description}>
+                      <h1 className="display- text-white bg-black border-1 handle text-center" style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}>
                       {greetings.title}
-                      </h1>{greetings.description}
+                      </h1 >{greetings.description}
                       
                       </p>
                          </Draggable>

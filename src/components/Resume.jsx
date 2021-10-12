@@ -133,19 +133,24 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Resume = () => {
+    const handleClick = (e, path) => {
+   e.preventDefault()
+  window.open(`${path}`, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1000,height=1000");
+  };
+
   const classes = useStyles();
     return ( 
       <div className="btn-wrapper size-lg text-lg" style={{}}>
-      <Button type="button" href={socialLinks.twitter} className={classes.twitter}>
+      <Button type="button" onClick={(e) => handleClick(e, socialLinks.twitter)} className={classes.twitter}>
       <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-twitter" />
       </Button>
-        <Button type="button" href={socialLinks.linkedin} className={classes.linkedin}>
+        <Button type="button" onClick={(e) => handleClick(e, socialLinks.linkedin)} className={classes.linkedin}>
         <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-linkedin" />
         </Button>
-        <Button type="button"  href={socialLinks.github} className={classes.github}>
+        <Button type="button"  onClick={(e) => handleClick(e, socialLinks.github)} className={classes.github}>
         <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-github" />
         </Button>
-        <Button type="button"  href={socialLinks.resume}  style={{width: "233px"}} className={classes.resume}>
+        <Button type="button"  onClick={(e) => handleClick(e, socialLinks.resume)} style={{width: "233px"}} className={classes.resume}>
         <i style={{filter: 'drop-shadow(0px 0px 5px white)'}}>Resume</i>
         </Button>
         {/* <Button type="button" style={{width: "233px"}} className={classes.location}>

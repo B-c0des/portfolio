@@ -4,17 +4,19 @@ import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import {Link} from 'react-scroll'
 import Tilt from 'react-parallax-tilt';
-
+function openNew(link) {
+    window.open(`${link}`, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1000,height=1000");
+}
 const useStyles = makeStyles((theme) => ({
   twitter: {
 background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 1px -1px 4px white;',
   
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
-      color: 'cyan',
-      textShadow: '0 2px 10px cyan',
-      boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+      color: 'white',
+      textShadow: '0 2px 10px white',
+      boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -1px 1px 4px white, 2px -2px 4px steelblue;',
       marginTop: '',
       filter: 'drop-shadow(0px 0px 5px white)'},
     border: 0,
@@ -27,14 +29,14 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
     textShadow: '0 2px 2px black'
   },
   linkedin: {
- background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
   
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
-      color: 'cyan',
-      textShadow: '0 2px 10px cyan',
-      boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+      color: 'white',
+      textShadow: '0 2px 10px white',
+      boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -2px 2px 4px white, 2px -2px 4px steelblue;',
       marginTop: '',
       filter: 'drop-shadow(0px 0px 5px white)'},
     border: 0,
@@ -48,12 +50,12 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
   },
   github: {
     background: 'linear-gradient(85deg, #1a1a1a 30%, #005266 90%)',
-  boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+  boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
   
      '&:hover': {
       background: 'linear-gradient(145deg,  #1a1a1a 10%, #008fb3 90%)',
       color: '#fff',
-       boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+       boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -2px 2px 4px white, 2px -2px 4px steelblue;',
       marginTop: '',
           textShadow: '0 2px 10px cyan',
     filter: 'drop-shadow(0px 0px 5px white)',
@@ -68,14 +70,14 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
     textShadow: '0 2px 2px black'
   },
   resume: {
-    background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-    boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+  background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
   
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
-      color: 'cyan',
-      textShadow: '0 2px 10px cyan',
-      boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+      color: 'white',
+      textShadow: '0 2px 10px white',
+      boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -2px 2px 4px white, 2px -2px 4px steelblue;',
       marginTop: '',
       filter: 'drop-shadow(0px 0px 5px white)'},
     border: 0,
@@ -88,14 +90,14 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
     textShadow: '0 2px 2px black'
   },
   contact: {
-     background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
   
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
-      color: 'cyan',
-      textShadow: '0 2px 10px cyan',
-      boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -2px 2px 4px cyan, 2px -2px 4px deeppink;',
+      color: 'white',
+      textShadow: '0 2px 10px white',
+      boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -2px 2px 4px white, 2px -2px 4px steelblue;',
       marginTop: '',
       filter: 'drop-shadow(0px 0px 5px white)'},
     border: 0,
@@ -132,20 +134,26 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
 
 const SocialLinks = () => {
   const classes = useStyles();
+  const handleClick = (e, path) => {
+   e.preventDefault()
+  window.open(`${path}`, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1000,height=1000");
+  };
+
+
     return ( 
       
       <div className="btn-wrapper size-lg text-lg text-center" style={{width: "390px"}}>
-      <Button type="button" href={socialLinks.twitter} className={classes.twitter}>
+        <Button type="button" onClick={(e) => handleClick(e, socialLinks.twitter)} className={classes.twitter}>
       <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-twitter" />
       </Button>
-        <Button type="button" href={socialLinks.linkedin} className={classes.linkedin}>
+        <Button type="button" onClick={(e) => handleClick(e, socialLinks.linkedin)} className={classes.linkedin}>
         <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-linkedin" />
         </Button>
-        <Button type="button" href={socialLinks.github} className={classes.github}>
+        <Button type="button" onClick={(e) => handleClick(e, socialLinks.github)} className={classes.github}>
         <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-github" />
         </Button>
         
-        <Button type="button" href={socialLinks.resume} className={classes.resume}>
+        <Button type="button"  onClick={(e) => handleClick(e, socialLinks.resume)} className={classes.resume}>
          <i style={{filter: 'drop-shadow(0px 0px 5px white)'}}>Resume</i>
         </Button>
         <Link  to="contact" spy={true} smooth={true}>
