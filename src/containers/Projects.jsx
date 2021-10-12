@@ -17,14 +17,14 @@ const Projects = () => {
         className="pb-0 section-profile-cover">
             <Container >
               <Fade bottom duration={1000} distance="40px">
-              <div className="d-flex p-2 pb-6" style={{filter: "drop-shadow(0px 2px 3px white)"}} >
+              <div className="d-flex p-2 pb-6" style={{filter: "drop-shadow(0px 2px 2px white)"}} >
                     <div>
                         <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
                         <i className="ni ni-laptop text-info" />
                         </div>
                     </div>
                     <div className="pl-4">
-                        <h4 className="display-3 text-white text-shadows">Applications</h4>
+                        <h4 className="display-3 text-white ">Applications</h4>
                     </div>
                 </div>
                 <Row className="row-grid justify-content-center">

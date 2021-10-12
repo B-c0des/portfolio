@@ -12,7 +12,7 @@ const Education = () => {
         <section
         style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg")` }} 
         className="section-profile-cover">
-            <Container style={{filter: "drop-shadow(0px 2px 3px black)"}}>
+            <Container style={{filter: "drop-shadow(0px 2px 3px white)"}}>
                 <div className="d-flex p-2 pb-6">
                     <div>
                         <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">

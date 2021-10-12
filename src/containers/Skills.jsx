@@ -26,7 +26,7 @@ const Skills = () => {
                     <DisplayLottie animationData={webdev} />
                 </Col>
                 <Col lg="6" className="text-center">
-                <h3 className="h3 text-info">{skillsSection.title}</h3>
+                <h3 className="h3 text-info" style={{ textShadow: '0 1px 50px black'}}>{skillsSection.title}</h3>
                     <div className="d-flex justify-content-center flex-wrap mb-3">
                     
                         {
