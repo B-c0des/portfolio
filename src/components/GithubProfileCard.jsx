@@ -44,24 +44,17 @@ const GithubProfileCard = ({ prof }) => {
 
     return ( 
             <Card className="section pb-0 section-profile-cover" 
-            style={{backgroundColor: "white", backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")`, boxShadow: 'inset 0px -30px 50px steelblue ' }} 
+            style={{backgroundColor: "white", backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")` }} 
             
-            >
+      >
+  
                 <Container className="" style={{filter: "drop-shadow(0px 0px 50px steelblue )"}}>
                 <div className="p-2" style={{filter: "drop-shadow(0px 0px 10px black)"}}>
                   <Row className="justify-content-center">
-                  <Col className={classes.card} lg="4">
-                  <Tilt
-                        className="parallax-effect-img"
-                        tiltMaxAngleX={18}
-                        tiltMaxAngleY={18}
-                        perspective={2000}
-                        transitionSpeed={2500}
-                        scale={1}
-                        gyroscope={true}
-                      >
+              <Col className={classes.card} lg="4">
+                 
                       <img src={prof.avatar_url} style={{width: "100px",filter: "drop-shadow(0px 1px 15px #005266 )"}} alt="" className="text-center rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
-                      </Tilt>
+                    
                       <h3 className="justify-content-center align-items-center text-white text-center" style={{filter: 'drop-shadow(0px 0px 5px black )' , textAlign: 'center'}}>
                           
                           <span className="text-white text-center">{prof.name}</span>
@@ -83,7 +76,7 @@ const GithubProfileCard = ({ prof }) => {
                     </Col>                    
                   </Row>
                 </div>
-                </Container>
+          </Container>
               </Card>
      );
 }
