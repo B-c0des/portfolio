@@ -32,11 +32,10 @@ const ExperienceCard = ({data}) => {
 
     const useStyles = makeStyles((theme) => ({
   card: {
- background: `linear-gradient(
-85deg
-, #1a1a1a 30%, #005266 90%)`,
-     boxShadow: `inset 4px -4px 8px 0px white, 0 0 5px -1px white`,
-    borderTop: '1px solid white;',
+ background: `linear-gradient(85deg , #1a1a1a 30%, #005266 90%)`,
+     boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
+            borderTop: '1px solid white;',
+      borderRight: '1px solid white',
     '&:hover': {
       
       cursor: 'grab'},

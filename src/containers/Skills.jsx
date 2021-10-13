@@ -21,13 +21,15 @@ import { textSpanIsEmpty } from 'typescript';
 const Skills = () => {
       const useStyles = makeStyles((theme) => ({
           card: {
-               background: `linear-gradient(85deg, steelblue 30%,#005266 90%)`,
+               background: `linear-gradient(85deg, #1a1a1a 30%,#005266 90%)`,
               display: 'flex',
               alignItems: 'space-between',
               justifyContent: 'space-between',
               flexDirection: "column",
-                boxShadow: `inset 4px -4px 8px 0px white, 0 0 5px -1px white`,
-                borderTop: '1px solid white;',
+                boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
+              borderTop: '1px solid white',
+                
+      borderRight: '1px solid white',
                 '&:hover': {
       
             cursor: 'grab'},
@@ -35,7 +37,6 @@ const Skills = () => {
             fontSize: 16,
                 color: 'white',
                 padding: '10px',
-            margin:'3px',
             textShadow: '0 2px 2px black',
             textAlign: 'center',
              userSelect: "none",
@@ -52,7 +53,7 @@ const Skills = () => {
               justifyContent: 'space-between',
               flexDirection: 'column',
               textShadow: '0 2px 2px white',
-              color: 'white'
+              color: 'white',
 
           },
           wrapperSkills: {
@@ -132,7 +133,7 @@ const Skills = () => {
                             </div>
                                <h3 className={ classes.textStyles}>{skillsSection.github}</h3>
                    
-                           <img className="container-fluid shadow mt-1" src="https://ghchart.rshah.org/brian-reed-software" alt="" />
+                           <img className="container-fluid  mt-1" src="https://ghchart.rshah.org/brian-reed-software" alt="" />
                 
                                
                                 </div>

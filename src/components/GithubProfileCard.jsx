@@ -7,10 +7,41 @@ import {
     Container,
 } from "reactstrap";
 import Tilt from 'react-parallax-tilt';
-
+import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import Resume from "../components/Resume";
 
-const GithubProfileCard = ({prof}) => {
+
+
+     
+const GithubProfileCard = ({ prof }) => {
+  
+  
+   const useStyles = makeStyles((theme) => ({
+  card: {
+ background: `linear-gradient(85deg , #1a1a1a 30%, #005266 90%)`,
+     boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
+       borderTop: '1px solid white;',      
+      borderRight: '1px solid white',
+    '&:hover': {
+      
+      cursor: 'grab'},
+    border: 0,
+    fontSize: 16,
+        color: 'white',
+        padding: '10px',
+    textShadow: '0 2px 2px black',
+    textAlign: 'center',
+        userSelect: "none",
+       borderRadius: '10px',
+        height: '60%',
+  },
+ 
+    }));
+    
+
+  const classes = useStyles();
+  
+
     return ( 
             <Card className="section pb-0 section-profile-cover" 
             style={{backgroundColor: "white", backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")`, boxShadow: 'inset 0px -30px 50px steelblue ' }} 
@@ -19,7 +50,7 @@ const GithubProfileCard = ({prof}) => {
                 <Container className="" style={{filter: "drop-shadow(0px 0px 50px steelblue )"}}>
                 <div className="p-2" style={{filter: "drop-shadow(0px 0px 10px black)"}}>
                   <Row className="justify-content-center">
-                  <Col className=" justify-content-center order-lg-2 text-center" lg="4">
+                  <Col className={classes.card} lg="4">
                   <Tilt
                         className="parallax-effect-img"
                         tiltMaxAngleX={18}
@@ -29,7 +60,7 @@ const GithubProfileCard = ({prof}) => {
                         scale={1}
                         gyroscope={true}
                       >
-                      <img src={prof.avatar_url} style={{width: "100px",filter: "drop-shadow(0px 1px 15px black )"}} alt="" className="text-center rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
+                      <img src={prof.avatar_url} style={{width: "100px",filter: "drop-shadow(0px 1px 15px #005266 )"}} alt="" className="text-center rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
                       </Tilt>
                       <h3 className="justify-content-center align-items-center text-white text-center" style={{filter: 'drop-shadow(0px 0px 5px black )' , textAlign: 'center'}}>
                           
