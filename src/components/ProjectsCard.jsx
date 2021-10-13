@@ -83,7 +83,7 @@ const ProjectsCard = ({data}) => {
                     transitionSpeed={9500}
                     scale={1.1}
                     gyroscope={true}
-                    glareEnable={true}
+                    glareEnable={false}
                 >
                         <div className={classes.card} >
                            

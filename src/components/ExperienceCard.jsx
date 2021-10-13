@@ -67,7 +67,7 @@ const ExperienceCard = ({data}) => {
             transitionSpeed={9500}
             scale={1.08}
             gyroscope={true}
-            glareEnable={true}
+            glareEnable={false}
         >
             <div className={classes.card}  >
                 <Card style={{background: rgb(colorArrays)}} >

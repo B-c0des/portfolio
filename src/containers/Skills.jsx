@@ -86,7 +86,7 @@ const Skills = () => {
                         transitionSpeed={2500}
                         scale={1.1}
                         gyroscope={true}
-                        glareEnable={true}
+                        glareEnable={false}
                         >
                                
             <span className="lead shadow text-white ">{skillsSection.subTitle}</span>
