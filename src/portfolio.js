@@ -37,7 +37,7 @@ export const socialLinks = {
 }
 
 export const skillsSection = {
-  title: 'Software Technologies Used:',
+  title: 'Software Technologies',
   portfolioName: '⚡Portfolio Built With⚡',
   github: 'GitHub Stats',
   skills: [
