@@ -22,8 +22,19 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;`,
     borderTop: '1px solid white;',
     '&:hover': {
-      
-      cursor: 'grab'},
+      cursor: 'grab'
+    },
+    ':after': {
+    content: '',
+    width: '80px',
+    height: '60px',
+    borderRadius: '50%',
+    background: 'linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)',
+    position: 'absolute',
+    transform: 'rotate(-18deg)',
+    left: '13px',
+    top: '9px',
+    },
     border: 0,
     fontSize: 16,
     borderRadius: 10,
