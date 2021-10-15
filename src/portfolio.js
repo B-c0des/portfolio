@@ -33,7 +33,7 @@ export const socialLinks = {
   "twitter": "https://twitter.com/brian_software_",
   "github": "https://github.com/brian-reed-software",
   "linkedin": "https://www.linkedin.com/in/brian-reed-software/",
-  "resume": "https://tinyurl.com/brian-reed-resume2"
+  "resume": "https://bit.ly/Brian-Reed-Resume"
 }
 
 export const skillsSection = {

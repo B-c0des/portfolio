@@ -19,7 +19,7 @@ import Draggable from 'react-draggable';
 const useStyles = makeStyles((theme) => ({
   description: {
  background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-      boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;`,
+    boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;`,
     borderTop: '1px solid white;',
     '&:hover': {
       
@@ -33,11 +33,24 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '0 2px 2px black',
     textAlign: 'justify',
     userSelect: "none",
-    marginRight: '55px'
+    marginRight: '55px',
+    filter: 'drop-shadow(2px 4px 10px white)',
+  },
+    text: {
+    border: 0,
+    fontSize: 16,
+    borderRadius: 10,
+    color: 'white',
+    padding: '5px 5px 5px 5px',
+    margin:'3px',
+    textShadow: '0 2px 2px black',
+    textAlign: 'justify',
+    userSelect: "none",
+    filter: 'drop-shadow(2px 4px 40px white)',
   },
  
 }));
-
+//style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}
 
 const  eventLogger = (e: MouseEvent, data: Object) => {
     console.log('Event: ', e);
@@ -87,11 +100,12 @@ const Greetings = () => {
                   position={null}
                   grid={[2, 2]}
                   scale={1}>
-                <p className="lead text-white text-center" className={ classes.description}>
-                      <h1 className="display- text-white bg-black border-1 handle text-center" style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}>
+                <p className="lead text-white text-center" className={ classes.description} >
+                      <h1 className="display- text-white bg-black border-1 handle text-center" className={classes.text} style={{fontSize: '40px'}}>
                       {greetings.title}
-                      </h1 >{greetings.description}
-                      
+                        </h1 >
+                        <h5 className={classes.text}>{greetings.description}
+                        </h5>
                       </p>
                          </Draggable>
                       <h1 className="" style={{width: "700px"}}>

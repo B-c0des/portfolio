@@ -15,8 +15,9 @@ const Education = () => {
             <Container style={{filter: "drop-shadow(0px 2px 3px white)"}}>
                 <div className="d-flex p-2 pb-6">
                     <div>
-                        <div className="icon icon-lg icon-shape bg-gradient-darker shadow rounded-circle text-info">
-                        <i className="ni ni-books text-white" />
+                        <div className="icon-lg rounded-circle text-info">
+                        <span class="iconify" data-icon="emojione:bookmark-tabs"></span>
+
                         </div>
                     </div>
                     <div className="pl-4">
