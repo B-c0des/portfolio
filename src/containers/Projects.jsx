@@ -13,7 +13,7 @@ const Projects = () => {
     return ( 
       
         <section
-        style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg")` }} 
+        style={{backgroundColor: `#212122` }} 
         className="pb-0 section-profile-cover">
             <Container >
               <Fade bottom duration={1000} distance="40px">

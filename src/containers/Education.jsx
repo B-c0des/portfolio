@@ -10,7 +10,7 @@ import {
 const Education = () => {
     return ( 
         <section
-        style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg")` }} 
+        style={{backgroundColor: "#212122" }} 
         className="section-profile-cover">
             <Container style={{filter: "drop-shadow(0px 2px 3px white)"}}>
                 <div className="d-flex p-2 pb-6">

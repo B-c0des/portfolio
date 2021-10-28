@@ -44,7 +44,7 @@ const GithubProfileCard = ({ prof }) => {
 
     return ( 
             <Card className="section pb-0 section-profile-cover" 
-            style={{backgroundColor: "white", backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")` }} 
+            style={{backgroundColor: "#212122" }} 
             
       >
   

@@ -67,7 +67,7 @@ const Skills = () => {
 
      const classes = useStyles();
     return ( 
-        <div className=" d-flex p-5  "  style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")`,backgroundColor: "black"}} >
+        <div className=" d-flex p-5  "  style={{backgroundColor: "#212122"}} >
             <Fade left duration={1000} distance="40px">
                 <div lg="6">
                     <DisplayLottie animationData={webdev} />

@@ -13,7 +13,7 @@ const Experience = () => {
     return ( 
       <div style={{backgroundColor: "black"}}>
         <section
-        style={{backgroundImage: `url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg")` }} 
+        style={{backgroundColor: "#212122"}} 
         className="section pb-0 section-profile-cover"  >
             <Container >
               <Fade left duration={1000} distance="40px">
