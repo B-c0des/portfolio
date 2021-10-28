@@ -71,7 +71,7 @@ const ExperienceCard = ({data}) => {
         >
             <div className={classes.card}  >
                 <Card style={{background: rgb(colorArrays)}} >
-                <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{ width: "125px" }} onLoad={() => getColorArrays()} alt=""/>
+                <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{ height: '200px', width: "200px" }} onLoad={() => getColorArrays()} alt=""/>
                     <h5 className="text-white text-center" style={{color: rgb(colorArrays), filter: `drop-shadow(0px 2px 3px '${rgb(colorArrays)})'`}}>{data.company}</h5>
 
                 </Card>

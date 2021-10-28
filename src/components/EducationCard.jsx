@@ -86,7 +86,7 @@ const EducationCard = ({education}) => {
             <div  className={classes.card}  >
                 
                     <div className={classes.card} className="text-center rounded" style={{background: rgb(colorArrays)}} >
-                      <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={education.schoolLogo} style={{ width: "125px" }} onLoad={() => getColorArrays()} alt=""/>
+                      <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={education.schoolLogo} style={{ width: "200px" }} onLoad={() => getColorArrays()} alt=""/>
                     <h5 className="text-info text-center text-white" >{education.schoolName}</h5>
                      </div>
 

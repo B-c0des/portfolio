@@ -7,7 +7,7 @@ import github from './assets/img/icons/common/github.svg'
 import socialagain from './assets/img/icons/common/social-again.svg'
 import airbnb from './assets/img/icons/common/airbnbLogo.png'
 import brws from './assets/img/icons/common/brian-reed-web-solutions.png'
-import mayflower from './assets/img/icons/common/mayflower.jpg'
+import mayflower from './assets/img/icons/common/truckdriver.png'
 import schoollogo from './assets/img/icons/common/school-logo.png'
 let myLink = "http://at100devs.herokuapp.com/"
 
@@ -201,9 +201,9 @@ export const experience = [{
 
   {
     role: 'Route Manager',
-    company: 'Mayflower',
+    company: 'Truck Driver',
     companylogo: mayflower,
-    url: "https://www.linkedin.com/company/mayflower/",
+    url: "https://www.linkedin.com/company/truckdriver/",
     date: '2015 - 2017',
     desc: ' Managing routes to make sure customer time needs are met. Driving a Semi-Truck to customer locations safely. Moving customers personal items who are relocating for work purposes. Using software to inventory and load items carefully into a trailer for transport. Managing teams to coordinate relocation.',
     descBullets: [
