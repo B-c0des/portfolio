@@ -50,7 +50,7 @@ const Skills = () => {
           },
           textStyles: {
               display: 'flex',
-              justifyContent: 'space-between',
+              justifyContent: 'center',
               flexDirection: 'column',
               textShadow: '0 2px 2px white',
               color: 'white',
@@ -67,7 +67,7 @@ const Skills = () => {
 
      const classes = useStyles();
     return ( 
-        <div className=" d-flex p-5  "  style={{backgroundColor: "#212122"}} >
+        <div className=" nav justify-content-center "  style={{backgroundColor: "#212122"}} >
             <Fade left duration={1000} distance="40px">
                 <div lg="6">
                     <DisplayLottie animationData={webdev} />
