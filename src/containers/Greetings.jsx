@@ -119,7 +119,7 @@ const Greetings = () => {
                         </h5>
                       </p>
                          </Draggable>
-                      <h1 className="" style={{width: "700px"}}>
+                      <h1 className="" style={{width: "450px"}}>
                       <SocialLinks />
                       </h1>
 
