@@ -67,7 +67,7 @@ const Skills = () => {
 
      const classes = useStyles();
     return ( 
-        <div className=" nav justify-content-center "  style={{backgroundColor: "#212122"}} >
+        <div className=" py-lg-md d-flex  container "  style={{backgroundColor: "#212122"}} >
             <Fade left duration={1000} distance="40px">
                 <div lg="6">
                     <DisplayLottie animationData={webdev} />
@@ -92,7 +92,7 @@ const Skills = () => {
             <span className="lead shadow text-white ">{skillsSection.subTitle}</span>
             
 
-                        
+                            
                 <div lg="6" className="text-center" className={ classes.card}>
                 <h3 className="h3 text-info" className={ classes.textStyles}>{skillsSection.title}</h3>
                     <div className="d-flex justify-content-center flex-wrap mb-3" >
