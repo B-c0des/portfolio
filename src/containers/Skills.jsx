@@ -67,7 +67,7 @@ const Skills = () => {
 
      const classes = useStyles();
     return ( 
-        <div className=" py-lg-md d-flex  container "  style={{backgroundColor: "#212122"}} >
+        <div className=" py-lg-md d-flex "  style={{backgroundColor: "#212122"}} >
             <Fade left duration={1000} distance="40px">
                 <div lg="6">
                     <DisplayLottie animationData={webdev} />
