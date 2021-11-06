@@ -3285,11 +3285,13 @@ input[type="button"].btn-block {
   align-items: center; }
 
 .navbar-toggler {
+  color: white;
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 0.0625rem solid transparent;
+  box-shadow: inset 2px 0px 10px -10px white;
   border-radius: 0.25rem; }
   .navbar-toggler:hover, .navbar-toggler:focus {
     text-decoration: none; }
@@ -13057,7 +13059,8 @@ textarea[resize="horizontal"] {
 @media (max-width: 991.98px) {
   .navbar-nav .nav-link {
     padding: .625rem 0;
-    color: #172b4d !important; }
+    color: white !important;}
+    /* color: #172b4d !important; } */
   .navbar-nav .dropdown-menu {
     box-shadow: none;
     min-width: auto; }
@@ -13105,8 +13108,10 @@ textarea[resize="horizontal"] {
   .navbar-collapse.collapsing,
   .navbar-collapse.show {
     padding: 1.5rem;
+    border: 5px solid red;
     border-radius: 0.25rem;
-    background: black;
+    background: linear-gradient(80deg, steelblue 30%, #80e5ff 90%);
+    box-shadow: inset 2px 0px 150px -100px white, inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white, inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;
     box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
     animation: show-navbar-collapse .2s ease forwards; }
   .navbar-collapse.collapsing-out {

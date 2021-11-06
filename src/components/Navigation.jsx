@@ -56,7 +56,7 @@ const Navigation = () => {
                     <Col className="collapse-brand" xs="6">
                       
                       <Link to="/">
-                        <h3 className="text-black" id="nav-title" style={{filter: "drop-shadow(0px 2px 3px black)"}}>{greetings.name}</h3>
+                        <h3 className="text-white" id="nav-title" style={{filter: "drop-shadow(0px 2px 3px black)"}}>{greetings.name}</h3>
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">

@@ -20,5 +20,7 @@ const GithubProfile = () => {
         </Suspense>
      );
 }
+
+
  
 export default GithubProfile;

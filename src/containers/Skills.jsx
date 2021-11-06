@@ -29,7 +29,7 @@ const Skills = () => {
                 boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
               borderTop: '1px solid white',
                 
-      borderRight: '1px solid white',
+          borderRight: '1px solid white',
                 '&:hover': {
       
             cursor: 'grab'},
@@ -45,6 +45,7 @@ const Skills = () => {
           row: {
               display: 'flex',
               justifyContent: 'space-between',
+              alignItems: 'center',
               flexDirection: 'row',
               textShadow: '0 2px 2px black'
           },
@@ -57,17 +58,23 @@ const Skills = () => {
 
           },
           wrapperSkills: {
-              filter: "drop-shadow(white 0px 2px 2px)",
+              backgroundColor: "#212122",
+              padding: "50px",
               margin: "top",
-              marginTop: "30%",
-          }
+              display: "flex",
+              flexDirection: "row",
+                '@media only screen and (max-width: 700px)': {
+                    flexDirection: "column"
+              },
+          },
+
  
     }));
     
 
      const classes = useStyles();
     return ( 
-        <div className=" py-lg-md d-flex "  style={{backgroundColor: "#212122"}} >
+        <div className={classes.wrapperSkills} >
             <Fade left duration={1000} distance="40px">
                 <div lg="6">
                     <DisplayLottie animationData={webdev} />
@@ -75,7 +82,7 @@ const Skills = () => {
                 
                 <div className={classes.row}>
                    
-                    <div className={classes.wrapperSkills} >
+                    <div  >
                         <ExternalLink href="https://github.com/brian-reed-software">
                   
              <Tilt
