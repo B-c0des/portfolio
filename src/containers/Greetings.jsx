@@ -47,18 +47,47 @@ const useStyles = makeStyles((theme) => ({
     marginRight: '55px',
     filter: 'drop-shadow(2px 4px 10px white)',
   },
-    text: {
+  text: {
     border: 0,
     fontSize: 16,
     borderRadius: 10,
     color: 'white',
     padding: '5px 5px 5px 5px',
-    margin:'3px',
+    margin: '3px',
     textShadow: '0 2px 2px black',
     textAlign: 'justify',
     userSelect: "none",
     filter: 'drop-shadow(2px 4px 40px white)',
   },
+    row: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      flexDirection: 'row',
+      textShadow: '0 2px 2px black'
+    },
+    textStyles: {
+      display: 'flex',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      textShadow: '0 2px 2px white',
+      color: 'white',
+
+    },
+  wrapperSkills: {
+    padding: "50px",
+    margin: "top",
+    display: "flex",
+    flexDirection: "row",
+    '@media only screen and (max-width: 700px)': {
+      flexDirection: "column"
+    }
+  },
+  backgroundStyle: {
+        backgroundColor: 'steelblue',
+        boxShadow: "inset 0px 0px 200px lightsteelblue, 0px 0px 20px steelblue; ",
+        filter: "dropshadow (white 0px 0px 50px); ",
+      }
  
 }));
 //style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}
@@ -78,13 +107,12 @@ const Greetings = () => {
   
   return ( 
     <Fade top duration={1000} distance="40px">
-        <main ref="main" >
-          <div className="position-relative">
-          
-            <section 
+        <main ref="main"  >
+        <div className={classes.backgroundStyle} >
+             <section 
             style={{backgroundImage: `url("")`, filter: 'drop-shadow(0px 0px 12px black)'}} 
             className="section section-lg section-shaped pb-5 section-profile-cover">
-              <div className="shape shape-style-1 bg-gradient-info" style={{boxShadow: "inset 0px 0px 20px lightsteelblue, 0px 0px 20px steelblue;", filter: "drop-shadow(white 0px 0px 50px);", backdropFilter: "blur(10px); border-radius: 15px;"}}>
+              <div >
               <span />
                 <span />
                 <span />
@@ -101,36 +129,30 @@ const Greetings = () => {
                 <span />
                 <span />
               </div>
-              <Container className="py-lg-md d-flex " >
-                <div className="col px-0 text-center">
-                  <Row>
-                    <Col lg="6" style={{filter: "drop-shadow(white 0px 0px 50px)"}}>
-                <Draggable
-                  handle=".handle"
-                  defaultPosition={{x: 0, y: 0}}
-                  position={null}
-                  grid={[2, 2]}
-                  scale={1}>
+              <div className={classes.wrapperSkills} >
+                  
+                          
+                <div className={classes.textStyles}>
                 <p className="lead text-white text-center" className={ classes.description} >
                       <h1 className="display- text-white bg-black border-1 handle text-center" className={classes.text} style={{fontSize: '40px'}}>
                       {greetings.title}
                         </h1 >
-                        <h5 className={classes.text}>{greetings.description}
+                        <h5 className={classes.text}>
+                          <hr style={{margin: "0px"}}/>
+                          {greetings.description}
+                          
                         </h5>
                       </p>
-                         </Draggable>
-                      <h1 className="" style={{width: "450px"}}>
+                      <h1 className={classes.textStyles}>
                       <SocialLinks />
                       </h1>
-
-                      </Col>
+                     </div>
                     <Col lg="6" style={{filter: "drop-shadow(0px 5px 150px white)"}}>
                       <GreetingLottie  animationData={code}/>
                     </Col>
-                  </Row>
-                </div>
+                  
                 
-              </Container>
+              </div>
               {/* SVG separator */}
               <div className="separator separator-bottom separator-skew" style={{filter: "drop-shadow(0px 5px 5px black)"}}>
                 <svg

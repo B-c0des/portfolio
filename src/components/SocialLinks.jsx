@@ -143,7 +143,7 @@ const SocialLinks = () => {
 
     return ( 
       
-      <div className="btn-wrapper size-lg text-lg text-center" style={{}}>
+      <div className="form-inline">
         <Button type="button" onClick={(e) => handleClick(e, socialLinks.twitter)} className={classes.twitter}>
       <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-twitter" />
       </Button>
