@@ -72,6 +72,7 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: 'column',
       textShadow: '0 2px 2px white',
       color: 'white',
+      alignItems: 'center'
 
     },
   wrapperSkills: {
@@ -84,8 +85,8 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   backgroundStyle: {
-        backgroundColor: 'steelblue',
-        boxShadow: "inset 0px 0px 200px lightsteelblue, 0px 0px 20px steelblue; ",
+        backgroundColor: '#80e5ff',
+        boxShadow: "inset 0px 0px 50px lightsteelblue, 0px 0px 20px steelblue; ",
         filter: "dropshadow (white 0px 0px 50px); ",
       }
  
@@ -110,7 +111,7 @@ const Greetings = () => {
         <main ref="main"  >
         <div className={classes.backgroundStyle} >
              <section 
-            style={{backgroundImage: `url("")`, filter: 'drop-shadow(0px 0px 12px black)'}} 
+            style={{backgroundImage: `url("")`, filter: 'drop-shadow(0px 0px 12px white)'}} 
             className="section section-lg section-shaped pb-5 section-profile-cover">
               <div >
               <span />
