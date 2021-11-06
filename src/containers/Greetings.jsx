@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;`,
     borderTop: '1px solid white;',
     '&:hover': {
-      cursor: 'grab'
+      cursor: 'pointer'
     },
     ':after': {
     content: '',
