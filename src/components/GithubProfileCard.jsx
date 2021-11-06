@@ -70,7 +70,7 @@ const GithubProfileCard = ({ prof }) => {
                       </Col>
                     <Col lg="8" className="order-lg-0">
                       <h2 id="contact" className="text-white" style={{filter: "drop-shadow(0px 3px 5px black )", textAlign: 'center' }}>
-                       Reach Out to me &#128071;
+                       Reach Out to me
                       </h2>
                       <div data-netlify-recaptcha="true" data-netlify="true" class="mighty-form" id="mf-e9b1f4b8-0f47-41c1-a114-0c1eac9921d5" ></div> 
                     </Col>                    

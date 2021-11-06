@@ -130,6 +130,12 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
     margin:'3px',
     textShadow: '0 2px 2px black'
   },
+  buttonCenter: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+  }
 }));
 
 
@@ -143,7 +149,7 @@ const SocialLinks = () => {
 
     return ( 
       
-      <div className="form-inline">
+      <div className={classes.buttonCenter}>
         <Button type="button" onClick={(e) => handleClick(e, socialLinks.twitter)} className={classes.twitter}>
       <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-twitter" />
       </Button>
