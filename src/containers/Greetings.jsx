@@ -34,6 +34,8 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(-18deg)',
     left: '13px',
     top: '9px',
+    justifyContent: 'center',
+    alignItems: 'center'
     },
     border: 0,
     fontSize: 16,
@@ -44,7 +46,6 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '0 2px 2px black',
     textAlign: 'justify',
     userSelect: "none",
-    marginRight: '55px',
     filter: 'drop-shadow(2px 4px 10px white)',
   },
   text: {
@@ -141,12 +142,12 @@ const Greetings = () => {
                         <h5 className={classes.text}>
                           <hr style={{margin: "0px"}}/>
                           {greetings.description}
-                          
-                        </h5>
-                      </p>
-                      <h1 className={classes.textStyles}>
+                                                <h1 className={classes.textStyles}>
                       <SocialLinks />
                       </h1>
+                        </h5>
+                      </p>
+
                      </div>
                     <Col lg="6" style={{filter: "drop-shadow(0px 5px 150px white)"}}>
                       <GreetingLottie  animationData={code}/>
