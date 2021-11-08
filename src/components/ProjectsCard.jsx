@@ -22,8 +22,8 @@ import { Fade } from 'react-reveal';
 const useStyles = makeStyles((theme) => ({
   card: {
  background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-    boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
-    //   boxShadow:     "inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 20px cyan, -10px 0 20px #f0f, 0px 0 2px cyan",
+  boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 20px steelblue;`,
+     //   boxShadow:     "inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 20px cyan, -10px 0 20px #f0f, 0px 0 2px cyan",
 
     borderTop: '1px solid white;',
     '&:hover': {
