@@ -22,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;`,
     borderTop: '1px solid white;',
     '&:hover': {
-      
     },
     ':after': {
     content: '',
@@ -35,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
     left: '13px',
     top: '9px',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+//    backgroundImage: "linearGradient (top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top,rgba(255, 255, 255, 0),rgba(255, 255, 255, .15) 50%,rgba(255, 255, 255, 0) 50%,rgba(255, 255, 255, 0))"
     },
     border: 0,
     fontSize: 16,
@@ -89,7 +89,8 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#80e5ff',
         boxShadow: "inset 0px 0px 50px lightsteelblue, 0px 0px 20px steelblue; ",
         filter: "dropshadow (white 0px 0px 50px); ",
-      }
+  },
+
  
 }));
 //style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}
@@ -135,7 +136,7 @@ const Greetings = () => {
                   
                           
                 <div className={classes.textStyles}>
-                <p className="lead text-white text-center" className={ classes.description} >
+                <p className="lead text-white text-center nav-title" className={ classes.description} >
                       <h1 className="display- text-white bg-black border-1 handle text-center" className={classes.text} style={{fontSize: '40px'}}>
                       {greetings.title}
                         </h1 >
