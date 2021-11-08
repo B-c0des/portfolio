@@ -19,12 +19,13 @@ const App = () => {
                 <Route path="/" exact render={props => (
                     <>
                        <Navigation />
-                        <Greetings/>
+                        <Greetings />
+                        
+                        <Projects />
                         <Skills />
                         {/* <Proficiency /> */}
                         <Education />
                         <Experience />
-                        <Projects />
                         <GithubProfile />
                     
                     </>
