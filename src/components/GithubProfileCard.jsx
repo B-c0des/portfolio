@@ -34,7 +34,12 @@ const GithubProfileCard = ({ prof }) => {
         userSelect: "none",
        borderRadius: '10px',
         height: '60%',
-  },
+     },
+     avatar: {
+       width: "100px",
+       filter: "drop-shadow(0px 1px 15px #005266)",
+       border: "2px solid white",
+     }
  
     }));
     
@@ -53,7 +58,7 @@ const GithubProfileCard = ({ prof }) => {
                   <Row className="justify-content-center">
               <Col className={classes.card} lg="4">
                  
-                      <img src={prof.avatar_url} style={{width: "100px",filter: "drop-shadow(0px 1px 15px #005266 )"}} alt="" className="text-center rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
+                      <img src={prof.avatar_url} className={classes.avatar} alt="" className="text-center rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
                     
                       <h3 className="justify-content-center align-items-center text-white text-center" style={{filter: 'drop-shadow(0px 0px 5px black )' , textAlign: 'center'}}>
                           
