@@ -18,7 +18,7 @@ import Draggable from 'react-draggable';
 // import React, { Component } from 'react'
 const useStyles = makeStyles((theme) => ({
   description: {
- background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+    background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 40%)',
     boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;`,
     borderTop: '1px solid white;',
     '&:hover': {
@@ -27,7 +27,6 @@ const useStyles = makeStyles((theme) => ({
     content: '',
     width: '80px',
     height: '60px',
-    borderRadius: '50%',
     background: 'linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)',
     position: 'absolute',
     transform: 'rotate(-18deg)',
@@ -35,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
     top: '9px',
     justifyContent: 'center',
     alignItems: 'center',
+    color: "black"
 //    backgroundImage: "linearGradient (top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top,rgba(255, 255, 255, 0),rgba(255, 255, 255, .15) 50%,rgba(255, 255, 255, 0) 50%,rgba(255, 255, 255, 0))"
     },
     border: 0,
@@ -50,46 +50,51 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     border: 0,
-    fontSize: 16,
+    fontSize: 20,
     borderRadius: 10,
-    color: 'white',
-    padding: '5px 5px 5px 5px',
-    margin: '3px',
-    textShadow: '0 2px 2px black',
+    padding: '0px 5px 5px 5px',
+    margin: '10px',
+    textShadow: "0px 0px 10px white ",
     textAlign: 'justify',
     userSelect: "none",
     filter: 'drop-shadow(2px 4px 40px white)',
   },
-    row: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      flexDirection: 'row',
-      textShadow: '0 2px 2px black'
+  row: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+    textShadow: '0 2px 2px black'
     },
-    textStyles: {
-      display: 'flex',
-      justifyContent: 'center',
-      flexDirection: 'column',
-      textShadow: '0 2px 2px white',
-      color: 'white',
-      alignItems: 'center'
+  textStyles: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    textShadow: '0 2px 2px white',
+    color: 'white',
+    alignItems: 'center'
 
     },
   wrapperSkills: {
     padding: "50px",
     margin: "top",
     display: "flex",
+    borderRadius: "50px",
     flexDirection: "row",
     '@media only screen and (max-width: 700px)': {
       flexDirection: "column"
     }
   },
   backgroundStyle: {
-        backgroundColor: '#80e5ff',
-        boxShadow: "inset 0px 0px 50px lightsteelblue, 0px 0px 20px steelblue; ",
-        filter: "dropshadow (white 0px 0px 50px); ",
+    backgroundColor: '#80e5ff',
+    boxShadow: "inset 0px 0px 50px lightsteelblue, 0px 0px 20px steelblue; ",
+    filter: "dropshadow (white 0px 0px 50px); ",
   },
+  title: {
+    fontFamily: 'Augestina',
+    fontSize: "28",
+    textShadow: "0px 8px 8px steelblue ",
+  }
 
  
 }));
@@ -136,8 +141,8 @@ const Greetings = () => {
                   
                           
                 <div className={classes.textStyles}>
-                <p className="lead text-white text-center nav-title" className={ classes.description} >
-                      <h1 className="display- text-white bg-black border-1 handle text-center" className={classes.text} style={{fontSize: '40px'}}>
+                <p className="lead text-center nav-title" className={ classes.description} >
+                      <h1 className="display- bg-black border-1 handle text-center" className={classes.title}>
                       {greetings.title}
                         </h1 >
                         <h5 className={classes.text}>
