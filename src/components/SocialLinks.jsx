@@ -9,7 +9,7 @@ function openNew(link) {
 }
 const useStyles = makeStyles((theme) => ({
   twitter: {
-background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
+  background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
      boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 1px -1px 4px white;',
   
     '&:hover': {
@@ -165,7 +165,7 @@ const SocialLinks = () => {
          <i style={{filter: 'drop-shadow(0px 0px 5px white)'}}>Resume</i>
         </Button>
         <Link  to="contact" spy={true} smooth={true}>
-        <Button type="button" style={{width: "367px"}} className={classes.contact}>
+        <Button type="button" className={classes.contact}>
         <span className="btn-inner--icon mr-1">
         <i className="fa fa-file" />
       </span>
