@@ -92,7 +92,7 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
   contact: {
  background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
      boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
-  
+
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
@@ -107,6 +107,7 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
     height: 48,
     padding: '0 30px',
     margin:'3px',
+    marginTop: '-6px',
     textShadow: '0 2px 2px black',
     justifyContent: 'center'
   },
