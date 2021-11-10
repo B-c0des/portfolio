@@ -16,7 +16,7 @@ export const greetings = {
   "name": "Brian Reed",
   "title": "Brian Reed",
   // "description": "  I'm a Software Engineer focused on Full-Stack Web Development. I am proficient in both Front-End and Back-End development. I have knowledge in Javascript, React, Node.js, MongoDB, CSS, HTML and GitHub. As a software engineer I aspire to help bring projects to life and demonstrate my commitment to developing world-class software solutions for companies and customers. I am also open to learning new languages, libraries and frameworks whichever enhances customers experience. Creating Cool Cross Platform Mobile Apps is my passion.",
-  "description": "I am a Software Engineer with a focus on Web Development using Javascript, React, Express, Node, and MongoDB. I have experience with styling using CSS and styled Components using Material UI. I enjoy learning new languages, Libraries or Frameworks. Please reach out to me if you have any questions , or would like to hire me as a Web Developer.",
+  "description": "I am a Software Engineer with a focus on Web Development using Javascript, React, Express, Node, and MongoDB. I have experience with styling using CSS and styled Components using Material UI. I enjoy learning new languages, Libraries or Frameworks. Please reach out to me if you have any questions , or would like to hire me as a Web Developer. Thanks!",
   "resumeLink": "contact.me"
 }
 

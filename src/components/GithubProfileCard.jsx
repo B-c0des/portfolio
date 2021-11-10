@@ -36,7 +36,7 @@ const GithubProfileCard = ({ prof }) => {
         height: '60%',
      },
      avatar: {
-       width: "100px",
+       width: "50px",
        filter: "drop-shadow(0px 1px 15px #005266)",
        border: "2px solid white",
      }
