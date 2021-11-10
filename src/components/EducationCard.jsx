@@ -20,14 +20,14 @@ const EducationCard = ({education}) => {
         setColorArrays(colorThief.getColor(imgRef.current));
     }
  const useStyles = makeStyles((theme) => ({
-  card: {
-      
-    background: 'linear-gradient(80deg, steelblue 40%, #80e5ff 80%, white 110%)',
+card: {
+ background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
    boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 20px steelblue;`,
-   borderTop: '1px solid white;',
+            borderTop: '1px solid white;',
+      borderRight: '1px solid white',
     '&:hover': {
       
-      cursor: ''},
+      cursor: 'pointer'},
     border: 0,
     fontSize: 16,
         color: 'white',
@@ -36,8 +36,10 @@ const EducationCard = ({education}) => {
     textShadow: '0 2px 2px black',
     textAlign: 'justify',
         userSelect: "none",
-        borderRadius: '10px',
-     },
+            borderRadius: '10px',
+        
+       filter: 'drop-shadow(0px 0px 10px black)',
+  },
      subHeader:{
     border: 0,
         padding: '1px',

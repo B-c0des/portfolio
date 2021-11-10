@@ -28,10 +28,8 @@ const Skills = () => {
               flexDirection: "column",
               boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 100px steelblue;`,
               borderTop: '1px solid white',
-                
-          borderRight: '1px solid white',
+              borderRight: '1px solid white',
                 '&:hover': {
-      
             cursor: 'pointer'},
             border: 0,
             fontSize: 16,
@@ -40,14 +38,15 @@ const Skills = () => {
             textShadow: '0 2px 2px black',
             textAlign: 'center',
              userSelect: "none",
-              borderRadius: '10px',
+              borderRadius: '10px',    
+               filter: 'drop-shadow(0px 0px 5px black)',
           },
           row: {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
               flexDirection: 'row',
-              textShadow: '0 2px 2px black'
+              textShadow: '0 2px 2px black',
           },
           textStyles: {
               display: 'flex',
@@ -67,7 +66,8 @@ const Skills = () => {
                     flexDirection: "column"
               },
               icons: {
-                    boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 100px white;`
+               filter: 'drop-shadow(0px 10px 10px steelblue)',
+                boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 100px white;`
               }
                 
           },

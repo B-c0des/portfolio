@@ -109,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
     margin:'3px',
     marginTop: '-6px',
     textShadow: '0 2px 2px black',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   location: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
@@ -136,6 +136,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     flexWrap: 'wrap',
+    filter: 'drop-shadow(0px 10px 10px steelblue)',
   }
 }));
 

@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
     top: '9px',
     justifyContent: 'center',
     alignItems: 'center',
-    color: "black"
+      color: "black"
+    
 //    backgroundImage: "linearGradient (top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top,rgba(255, 255, 255, 0),rgba(255, 255, 255, .15) 50%,rgba(255, 255, 255, 0) 50%,rgba(255, 255, 255, 0))"
     },
     border: 0,
@@ -47,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'justify',
     userSelect: "none",
     filter: 'drop-shadow(2px 4px 100px white)',
+    
   },
   text: {
     border: 0,
@@ -58,6 +60,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'justify',
     userSelect: "none",
     filter: 'drop-shadow(2px 4px 40px white)',
+    
+    textShadow: "0px 8px 8px white ",
   },
   row: {
     display: 'flex',
@@ -81,6 +85,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     borderRadius: "50px",
     flexDirection: "row",
+    filter: 'drop-shadow(0px 10px 4px steelblue)',
     '@media only screen and (max-width: 700px)': {
       flexDirection: "column"
     }
@@ -88,12 +93,12 @@ const useStyles = makeStyles((theme) => ({
   backgroundStyle: {
     backgroundColor: '#80e5ff',
     boxShadow: "inset 0px 0px 50px lightsteelblue, 0px 0px 20px steelblue; ",
-    filter: "dropshadow (white 0px 0px 50px); ",
+    filter: 'drop-shadow(2px 4px 40px white)',
   },
   title: {
     fontFamily: 'Augestina',
     fontSize: "28",
-    textShadow: "0px 8px 8px steelblue ",
+    textShadow: "0px 8px 8px white ",
   }
 
  

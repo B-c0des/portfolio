@@ -33,12 +33,18 @@ const GithubProfileCard = ({ prof }) => {
     textAlign: 'center',
         userSelect: "none",
        borderRadius: '10px',
-        height: '60%',
+       height: '60%',
+       filter: 'drop-shadow(0px 0px 20px black)',
      },
      avatar: {
-       width: "50px",
-       filter: "drop-shadow(0px 1px 15px #005266)",
+       width: "50%",
        border: "2px solid white",
+       borderRadius: "100%",
+       filter: 'drop-shadow(0px 0px 20px black)',
+     },
+     messageForm: {
+       width: "50%",
+       filter: 'drop-shadow(0px 0px 20px black)',
      }
  
     }));
@@ -58,7 +64,7 @@ const GithubProfileCard = ({ prof }) => {
                   <Row className="justify-content-center">
               <Col className={classes.card} lg="4">
                  
-                      <img src={prof.avatar_url} className={classes.avatar} alt="" className="text-center rounded-circle  img-fluid shadow shadow-lg--hover mb-1"/>
+                      <img className={classes.avatar}   src={prof.avatar_url}  alt="" />
                     
                       <h3 className="justify-content-center align-items-center text-white text-center" style={{filter: 'drop-shadow(0px 0px 5px black )' , textAlign: 'center'}}>
                           
@@ -73,7 +79,7 @@ const GithubProfileCard = ({ prof }) => {
                       </h3>
                       <Resume />
                       </Col>
-                    <Col lg="8" className="order-lg-0">
+                    <Col lg="8" className={classes.messageForm} >
                       <h2 id="contact" className="text-white" style={{filter: "drop-shadow(0px 3px 5px black )", textAlign: 'center' }}>
                        Reach Out to me
                       </h2>

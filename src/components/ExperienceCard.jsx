@@ -47,7 +47,9 @@ const ExperienceCard = ({data}) => {
     textShadow: '0 2px 2px black',
     textAlign: 'justify',
         userSelect: "none",
-        borderRadius: '10px',
+            borderRadius: '10px',
+        
+       filter: 'drop-shadow(0px 0px 10px black)',
   },
  
     }));
