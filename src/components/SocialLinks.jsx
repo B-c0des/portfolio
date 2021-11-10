@@ -9,7 +9,7 @@ function openNew(link) {
 }
 const useStyles = makeStyles((theme) => ({
   twitter: {
-background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
      boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 1px -1px 4px white;',
   
     '&:hover': {
@@ -29,7 +29,7 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
     textShadow: '0 2px 2px black'
   },
   linkedin: {
-background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+  background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
      boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
   
     '&:hover': {
@@ -49,7 +49,7 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
     textShadow: '0 2px 2px black'
   },
   github: {
-    background: 'linear-gradient(85deg, #1a1a1a 30%, #005266 90%)',
+    background: 'linear-gradient(85deg, #1a1a1a 10%, #005266 80%, white 120%)',
   boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
   
      '&:hover': {
@@ -70,7 +70,7 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
     textShadow: '0 2px 2px black'
   },
   resume: {
-  background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+  background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
      boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
 
     '&:hover': {
@@ -90,7 +90,7 @@ background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
     textShadow: '0 2px 2px black'
   },
   contact: {
- background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+  background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
      boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
 
     '&:hover': {

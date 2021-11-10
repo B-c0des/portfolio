@@ -10,7 +10,7 @@ import {Link} from 'react-scroll'
 // import ThemeNesting from './Button';
 const useStyles = makeStyles((theme) => ({
   twitter: {
- background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
+    background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
      boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
   
     '&:hover': {
@@ -30,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '0 2px 2px black'
   },
   linkedin: {
- background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-     boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+    background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
+    boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
   
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '0 2px 2px black'
   },
   github: {
-    background: 'linear-gradient(85deg, #1a1a1a 30%, #005266 90%)',
+    background: 'linear-gradient(85deg, #1a1a1a 10%, #005266 90%, white 110%)',
   boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
   
      '&:hover': {
@@ -71,8 +71,8 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '0 2px 2px black'
   },
   resume: {
-    background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',
-     boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
+    background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
+    boxShadow: 'inset 0px -2px 3px 0px white, 0 0 5px -1px white, -2px 2px 4px deeppink, 2px -2px 4px cyan;',
   
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',

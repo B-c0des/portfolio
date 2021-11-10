@@ -18,7 +18,7 @@ import Draggable from 'react-draggable';
 // import React, { Component } from 'react'
 const useStyles = makeStyles((theme) => ({
   description: {
-    background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 40%)',
+    background: 'linear-gradient(80deg,black -10%, steelblue 5%, #80e5ff 15%, #80e5ff 80%, white 95%)',
     boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;`,
     borderTop: '1px solid white;',
     '&:hover': {
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '0 2px 2px black',
     textAlign: 'justify',
     userSelect: "none",
-    filter: 'drop-shadow(2px 4px 10px white)',
+    filter: 'drop-shadow(2px 4px 100px white)',
   },
   text: {
     border: 0,
