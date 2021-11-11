@@ -43,7 +43,7 @@ const GithubProfileCard = ({ prof }) => {
        filter: 'drop-shadow(0px 0px 20px black)',
      },
      messageForm: {
-       width: "50%",
+       width: "100%",
        filter: 'drop-shadow(0px 0px 20px black)',
      }
  
