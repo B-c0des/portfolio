@@ -19,7 +19,7 @@ const GithubProfileCard = ({ prof }) => {
    const useStyles = makeStyles((theme) => ({
   card: {
     background: 'linear-gradient(80deg,black -00%, steelblue 40%, #80e5ff 80%, white 100%)',
-     boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
+     boxShadow: `inset 2px 00px 150px -100px ,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
        borderTop: '1px solid white;',      
       borderRight: '1px solid white',
     '&:hover': {
