@@ -156,7 +156,7 @@ const Greetings = () => {
                       </p>
 
                      </div>
-                    <Col lg="6" style={{filter: "drop-shadow(0px 5px 150px white)"}}>
+                    <Col lg="6">
                       <GreetingLottie  animationData={code}/>
                     </Col>
                   
