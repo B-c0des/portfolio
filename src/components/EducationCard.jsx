@@ -37,8 +37,6 @@ card: {
     textAlign: 'justify',
         userSelect: "none",
             borderRadius: '10px',
-        
-       filter: 'drop-shadow(0px 0px 10px black)',
   },
      subHeader:{
     border: 0,

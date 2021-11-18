@@ -17,7 +17,7 @@ const Projects = () => {
         className="pb-0 section-profile-cover">
             <Container >
               <Fade bottom duration={1000} distance="40px">
-              <div className="d-flex p-2 pb-6" style={{filter: "drop-shadow(0px 2px 2px white)"}} >
+              <div className="d-flex p-2 pb-6" >
                     <div>
                         <div className="icon-lg rounded-circle text-info ">
                         <span class="iconify" data-icon="emojione-v1:laptop-computer"></span>

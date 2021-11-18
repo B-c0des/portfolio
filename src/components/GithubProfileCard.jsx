@@ -34,17 +34,14 @@ const GithubProfileCard = ({ prof }) => {
         userSelect: "none",
        borderRadius: '10px',
        height: '60%',
-       filter: 'drop-shadow(0px 0px 20px black)',
      },
      avatar: {
        width: "50%",
        border: "2px solid white",
        borderRadius: "100%",
-       filter: 'drop-shadow(0px 0px 20px black)',
      },
      messageForm: {
        width: "100%",
-       filter: 'drop-shadow(0px 0px 20px black)',
      }
  
     }));

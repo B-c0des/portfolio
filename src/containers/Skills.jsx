@@ -39,7 +39,6 @@ const Skills = () => {
             textAlign: 'center',
              userSelect: "none",
               borderRadius: '10px',    
-               filter: 'drop-shadow(0px 0px 5px black)',
           },
           row: {
               display: 'flex',

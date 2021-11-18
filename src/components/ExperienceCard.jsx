@@ -48,8 +48,6 @@ const ExperienceCard = ({data}) => {
     textAlign: 'justify',
         userSelect: "none",
             borderRadius: '10px',
-        
-       filter: 'drop-shadow(0px 0px 10px black)',
   },
  
     }));
@@ -61,7 +59,6 @@ const ExperienceCard = ({data}) => {
         <Fade left duration={1000} exit={true}  distance="40px">
         <ExternalLink href={data.url}>
                 <Tilt
-                style={{filter: "drop-shadow(0px 0px 40px black)"}}
             className="parallax-effect-img"
             tiltMaxAngleX={12}
             tiltMaxAngleY={12}
@@ -74,7 +71,7 @@ const ExperienceCard = ({data}) => {
             <div className={classes.card}  >
                 <Card style={{background: rgb(colorArrays)}} >
                 <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={data.companylogo} style={{ height: '200px', width: "200px" }} onLoad={() => getColorArrays()} alt=""/>
-                    <h5 className="text-white text-center" style={{color: rgb(colorArrays), filter: `drop-shadow(0px 2px 3px '${rgb(colorArrays)})'`}}>{data.company}</h5>
+                    <h5 className="text-white text-center" style={{color: rgb(colorArrays)}}>{data.company}</h5>
 
                 </Card>
                 <CardBody className="py-1">

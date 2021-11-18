@@ -12,7 +12,7 @@ const Education = () => {
         <section
         style={{backgroundColor: "#212122" }} 
         className="section-profile-cover">
-            <Container style={{filter: "drop-shadow(0px 2px 3px white)"}}>
+            <Container>
                 <div className="d-flex p-2 pb-6">
                     <div>
                         <div className="icon-lg rounded-circle text-info">
