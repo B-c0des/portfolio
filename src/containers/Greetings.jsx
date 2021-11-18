@@ -47,7 +47,6 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '0 2px 2px black',
     textAlign: 'justify',
     userSelect: "none",
-    filter: 'drop-shadow(2px 4px 100px white)',
     
   },
   text: {
@@ -60,7 +59,6 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'justify',
     userSelect: "none",
     filter: 'drop-shadow(2px 4px 40px white)',
-    
     textShadow: "0px 8px 8px white ",
   },
   row: {
@@ -85,7 +83,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     borderRadius: "50px",
     flexDirection: "row",
-    filter: 'drop-shadow(0px 10px 4px steelblue)',
     '@media only screen and (max-width: 700px)': {
       flexDirection: "column"
     }
@@ -93,7 +90,6 @@ const useStyles = makeStyles((theme) => ({
   backgroundStyle: {
     backgroundColor: '#80e5ff',
     boxShadow: "inset 0px 0px 50px lightsteelblue, 0px 0px 20px steelblue; ",
-    filter: 'drop-shadow(2px 4px 40px white)',
   },
   title: {
     fontFamily: 'Augestina',
@@ -165,11 +161,11 @@ const Greetings = () => {
                     </Col>
                   
                 
-              </div>
-              {/* SVG separator */}
+            </div>
+            
               <div className="separator separator-bottom separator-skew" style={{filter: "drop-shadow(0px 5px 5px black)"}}>
                 <svg
-                  
+      
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="none"
                   version="1.1"
