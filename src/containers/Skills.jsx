@@ -67,9 +67,24 @@ const Skills = () => {
               icons: {
                filter: 'drop-shadow(0px 10px 10px steelblue)',
                 boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 100px white;`
-              }
-                
+              },                
           },
+              iconContainer: {
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  flexDirection: 'row',
+                  justifyContent: 'center',
+                  margin: '10px',
+                  
+              },
+              iconInformation: {
+                  display: 'flex',
+                  flexDirection: 'column',
+                  margin: '10px',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  filter: 'drop-shadow(0px 10px 10px black)',
+              }
 
  
     }));
@@ -77,6 +92,7 @@ const Skills = () => {
 
      const classes = useStyles();
     return ( 
+        
         <div className={classes.wrapperSkills} >
             <Fade left duration={1000} distance="40px">
                 <div lg="6">
@@ -100,36 +116,32 @@ const Skills = () => {
                         >
                                
             <span className="lead shadow text-white ">{skillsSection.subTitle}</span>
-            
-
-                            
-                <div lg="6" className="text-center" className={ classes.card}>
-                <h3 className="h3 text-info" className={ classes.textStyles}>{skillsSection.title}</h3>
-                    <div className="d-flex justify-content-center flex-wrap mb-3" >
-                    
+               <div lg="6" className="text-center" className={classes.card}>
+                <h3 className="h3 text-info" className={classes.textStyles}>{skillsSection.title}</h3>
+                 <div className={classes.iconContainer} >
                         {
-                            skillsSection.softwareSkills.map((skill) => {
-                                return <Fragment key={skill.skillName}>
-
-                        
-                        <div className=" bg-gradient-white icon icon-shape shadow rounded-circle m-1 "  id={skill.skillName}>
-
+                        skillsSection.softwareSkills.map((skill) => {
+                            return (
+                                <Fragment key={skill.skillName}>
+                        <div className={classes.iconInformation}>
+                        <div className=" bg-gradient-white icon icon-shape shadow rounded-circle"  id={skill.skillName}>
                         <span  className="iconify"   data-icon={skill.fontAwesomeClassname} data-inline="false"></span>
-                        
-                            </div>
-                           
+                           </div >
                             <UncontrolledTooltip
                                 delay={0}
                                 placement="bottom"
                                 target={skill.skillName}
                                 >
+                                </UncontrolledTooltip>
+                                <div>
                                 {skill.skillName}
-                            </UncontrolledTooltip>
-                        
+                                </div>
+                                </div>
                                 </Fragment>
+                            )
                             })
                         }
-                    
+                        </div>
                     {/* <h3 className="text-info">{skillsSection.portfolioName}</h3>
                     <div>
                         
@@ -140,7 +152,7 @@ const Skills = () => {
                         }
                     </div> */}
                  
-                            </div>
+                                    
                                <h3 className={ classes.textStyles}>{skillsSection.github}</h3>
                    
                            <img className="container-fluid  mt-1" src="https://ghchart.rshah.org/brian-reed-software" alt="" />
