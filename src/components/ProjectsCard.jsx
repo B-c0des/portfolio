@@ -26,16 +26,16 @@ const useStyles = makeStyles((theme) => ({
      //   boxShadow:     "inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 20px cyan, -10px 0 20px #f0f, 0px 0 2px cyan",
     borderTop: '1px solid white;',
     '&:hover': {  
-      cursor: 'pointer'},
+    cursor: 'pointer'},
     border: 0,
     fontSize: 16,
-        color: 'steelblue',
-        padding: '10px',
+    color: 'steelblue',
+    padding: '10px',
     margin:'3px',
     textShadow: '0 2px 2px black',
     textAlign: 'justify',
-        userSelect: "none",
-        borderRadius: '10px',
+    userSelect: "none",
+    borderRadius: '10px',
   },
  
 }));
@@ -76,42 +76,37 @@ const ProjectsCard = ({data}) => {
         <Fade left duration={1000} distance="40px">
             <ExternalLink href={data.myLink}>
             <Tilt
-                    className="parallax-effect-img"
-                    tiltMaxAngleX={12}
-                    tiltMaxAngleY={12}
-                    perspective={2000}
-                    transitionSpeed={9500}
-                    scale={1.1}
-                    gyroscope={true}
-                    glareEnable={true}
+             className="parallax-effect-img"
+             tiltMaxAngleX={12}
+             tiltMaxAngleY={12}
+             perspective={2000}
+             transitionSpeed={9500}
+             scale={1.1}
+             gyroscope={true}
+             glareEnable={true}
                 >
-                        <div className={classes.card} >
-                           
+            <div className={classes.card} >
             <div  style={{flex: 1}} style={{color: 'white'}} className="card1 justify-content-center text-center rounded">
-            
-                                <Card className="shadow" style={{ background: rgb(colorArrays) }} >
-                                    
-                <img ref={imgRef} className="" top src={data.companyname} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>
+            <Card className="shadow" style={{ background: rgb(colorArrays) }} >             
+             <img ref={imgRef} className="" top src={data.companyname} style={{borderRadius: "5%" }} onLoad={() => getColorArrays()} alt=""/>
                     {/* data.company  */}
-                </Card>
-                <div >
+            </Card>
+             <div >
                 {/* style={{borderRadius: "100%" }} */}
-                <img className=" bg-black  mb-3 img-center img-fluid" top src={data.companylogo} style={{borderRadius: "10px" }}  alt=""/>
-                                    {data.date}
-                                    
-                    <CardText style={{textShadow: "0 0 10px black"}} className="description my-3 text-left" >
-                        {data.desc}
-                        
-                        <ul>
-                            {
-                                data.descBullets ? 
-                                data.descBullets.map((desc) => {
-                                    return <li key={desc}>{desc}</li>
-                                }) : null
-                            }
-                        </ul>
-                    </CardText>
-                </div>
+            <img className=" bg-black  mb-3 img-center img-fluid" top src={data.companylogo} style={{borderRadius: "10px" }}  alt=""/>
+            {data.date}
+                <CardText style={{ textShadow: "0 0 10px black" }} className="description my-3 text-left" >
+             {data.desc}
+                <ul>
+               {
+                data.descBullets ? 
+                data.descBullets.map((desc) => {
+                return <li key={desc}>{desc}</li>
+                }) : null
+                }
+                </ul>
+                </CardText>
+              </div>
             </div>
             </div>
             </Tilt>
@@ -119,7 +114,6 @@ const ProjectsCard = ({data}) => {
             {/* </ResizableBox>
             </Draggable> */}
         </Fade>
-        
         </Col>
      )
 }

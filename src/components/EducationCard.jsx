@@ -7,6 +7,7 @@ import {
     CardBody,
     Badge
 } from "reactstrap";
+
 import Tilt from 'react-parallax-tilt';
 
 import { Fade } from 'react-reveal';
@@ -19,17 +20,18 @@ const EducationCard = ({education}) => {
         const colorThief = new ColorThief();
         setColorArrays(colorThief.getColor(imgRef.current));
     }
- const useStyles = makeStyles((theme) => ({
-card: {
- background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
-   boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 20px steelblue;`,
+
+const useStyles = makeStyles((theme) => ({
+    card: {
+    background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
+    boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 20px steelblue;`,
     borderTop: '1px solid white;',
     borderRight: '1px solid white',
     '&:hover': {
     cursor: 'pointer'},
     border: 0,
     fontSize: 16,
-     color: 'white',
+    color: 'white',
     padding: '10px',
     margin:'3px',
     textShadow: '0 2px 2px black',
@@ -71,37 +73,37 @@ const [height, setHeight] = useState(800);
         <Fade right duration={1000} distance="40px" >
             <ExternalLink href="https://catalog.pcc.edu/programsanddisciplines/computerscience/">
             <Tilt
-                    className="parallax-effect-img"
-                    tiltMaxAngleX={12}
-                    tiltMaxAngleY={12}
-                    perspective={2000}
-                    transitionSpeed={9500}
-                    scale={1.1}
-                    gyroscope={true}
-                    glareEnable={false}
+              className="parallax-effect-img"
+              tiltMaxAngleX={12}
+              tiltMaxAngleY={12}
+              perspective={2000}
+              transitionSpeed={9500}
+              scale={1.1}
+              gyroscope={true}
+              glareEnable={false}
                 >
             <div  className={classes.card}  >
             <div className={classes.card} className="text-center rounded" style={{background: rgb(colorArrays)}} >
                <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={education.schoolLogo} style={{ width: "200px" }} onLoad={() => getColorArrays()} alt=""/>
-                 <h5 className="text-info text-center text-white" >{education.schoolName}</h5>
-                   </div>
-                        <h5 className="ml-4 text-center" className={classes.subHeader} >{education.subHeader}
-                        <Badge color="info" className={classes.duration}>
-                        {education.duration}
-                        </Badge>
-                        </h5>
-                        <p className="description mt-3 text-white">
-                            {education.desc}
-                            <ul>
-                            {
-                                education.descBullets ? 
-                                education.descBullets.map((desc) => {
-                                    return <li key={desc}>{desc}</li>
-                                }) : null
-                            }
-                        </ul>
-                        </p>
-                    </div>
+                <h5 className="text-info text-center text-white" >{education.schoolName}</h5>
+                </div>
+                <h5 className="ml-4 text-center" className={classes.subHeader} >{education.subHeader}
+                <Badge color="info" className={classes.duration}>
+                {education.duration}
+                </Badge>
+                </h5>
+                <p className="description mt-3 text-white">
+                    {education.desc}
+                     <ul>
+                    {
+                     education.descBullets ? 
+                     education.descBullets.map((desc) => {
+                      return <li key={desc}>{desc}</li>
+                    }) : null
+                    }
+                </ul>
+                </p>
+               </div>
             </Tilt>
             </ExternalLink>
         </Fade>
