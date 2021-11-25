@@ -23,54 +23,51 @@ const EducationCard = ({education}) => {
 card: {
  background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
    boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 20px steelblue;`,
-            borderTop: '1px solid white;',
-      borderRight: '1px solid white',
+    borderTop: '1px solid white;',
+    borderRight: '1px solid white',
     '&:hover': {
-      
-      cursor: 'pointer'},
+    cursor: 'pointer'},
     border: 0,
     fontSize: 16,
-        color: 'white',
-        padding: '10px',
+     color: 'white',
+    padding: '10px',
     margin:'3px',
     textShadow: '0 2px 2px black',
     textAlign: 'justify',
-        userSelect: "none",
-            borderRadius: '10px',
+    userSelect: "none",
+    borderRadius: '10px',
   },
-     subHeader:{
+    subHeader:{
     border: 0,
-        padding: '1px',
+    padding: '1px',
     margin:'3px',
     textShadow: '0 2px 2px black',
     textAlign: 'center',
-        userSelect: "none",
-        borderRadius: '10px',
+    userSelect: "none",
+    borderRadius: '10px',
      },
-     duration:{
+    duration:{
     border: 0,
-        padding: '2px',
-         margin: '3px',
+    padding: '2px',
+    margin: '3px',
     color: `white`,
     textShadow: '0 2px 2px black',
     textAlign: 'center',
-        userSelect: "none",
-         borderRadius: '10px',
-        backgroundColor: `${rgb(colorArrays)}`,
+    userSelect: "none",
+    borderRadius: '10px',
+    backgroundColor: `${rgb(colorArrays)}`,
      }
- 
-    }));
+ }));
     
-
-     const classes = useStyles();
+const classes = useStyles();
     function rgb(values) {
         return typeof values === "undefined" ? null : "rgb(" + values.join(', ') + ")";
     }
 
-    const [width, setWidth] = useState(500);
-    const [height, setHeight] = useState(800);
-    return ( 
+const [width, setWidth] = useState(500);
+const [height, setHeight] = useState(800);
 
+    return (
         <Fade right duration={1000} distance="40px" >
             <ExternalLink href="https://catalog.pcc.edu/programsanddisciplines/computerscience/">
             <Tilt
@@ -84,18 +81,15 @@ card: {
                     glareEnable={false}
                 >
             <div  className={classes.card}  >
-                
-                    <div className={classes.card} className="text-center rounded" style={{background: rgb(colorArrays)}} >
-                      <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={education.schoolLogo} style={{ width: "200px" }} onLoad={() => getColorArrays()} alt=""/>
-                    <h5 className="text-info text-center text-white" >{education.schoolName}</h5>
-                     </div>
-
+            <div className={classes.card} className="text-center rounded" style={{background: rgb(colorArrays)}} >
+               <img ref={imgRef} className=" bg-black rounded-circle mb-3 img-center img-fluid shadow-lg " top src={education.schoolLogo} style={{ width: "200px" }} onLoad={() => getColorArrays()} alt=""/>
+                 <h5 className="text-info text-center text-white" >{education.schoolName}</h5>
+                   </div>
                         <h5 className="ml-4 text-center" className={classes.subHeader} >{education.subHeader}
                         <Badge color="info" className={classes.duration}>
                         {education.duration}
                         </Badge>
                         </h5>
-
                         <p className="description mt-3 text-white">
                             {education.desc}
                             <ul>
@@ -108,7 +102,6 @@ card: {
                         </ul>
                         </p>
                     </div>
-
             </Tilt>
             </ExternalLink>
         </Fade>

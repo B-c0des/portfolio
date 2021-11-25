@@ -23,7 +23,6 @@ const GithubProfileCard = ({ prof }) => {
        borderTop: '1px solid white;',      
       borderRight: '1px solid white',
     '&:hover': {
-      
       cursor: 'pointer'},
     border: 0,
     fontSize: 16,

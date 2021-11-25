@@ -15,9 +15,6 @@ import {Link} from 'react-scroll'
 import { skillsSection } from "../portfolio";
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import { textSpanIsEmpty } from 'typescript';
-
-
-
 const Skills = () => {
       const useStyles = makeStyles((theme) => ({
           card: {
@@ -53,7 +50,6 @@ const Skills = () => {
               flexDirection: 'column',
               textShadow: '0 2px 2px white',
               color: 'white',
-
           },
           wrapperSkills: {
               backgroundColor: "#212122",
@@ -84,9 +80,7 @@ const Skills = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                   filter: 'drop-shadow(0px 10px 10px black)',
-              }
-
- 
+              } 
     }));
     
 
@@ -151,8 +145,6 @@ const Skills = () => {
                             })
                         }
                     </div> */}
-                 
-                                    
                                <h3 className={ classes.textStyles}>{skillsSection.github}</h3>
                    
                            <img className="container-fluid  mt-1" src="https://ghchart.rshah.org/brian-reed-software" alt="" />
