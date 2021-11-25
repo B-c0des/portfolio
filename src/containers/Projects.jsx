@@ -11,28 +11,26 @@ import { Fade } from 'react-reveal';
 
 const Projects = () => {
     return ( 
-      
         <section
         style={{backgroundColor: `#212122` }} 
         className="pb-0 section-profile-cover">
             <Container >
               <Fade bottom duration={1000} distance="40px">
               <div className="d-flex p-2 pb-6" >
-                    <div>
-                        <div className="icon-lg rounded-circle text-info ">
-                        <span class="iconify" data-icon="emojione-v1:laptop-computer"></span>
-
-                        </div>
-                    </div>
-                    <div className="pl-4">
-                        <h4 className="display-3 text-white ">Applications</h4>
-                    </div>
+                <div>
+                <div className="icon-lg rounded-circle text-info ">
+                <span class="iconify" data-icon="emojione-v1:laptop-computer"></span>
+                </div>
+                 </div>
+                 <div className="pl-4">
+                 <h4 className="display-3 text-white ">Applications</h4>
+                  </div>
                 </div>
                 <Row className="row-grid justify-content-center">
-                    {
-                        projects.map(data => {
-                            return <ProjectsCard data={data} />
-                        })
+                 {
+                   projects.map(data => {
+                    return <ProjectsCard data={data} />
+                    })
                     }
                 </Row>
               </Fade>

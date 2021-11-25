@@ -18,28 +18,26 @@ const Experience = () => {
             <Container >
               <Fade left duration={1000} distance="40px">
               <div className=" d-flex p-2 pb-6  " style={{ filter: "drop-shadow(0px 2px 3px white)" }}>
-                    <div>
-                        <div className="icon-lg rounded-circle text-info">
-                        <span class="iconify" data-icon="emojione:card-index-dividers"></span>
-
-                        </div>
-                    </div>
-                    <div className="pl-4">
-                        <h4 className="display-3 text-white">Experience</h4>
-                    </div>
+              <div>
+              <div className="icon-lg rounded-circle text-info">
+              <span class="iconify" data-icon="emojione:card-index-dividers"></span>
+               </div>
+               </div>
+               <div className="pl-4">
+              <h4 className="display-3 text-white">Experience</h4>
+              </div>
               </div>
                 <Row className="row-grid align-items-center justify-content-center">
-                    {
-                        experience.map(data => {
-                            return <ExperienceCard data={data} />
-                        })
-                    }
-                </Row>
+                {
+                experience.map(data => {
+                  return <ExperienceCard data={data} />
+                   })
+                }
+              </Row>
               </Fade>
             </Container>
             <div className="">
               <svg
-              
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
                 version="1.1"

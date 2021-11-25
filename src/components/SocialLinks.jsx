@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
   twitter: {
   background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
      boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 1px -1px 4px white;',
-  
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
@@ -19,19 +18,18 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -1px 1px 4px white, 2px -2px 4px steelblue;',
       marginTop: '',
       filter: 'drop-shadow(0px 0px 5px white)'},
-    border: 0,
-    fontSize: 16,
-    borderRadius: 5,
-    color: 'white',
-    height: 48,
-    padding: '0 30px',
-    margin:'3px',
-    textShadow: '0 2px 2px black'
+     border: 0,
+     fontSize: 16,
+     borderRadius: 5,
+     color: 'white',
+     height: 48,
+     padding: '0 30px',
+     margin:'3px',
+     textShadow: '0 2px 2px black'
   },
-  linkedin: {
-  background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
-     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
-  
+    linkedin: {
+    background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
+    boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
@@ -49,15 +47,14 @@ const useStyles = makeStyles((theme) => ({
     textShadow: '0 2px 2px black'
   },
   github: {
-    background: 'linear-gradient(85deg, #1a1a1a 10%, #005266 80%, white 120%)',
-  boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
-  
+     background: 'linear-gradient(85deg, #1a1a1a 10%, #005266 80%, white 120%)',
+     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;', 
      '&:hover': {
       background: 'linear-gradient(145deg,  #1a1a1a 10%, #008fb3 90%)',
       color: '#fff',
-       boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -2px 2px 4px white, 2px -2px 4px steelblue;',
+      boxShadow: 'inset 1px -0px 4px 0px white, 0 0 5px -1px white, -2px 2px 4px white, 2px -2px 4px steelblue;',
       marginTop: '',
-          textShadow: '0 2px 10px cyan',
+      textShadow: '0 2px 10px cyan',
     filter: 'drop-shadow(0px 0px 5px white)',
     padding:'5px 30px'},
     border: 0,
@@ -140,17 +137,13 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-
 const SocialLinks = () => {
-  const classes = useStyles();
-  const handleClick = (e, path) => {
+const classes = useStyles();
+const handleClick = (e, path) => {
    e.preventDefault()
   window.open(`${path}`, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1000,height=1000");
   };
-
-
-    return ( 
-      
+    return (   
       <div className={classes.buttonCenter}>
         <Button type="button" onClick={(e) => handleClick(e, socialLinks.twitter)} className={classes.twitter}>
       <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-twitter" />
@@ -161,7 +154,6 @@ const SocialLinks = () => {
         <Button type="button" onClick={(e) => handleClick(e, socialLinks.github)} className={classes.github}>
         <i style={{filter: 'drop-shadow(0px 0px 5px white)'}} className="fa fa-github" />
         </Button>
-        
         <Button type="button"  onClick={(e) => handleClick(e, socialLinks.resume)} className={classes.resume}>
          <i style={{filter: 'drop-shadow(0px 0px 5px white)'}}>Resume</i>
         </Button>
@@ -180,7 +172,4 @@ const SocialLinks = () => {
       </div>
      );
 }
- 
-
-
 export default SocialLinks;

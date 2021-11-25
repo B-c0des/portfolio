@@ -13,14 +13,12 @@ import ReactSnapScroll from 'react-snap-scroll';
 
 const App = () => {
     return ( 
-        
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact render={props => (
                     <>
                        <Navigation />
                         <Greetings />
-                        
                         <Projects />
                         <Skills />
                         {/* <Proficiency /> */}
