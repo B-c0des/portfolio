@@ -97,7 +97,6 @@ const useStyles = makeStyles((theme) => ({
     textShadow: "0px 8px 8px white ",
   }
 
- 
 }));
 //style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}
 
@@ -138,34 +137,27 @@ const Greetings = () => {
                 <span />
                 <span />
               </div>
-              <div className={classes.wrapperSkills} >
-                  
-                          
+              <div className={classes.wrapperSkills} >          
                 <div className={classes.textStyles}>
                 <p className="lead text-center nav-title" className={ classes.description} >
-                      <h1 className="display- bg-black border-1 handle text-center" className={classes.title}>
-                      {greetings.title}
-                        </h1 >
-                        <h5 className={classes.text}>
-                          <hr style={{margin: "0px"}}/>
-                          {greetings.description}
-                      <h1 className={classes.textStyles}>
-                      <SocialLinks />
-                      </h1>
-                        </h5>
-                      </p>
-
-                     </div>
+                  <h1 className="display- bg-black border-1 handle text-center" className={classes.title}>
+                  {greetings.title}
+                  </h1 >
+                 <h5 className={classes.text}>
+                     <hr style={{margin: "0px"}}/>
+                    {greetings.description}
+                  <h1 className={classes.textStyles}>
+                    <SocialLinks />
+                  </h1>
+                  </h5>
+                  </p>
+                  </div>
                     <Col lg="6">
                       <GreetingLottie  animationData={code}/>
                     </Col>
-                  
-                
-            </div>
-            
+                  </div>
               <div className="separator separator-bottom separator-skew" style={{filter: "drop-shadow(0px 5px 5px black)"}}>
                 <svg
-      
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="none"
                   version="1.1"
@@ -174,7 +166,7 @@ const Greetings = () => {
                   y="0"
                 >
                   <polygon
-                  style={{fill: "#212122"}}
+                  style={{fill: "black"}}
                     points="2560 0 2560 100 0 100"
                   />
                 </svg>

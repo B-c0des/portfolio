@@ -10,7 +10,7 @@ import {
 const Education = () => {
     return ( 
         <section
-        style={{backgroundColor: "#212122" }} 
+        style={{backgroundColor: "black" }} 
         className="section-profile-cover">
         <Container>
         <div className="d-flex p-2 pb-6">
@@ -41,7 +41,7 @@ const Education = () => {
              y="0"
            >
          <polygon
-            style={{fill: "#212122"}}
+            style={{fill: "black"}}
             points="2560 0 2560 100 0 100"
            />
             </svg>

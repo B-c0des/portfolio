@@ -13,7 +13,7 @@ const Experience = () => {
     return ( 
       <div style={{backgroundColor: "black"}}>
         <section
-        style={{backgroundColor: "#212122"}} 
+        style={{backgroundColor: "black"}} 
         className="section pb-0 section-profile-cover"  >
             <Container >
               <Fade left duration={1000} distance="40px">
@@ -46,7 +46,7 @@ const Experience = () => {
                 y="0"
               >
                 <polygon
-                  style={{fill: "#212122"}}
+                  style={{fill: "black"}}
                   points="2560 0 2560 100 0 100"
                 />
               </svg>

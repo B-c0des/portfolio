@@ -25,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
      height: 48,
      padding: '0 30px',
      margin:'3px',
-     textShadow: '0 2px 2px black'
+    textShadow: '0 2px 2px black',
+    border: "1px solid white",
   },
     linkedin: {
     background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
@@ -44,7 +45,9 @@ const useStyles = makeStyles((theme) => ({
     height: 48,
     padding: '0 30px',
     margin:'3px',
-    textShadow: '0 2px 2px black'
+    textShadow: '0 2px 2px black',
+    border: "1px solid white",
+    
   },
   github: {
      background: 'linear-gradient(85deg, #1a1a1a 10%, #005266 80%, white 120%)',
@@ -59,12 +62,13 @@ const useStyles = makeStyles((theme) => ({
     padding:'5px 30px'},
     border: 0,
     fontSize: 16,
-    borderRadius: 3,
+    borderRadius: 5,
     color: 'white',
     height: 48,
     padding: '0 30px',
     margin:'2px',
-    textShadow: '0 2px 2px black'
+    textShadow: '0 2px 2px black',
+    border: "1px solid white",
   },
   resume: {
   background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
@@ -84,7 +88,8 @@ const useStyles = makeStyles((theme) => ({
     height: 48,
     padding: '0 30px',
     margin:'3px',
-    textShadow: '0 2px 2px black'
+    textShadow: '0 2px 2px black',
+    border: "1px solid white",
   },
   contact: {
   background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
@@ -107,6 +112,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '-6px',
     textShadow: '0 2px 2px black',
     justifyContent: 'center',
+    border: "1px solid white",
   },
   location: {
     background: 'linear-gradient(80deg, #2196F3 30%, #80e5ff 90%)',

@@ -43,7 +43,7 @@ const GithubProfileCard = ({ prof }) => {
 
     return ( 
        <Card className="section pb-0 section-profile-cover" 
-        style={{backgroundColor: "#212122" }}
+        style={{backgroundColor: "black" }}
         >
        <Container className="" style={{filter: "drop-shadow(0px 0px 50px steelblue )"}}>
        <div className="p-2" style={{filter: "drop-shadow(0px 0px 10px black)"}}>

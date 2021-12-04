@@ -52,7 +52,7 @@ const Skills = () => {
              color: 'white',
           },
           wrapperSkills: {
-              backgroundColor: "#212122",
+              backgroundColor: "black",
               padding: "50px",
               margin: "top",
               display: "flex",
