@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     top: '9px',
     justifyContent: 'center',
     alignItems: 'center',
-      color: "black"
+    color: "black"
     
 //    backgroundImage: "linearGradient (top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top,rgba(255, 255, 255, 0),rgba(255, 255, 255, .15) 50%,rgba(255, 255, 255, 0) 50%,rgba(255, 255, 255, 0))"
     },
@@ -79,17 +79,23 @@ const useStyles = makeStyles((theme) => ({
     },
   wrapperSkills: {
     padding: "50px",
-    margin: "top",
+    marginTop: "50px",
+    marginBottom:"50px",
     display: "flex",
     borderRadius: "50px",
     flexDirection: "row",
-    '@media only screen and (max-width: 700px)': {
+    justifyContent: "center",
+    alignItems: "center",
+    '@media only screen and (max-width: 800px)': {
       flexDirection: "column"
     }
   },
   backgroundStyle: {
     backgroundColor: '#80e5ff',
     boxShadow: "inset 0px 0px 50px lightsteelblue, 0px 0px 20px steelblue; ",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
   },
   title: {
     fontFamily: 'Augestina',
@@ -117,9 +123,6 @@ const Greetings = () => {
     <Fade top duration={1000} distance="40px">
         <main ref="main"  >
         <div className={classes.backgroundStyle} >
-             <section 
-            style={{backgroundImage: `url("")`, filter: 'drop-shadow(0px 0px 12px white)'}} 
-            className="section section-lg section-shaped pb-5 section-profile-cover">
               <div >
               <span />
                 <span />
@@ -136,7 +139,9 @@ const Greetings = () => {
                 <span />
                 <span />
                 <span />
-              </div>
+          </div>
+          
+          <Container>
               <div className={classes.wrapperSkills} >          
                 <div className={classes.textStyles}>
                 <p className="lead text-center nav-title" className={ classes.description} >
@@ -157,6 +162,7 @@ const Greetings = () => {
                     </Col>
                   </div>
               <div className="separator separator-bottom separator-skew" style={{filter: "drop-shadow(0px 5px 5px black)"}}>
+              
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="none"
@@ -171,9 +177,10 @@ const Greetings = () => {
                   />
                 </svg>
               </div>
-            </section>
+                </Container>
             {/* 1st Hero Variation */}
           </div>
+          
         </main>
         </Fade>
    );

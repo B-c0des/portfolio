@@ -45,7 +45,7 @@ const GithubProfileCard = ({ prof }) => {
        <Card className="section pb-0 section-profile-cover" 
         style={{backgroundColor: "black" }}
         >
-       <Container className="" style={{filter: "drop-shadow(0px 0px 50px steelblue )"}}>
+       <Container className="" style={{filter: "drop-shadow(0px 0px 50px steelblue)" , justifyContent: "center"}}>
        <div className="p-2" style={{filter: "drop-shadow(0px 0px 10px black)"}}>
        <Row className="justify-content-center">
         <Col className={classes.card} lg="4">

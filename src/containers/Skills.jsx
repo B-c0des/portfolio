@@ -56,7 +56,8 @@ const Skills = () => {
               padding: "50px",
               margin: "top",
               display: "flex",
-              flexDirection: "row",
+            flexDirection: "row",
+              justifyContent: "center",
              '@media only screen and (max-width: 700px)': {
               flexDirection: "column"
               },
