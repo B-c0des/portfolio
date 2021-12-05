@@ -101,6 +101,12 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Augestina',
     fontSize: "28",
     textShadow: "0px 8px 8px white ",
+  },
+  svgStyling: {
+    '@media only screen and (max-width: 800px)': {
+      display: "none",
+
+    }
   }
 
 }));
@@ -163,7 +169,8 @@ const Greetings = () => {
                   </div>
               <div className="separator separator-bottom separator-skew" style={{filter: "drop-shadow(0px 5px 5px black)"}}>
               
-                <svg
+              <svg
+                  className={classes.svgStyling}
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="none"
                   version="1.1"
