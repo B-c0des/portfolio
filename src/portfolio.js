@@ -16,7 +16,7 @@ export const greetings = {
   "name": "Brian Reed",
   "title": "Brian Reed",
   // "description": "  I'm a Software Engineer focused on Full-Stack Web Development. I am proficient in both Front-End and Back-End development. I have knowledge in Javascript, React, Node.js, MongoDB, CSS, HTML and GitHub. As a software engineer I aspire to help bring projects to life and demonstrate my commitment to developing world-class software solutions for companies and customers. I am also open to learning new languages, libraries and frameworks whichever enhances customers experience. Creating Cool Cross Platform Mobile Apps is my passion.",
-  "description": "I am a Software Engineer with a focus on Web Development using Javascript, React, Express, Node, and MongoDB. I have experience with styling using CSS and styled Components using Material UI. I enjoy learning new languages, Libraries or Frameworks. Please reach out to me if you have any questions , or would like to hire me as a Web Developer. Thanks!",
+  "description": "I am a software engineer with a focus on web development using Javascript, React, Express, Node, and MongoDB. I have experience with styling using CSS and styling components using Material UI. I enjoy learning new languages, libraries, or frameworks. Please reach out to me if you have any questions, or would like to hire me as a web developer. Thanks!",
   "resumeLink": "contact.me"
 }
 
@@ -161,7 +161,7 @@ export const experience = [{
     companylogo: at100devs,
     url: "https://www.linkedin.com/company/100devs/",
     date: '2020 – Present',
-    desc: ' Whether you need a pogressive web application, or a full-stack web application, we develop it at 100 Devs through collaboration with over 100 developers. Creating unique custom web apps for customers and clients is what we do. ',
+    desc: 'Whether you need a progressive web application or a full-stack web application, we develop it at 100 Devs through collaboration with over 100 developers. Creating unique custom web apps for customers and clients is what we do.',
     descBullets: [
       'JavaScript',
       'React',
@@ -183,7 +183,7 @@ export const experience = [{
     url: "https://www.linkedin.com/company/brian-reed-web-solutions/",
     date: '2017 – Present',
     //desc: ' As a software engineer I enjoy creating responsive customer focused applications to demonstrate my commitment to developing software solutions for companies and customers. I am a Web Developer with a focus on React, Javascript, Node, Mongo and Express. I also have experience with styling using CSS and custom styled Components using Material UI. I am also open to learning new languages, libraries and frameworks whichever enhances the customers experience.',
-    desc: ' I work with local clients and businesses creating customer focused, user friendly, responsive websites for many different types of businesses. Iterative improvement researching various NPM libraries and frameworks for customer focused websites.',
+    desc: 'I create customer-focused, user-friendly, responsive websites for small and medium-sized businesses. Iterative improvement researching software technologies for customer-focused websites. ',
     descBullets: [
       'JavaScript',
       'React',
@@ -205,7 +205,7 @@ export const experience = [{
     companylogo: mayflower,
     url: "https://www.linkedin.com/company/truckdriver/",
     date: '2015 - 2017',
-    desc: ' Managing routes to make sure customer time needs are met. Driving a Semi-Truck to customer locations safely. Moving customers personal items who are relocating for work purposes. Using software to inventory and load items carefully into a trailer for transport. Managing teams to coordinate relocation.',
+    desc: 'Managing routes to make sure customer time needs are met. Driving a Semi-Truck to customer locations safely. Moving customers personal items who are relocating for work purposes. Using software to inventory and load items carefully into a trailer for transport. Managing teams to coordinate relocation.',
     descBullets: [
       'Using electronic time management software.',
       'Using GPS software to navigate route.',
@@ -221,7 +221,7 @@ export const projects = [{
     companylogo: socialNetworkingApp,
     appName: 'Social Again',
     myLink: "https://social-again.herokuapp.com/",
-    desc: ' A social networking application for software technology enthusiasts to be social again. It allows users to create a profile, upload a photo, share software tech stack, share contact information and share comments. ',
+    desc: 'A social networking application. Technology enthusiasts can be social again. It allows users to create a profile, upload a photo, and share the software tech stack, contact information, and comments.  ',
     descBullets: [
       'JavaScript',
       'Node',
