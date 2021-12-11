@@ -1,6 +1,5 @@
 import React from 'react';
 import build from "../assets/lottie/build";
-
 import { SkillBars } from "../portfolio";
 import {
     Container,
@@ -8,11 +7,8 @@ import {
     Progress,
     Col
 } from "reactstrap";
-
 import { Fade } from 'react-reveal';
-
 import GreetingLottie from "../components/DisplayLottie";
-
 const Proficiency = () => {
     return ( 
         <Container className="section section-lg">
@@ -42,5 +38,4 @@ const Proficiency = () => {
         </Container>
      );
 }
- 
 export default Proficiency;

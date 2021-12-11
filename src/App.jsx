@@ -10,7 +10,6 @@ import Projects from './containers/Projects';
 import GithubProfile from './containers/GithubProfile'
 import ReactSnapScroll from 'react-snap-scroll';
 
-
 const App = () => {
     return ( 
         <BrowserRouter>
@@ -25,7 +24,6 @@ const App = () => {
                         <Education />
                         <Experience />
                         <GithubProfile />
-                    
                     </>
                 )}/>
             </Switch>

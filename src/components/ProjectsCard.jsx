@@ -40,23 +40,20 @@ const useStyles = makeStyles((theme) => ({
  
 }));
 
-
 const ProjectsCard = ({data}) => {
     const [colorArrays, setColorArrays] = useState([]);
     const imgRef = createRef();
-
     function getColorArrays() {
         const colorThief = new ColorThief();
         setColorArrays(colorThief.getColor(imgRef.current));
     }
-
     function rgb(values) {
         return typeof values === "undefined" ? null : "rgb(" + values.join(', ') + ")";
-    }
+  }
+  
     const [width, setWidth] = useState(500);
     const [height, setHeight] = useState(800);
     const classes = useStyles();
-
     return ( 
         <Col lg="4">
         {/* <Draggable

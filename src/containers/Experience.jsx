@@ -15,9 +15,9 @@ const Experience = () => {
         <section
         style={{backgroundColor: "black"}} 
         className="section pb-0 section-profile-cover"  >
-            <Container >
+            <Container>
               <Fade left duration={1000} distance="40px">
-              <div className=" d-flex p-2 pb-6  " style={{ filter: "drop-shadow(0px 2px 3px white)" }}>
+              <div className="d-flex p-2 pb-6" style={{ filter: "drop-shadow(0px 2px 3px white)" }}>
               <div>
               <div className="icon-lg rounded-circle text-info">
               <span class="iconify" data-icon="emojione:card-index-dividers"></span>
