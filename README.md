@@ -15,6 +15,8 @@
 </p>
 
 
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
+
 ## Technologies Used 
 
 - [React](https://reactjs.org/)
@@ -25,8 +27,12 @@
 - [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
 - [react-headroom](https://github.com/KyleAMathews/react-headroom)
 
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
+
 ## Illustrations
 - [Lottie File Source](https://lottiefiles.com)
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
 
 ## For the Future
 
