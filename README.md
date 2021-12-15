@@ -33,6 +33,8 @@
 
 - Enable Dark Mode
 
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
+
 ```Live Address```
 <p align="right">Copy Link Here 👇 </p>
 
