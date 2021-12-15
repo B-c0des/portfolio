@@ -1,15 +1,15 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
   <h3 align="center">  
-    <a href="https://fizzbuzz-checker.herokuapp.com/" target="_blank">
+    <a href="https://brian-reed.me" target="_blank">
       <img src="https://api.apiflash.com/v1/urltoimage?access_key=d34cca0d6f784ec2a6abcb263f308015&url=http://https://brian-reed.me/"></img>
    
 </h3>
 
   <p align="center">
-    Fizz Buzz Checker!
+    My Profile
     <br/>
-      ### To view a live example, **[click here](https://brian-reed.me//)**.
+      (view live demo)
      </a>
     <br/>
 </p>
