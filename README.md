@@ -38,3 +38,18 @@
 
 - Enable Dark Mode
 
+
+
+```Live Address```
+<p align="right">Copy Link Here 👇 </p>
+
+```
+https://brian-reed.me
+```
+
+```Repository```
+<p align="right">Copy Link Here 👇 </p>
+
+```
+https://github.com/brian-reed-software/portfolio
+```
