@@ -29,16 +29,9 @@
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
 
-## Illustrations
-- [Lottie File Source](https://lottiefiles.com)
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
-
 ## For the Future
 
 - Enable Dark Mode
-
-
 
 ```Live Address```
 <p align="right">Copy Link Here 👇 </p>
