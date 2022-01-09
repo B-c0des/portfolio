@@ -4,11 +4,8 @@ import {
     Container,
     Row,
 } from "reactstrap";
-
 import { Fade } from 'react-reveal';
-
 import ExperienceCard from "../components/ExperienceCard";
-
 const Experience = () => {
     return ( 
       <div style={{backgroundColor: "black"}}>
@@ -55,5 +52,4 @@ const Experience = () => {
           </div>
      );
 }
- 
 export default Experience;

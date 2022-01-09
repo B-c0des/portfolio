@@ -18,14 +18,14 @@ import { textSpanIsEmpty } from 'typescript';
 const Skills = () => {
       const useStyles = makeStyles((theme) => ({
           card: {
-             background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-             display: 'flex',
-              alignItems: 'space-between',
-              justifyContent: 'space-between',
-              flexDirection: "column",
-              boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 100px steelblue;`,
-              borderTop: '1px solid white',
-              borderRight: '1px solid white',
+            background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
+            display: 'flex',
+            alignItems: 'space-between',
+            justifyContent: 'space-between',
+            flexDirection: "column",
+            boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 100px steelblue;`,
+            borderTop: '1px solid white',
+            borderRight: '1px solid white',
             '&:hover': {
             cursor: 'pointer'},
             border: 0,
@@ -56,7 +56,7 @@ const Skills = () => {
               padding: "50px",
               margin: "top",
               display: "flex",
-            flexDirection: "row",
+              flexDirection: "row",
               justifyContent: "center",
              '@media only screen and (max-width: 700px)': {
               flexDirection: "column"
@@ -65,7 +65,7 @@ const Skills = () => {
                filter: 'drop-shadow(0px 10px 10px steelblue)',
                boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 100px white;`
               },                
-          },
+            },
               iconContainer: {
                 display: 'flex',
                 flexWrap: 'wrap',
@@ -73,7 +73,7 @@ const Skills = () => {
                 justifyContent: 'center',
                 margin: '10px',
                   
-              },
+            },
               iconInformation: {
                 display: 'flex',
                 flexDirection: 'column',
@@ -150,5 +150,4 @@ const classes = useStyles();
         </div>
      );
 }
- 
 export default Skills;

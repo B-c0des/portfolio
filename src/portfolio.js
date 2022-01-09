@@ -1,5 +1,4 @@
 import emoji from 'react-easy-emoji';
-
 import at100devs from './assets/img/icons/common/100devs.jpg'
 import socialNetworkingApp from './assets/img/icons/common/sna.jpg'
 import fizzBuzz from './assets/img/icons/common/fizzbuzz.jpg'
@@ -10,8 +9,6 @@ import brws from './assets/img/icons/common/brian-reed-web-solutions.png'
 import truckDriver from './assets/img/icons/common/truckdriver.png'
 import schoollogo from './assets/img/icons/common/school-logo.png'
 let myLink = "http://at100devs.herokuapp.com/"
-
-
 export const greetings = {
   "name": "Brian Reed",
   "title": "Brian Reed",
@@ -19,15 +16,12 @@ export const greetings = {
   "description": "I am a software engineer with a focus on web development using Javascript, React, Express, Node, and MongoDB. I have experience with styling using CSS and styling components using Material UI. I enjoy learning new languages, libraries, or frameworks. Please reach out to me if you have any questions, or would like to hire me as a web developer. Thanks!",
   "resumeLink": "contact.me"
 }
-
 export const openSource = {
   githubUserName: 'brian-reed-software',
 };
-
 export const contact = {
 
 }
-
 export const socialLinks = {
   "facebook": "",
   "instagram": "",
@@ -36,7 +30,6 @@ export const socialLinks = {
   "linkedin": "https://www.linkedin.com/in/brian-reed-software/",
   "resume": "https://bit.ly/brian-reed-resume-"
 }
-
 export const skillsSection = {
   title: 'Software Technologies',
   portfolioName: '⚡Portfolio Built With⚡',
@@ -54,12 +47,10 @@ export const skillsSection = {
     emoji('React Router Dom'),
     emoji('React Parallax'),
     emoji('React Classnames'),
-
     // emoji(
     //   '⚡ Integration of Firebase/ AWS / Digital Ocean'
     // ),
   ],
-
   softwareSkills: [{
       skillName: 'JavaScript',
       fontAwesomeClassname: 'logos:javascript',
@@ -127,8 +118,6 @@ export const skillsSection = {
 
   ],
 }
-
-
 export const SkillBars = [{
     Stack: 'Frontend/Design', //Insert stack or technology you have experience in
     progressPercentage: '90', //Insert relative proficiency in percentage
@@ -142,7 +131,6 @@ export const SkillBars = [{
     progressPercentage: '60',
   },
 ]
-
 export const educationInfo = [{
   schoolLogo: schoollogo,
   schoolName: 'Portland Community College',
@@ -154,29 +142,23 @@ export const educationInfo = [{
     // '',
   ],
 }, ]
-
-export const experience = [{
-    role: 'Software Engineer',
-    company: '100 Devs',
-    companylogo: at100devs,
-    url: "https://www.linkedin.com/company/100devs/",
-    date: '2020 – Present',
-    desc: 'Whether you need a progressive web application or a full-stack web application, we develop it at 100 Devs through collaboration with over 100 developers. Creating unique custom web apps for customers and clients is what we do.',
+export const experience = [
+    {
+    role: 'Route Manager',
+    company: 'Truck Driver',
+    companylogo: truckDriver,
+    url: "https://www.linkedin.com/company/truckdriver/",
+    date: '2015 - 2017',
+    desc: 'Managing routes to make sure customer time needs are met. Driving a Semi-Truck to customer locations safely. Moving customers personal items who are relocating for work purposes. Using software to inventory and load items carefully into a trailer for transport. Managing teams to coordinate relocation.',
     descBullets: [
-      'JavaScript',
-      'React',
-      'Node',
-      'Styled Componants',
-      'Material UI',
-      'Mongoose',
-      'Express',
-      'NoSQL / Mongo Database',
-      'EJS',
-      'CSS',
-      'HTML'
+      'Using time management software on a computer.',
+      'Navigating a route using GPS software.',
+      'Inventories are inventoried using inventory software.',
+      'Clear communication with relocation coordinators.',
     ],
   },
-  {
+
+    {
     role: 'Web Developer',
     company: 'Brian Reed Web Solutions',
     companylogo: brws,
@@ -198,24 +180,31 @@ export const experience = [{
       'HTML'
     ],
   },
-
+  
   {
-    role: 'Route Manager',
-    company: 'Truck Driver',
-    companylogo: truckDriver,
-    url: "https://www.linkedin.com/company/truckdriver/",
-    date: '2015 - 2017',
-    desc: 'Managing routes to make sure customer time needs are met. Driving a Semi-Truck to customer locations safely. Moving customers personal items who are relocating for work purposes. Using software to inventory and load items carefully into a trailer for transport. Managing teams to coordinate relocation.',
+  
+    role: 'Software Engineer',
+    company: '100 Devs',
+    companylogo: at100devs,
+    url: "https://www.linkedin.com/company/100devs/",
+    date: '2020 – Present',
+    desc: 'Whether you need a progressive web application or a full-stack web application, we develop it at 100 Devs through collaboration with over 100 developers. Creating unique custom web apps for customers and clients is what we do.',
     descBullets: [
-      'sing time management software on a computer.',
-      'Navigating a route using GPS software.',
-      'Inventories are inventoried using inventory software.',
-      'Clear communication with relocation coordinators.',
+      'JavaScript',
+      'React',
+      'Node',
+      'Styled Componants',
+      'Material UI',
+      'Mongoose',
+      'Express',
+      'NoSQL / Mongo Database',
+      'EJS',
+      'CSS',
+      'HTML'
     ],
   },
 
 ]
-
 export const projects = [{
     companyname: socialagain,
     companylogo: socialNetworkingApp,
