@@ -94,7 +94,8 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "inset 0px 0px 50px black, 0px 0px 20px steelblue; ",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    backgroundColor: "#000000",
   },
   title: {
     fontFamily: 'Augestina',
@@ -106,7 +107,7 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
     card: {
-      background: 'linear-gradient(80deg,black -00%, steelblue 40%, #80e5ff 80%, white 100%)',
+      background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
       boxShadow: `inset 2px 00px 150px -100px ,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
       borderTop: '1px solid white;',      
       borderRight: '1px solid white',

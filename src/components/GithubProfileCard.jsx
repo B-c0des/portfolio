@@ -9,9 +9,11 @@ import Tilt from 'react-parallax-tilt';
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import Resume from "../components/Resume";
 const GithubProfileCard = ({ prof }) => {
-   const useStyles = makeStyles((theme) => ({
+  const useStyles = makeStyles((theme) => ({
+     
     card: {
-      background: 'linear-gradient(80deg,black -00%, steelblue 40%, #80e5ff 80%, white 100%)',
+      background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
+  
       boxShadow: `inset 2px 00px 150px -100px ,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
       borderTop: '1px solid white;',      
       borderRight: '1px solid white',
@@ -39,7 +41,14 @@ const GithubProfileCard = ({ prof }) => {
      messageForm: {
       width: "100%",
      },
-    }));
+     textName: {
+       display: "flex",
+       justifyContent: "center",
+       color: "white",
+       filter: "drop-shadow(0px 0px 50px steelblue)",
+     }
+   }));
+  
   const classes = useStyles();
     return ( 
        <Card className="section pb-0 section-profile-cover" 
@@ -63,7 +72,7 @@ const GithubProfileCard = ({ prof }) => {
           <Resume />
           </Col>
            <Col lg="8" className={classes.messageForm} >
-           <h2 id="contact" className="text-white" style={{filter: "drop-shadow(0px 3px 5px black )", textAlign: 'center' }}>
+           <h2 id="contact" className={classes.textName}>
             Reach Out to me
            </h2>
           <div data-netlify-recaptcha="true" data-netlify="true" class="mighty-form" id="mf-e9b1f4b8-0f47-41c1-a114-0c1eac9921d5" ></div> 
@@ -74,4 +83,5 @@ const GithubProfileCard = ({ prof }) => {
         </Card>
      );
 }
+
 export default GithubProfileCard;
