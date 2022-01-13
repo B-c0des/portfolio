@@ -17,7 +17,6 @@ import {
 } from "reactstrap"; 
 import ColorThief from "colorthief";
 import BackdropFilter from "react-backdrop-filter";
-
 import { Fade } from 'react-reveal';
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -36,10 +35,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'justify',
     userSelect: "none",
     borderRadius: '10px',
+    filter: "drop-shadow(0px 0px 50px steelblue)",
   },
- 
 }));
-
 const ProjectsCard = ({data}) => {
     const [colorArrays, setColorArrays] = useState([]);
     const imgRef = createRef();
@@ -50,7 +48,6 @@ const ProjectsCard = ({data}) => {
     function rgb(values) {
         return typeof values === "undefined" ? null : "rgb(" + values.join(', ') + ")";
   }
-  
     const [width, setWidth] = useState(500);
     const [height, setHeight] = useState(800);
     const classes = useStyles();
@@ -114,5 +111,4 @@ const ProjectsCard = ({data}) => {
         </Col>
      )
 }
- 
 export default ProjectsCard;

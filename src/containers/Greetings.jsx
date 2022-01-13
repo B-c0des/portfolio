@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
     top: '9px',
     justifyContent: 'center',
     alignItems: 'center',
-    color: "black"
+    color: "black",
+    
 //    backgroundImage: "linearGradient (top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top,rgba(255, 255, 255, 0),rgba(255, 255, 255, .15) 50%,rgba(255, 255, 255, 0) 50%,rgba(255, 255, 255, 0))"
     },
     border: 0,
@@ -85,11 +86,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     '@media only screen and (max-width: 800px)': {
       flexDirection: "column"
-    }
+    },
+     filter: "drop-shadow(0px 0px 50px steelblue)"
   },
   backgroundStyle: {
-    backgroundColor: 'steelblue',
-    boxShadow: "inset 0px 0px 50px lightsteelblue, 0px 0px 20px steelblue; ",
+    backgroundColor: 'Augestina',
+    boxShadow: "inset 0px 0px 50px black, 0px 0px 20px steelblue; ",
     display: "flex",
     justifyContent: "center",
     alignItems: "center"
@@ -102,7 +104,37 @@ const useStyles = makeStyles((theme) => ({
   svgStyling: {
     '@media only screen and (max-width: 800px)': {
       display: "none",
-    }
+    },
+    card: {
+      background: 'linear-gradient(80deg,black -00%, steelblue 40%, #80e5ff 80%, white 100%)',
+      boxShadow: `inset 2px 00px 150px -100px ,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
+      borderTop: '1px solid white;',      
+      borderRight: '1px solid white',
+    '&:hover': {
+      cursor: 'pointer'},
+      border: 0,
+      fontSize: 16,
+      color: 'white',
+      padding: '10px',
+      textShadow: '0 2px 2px black',
+      textAlign: 'center',
+      userSelect: "none",
+      borderRadius: '10px',
+      height: '60%',
+      
+     },
+     avatar: {
+      width: "50%",
+      border: "2px solid white",
+      borderRadius: "100%",
+     },
+     messageForm: {
+      width: "100%",
+    },
+     glowingCard:{
+       filter: "drop-shadow(0px 0px 50px steelblue)",
+       justifyContent: "center"
+     },
   }
 }));
 //style={{filter: "drop-shadow(0px 0px 70px white)", textShadow: "0px 2px 2px black", textAlign: 'justify'}}

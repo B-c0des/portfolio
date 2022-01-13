@@ -7,11 +7,8 @@ import {
     CardBody,
     Badge
 } from "reactstrap";
-
 import Tilt from 'react-parallax-tilt';
-
 import { Fade } from 'react-reveal';
-
 const EducationCard = ({education}) => {
     const [colorArrays, setColorArrays] = useState([]);
     const imgRef = createRef();
@@ -20,12 +17,12 @@ const EducationCard = ({education}) => {
         const colorThief = new ColorThief();
         setColorArrays(colorThief.getColor(imgRef.current));
     }
-
 const useStyles = makeStyles((theme) => ({
     card: {
     background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
     boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 20px steelblue;`,
     borderTop: '1px solid white;',
+    filter: "drop-shadow(0px 0px 50px steelblue)",
     borderRight: '1px solid white',
     '&:hover': {
     cursor: 'pointer'},
@@ -58,17 +55,18 @@ const useStyles = makeStyles((theme) => ({
     userSelect: "none",
     borderRadius: '10px',
     backgroundColor: `${rgb(colorArrays)}`,
-     }
+    },
+    glowingCard: {
+       filter: "drop-shadow(0px 0px 50px steelblue)",
+       justifyContent: "center"
+     },
  }));
-    
 const classes = useStyles();
     function rgb(values) {
         return typeof values === "undefined" ? null : "rgb(" + values.join(', ') + ")";
     }
-
 const [width, setWidth] = useState(500);
 const [height, setHeight] = useState(800);
-
     return (
         <Fade right duration={1000} distance="40px" >
             <ExternalLink href="https://catalog.pcc.edu/programsanddisciplines/computerscience/">
@@ -109,5 +107,4 @@ const [height, setHeight] = useState(800);
         </Fade>
      );
 }
- 
 export default EducationCard;

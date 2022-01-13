@@ -9,16 +9,13 @@ import {
     CardHeader,
     Col
 } from "reactstrap"; 
-
 import ColorThief from "colorthief";
 import Tilt from 'react-parallax-tilt';
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import { Fade } from 'react-reveal';
-
 const ExperienceCard = ({data}) => {
     const [colorArrays, setColorArrays] = useState([]);
     const imgRef = createRef();
-
     function getColorArrays() {
         const colorThief = new ColorThief();
         setColorArrays(colorThief.getColor(imgRef.current));
@@ -27,7 +24,6 @@ const ExperienceCard = ({data}) => {
     function rgb(values) {
         return typeof values === "undefined" ? null : "rgb(" + values.join(', ') + ")";
     }
-
     const useStyles = makeStyles((theme) => ({
     card: {
     background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
@@ -45,9 +41,9 @@ const ExperienceCard = ({data}) => {
     textAlign: 'justify',
     userSelect: "none",
     borderRadius: '10px',
+    filter: "drop-shadow(0px 0px 50px steelblue)",
     },
     }));
-    
     const classes = useStyles();
     return ( 
         <Col lg="4">
@@ -94,5 +90,4 @@ const ExperienceCard = ({data}) => {
         </Col>
      );
 }
- 
 export default ExperienceCard;

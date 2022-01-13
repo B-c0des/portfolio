@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
     Card,
     Col,
@@ -9,7 +8,6 @@ import {
 import Tilt from 'react-parallax-tilt';
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import Resume from "../components/Resume";
- 
 const GithubProfileCard = ({ prof }) => {
    const useStyles = makeStyles((theme) => ({
     card: {
@@ -29,6 +27,10 @@ const GithubProfileCard = ({ prof }) => {
       borderRadius: '10px',
       height: '60%',
      },
+     glowingCard:{
+       filter: "drop-shadow(0px 0px 50px steelblue)",
+       justifyContent: "center"
+     },
      avatar: {
       width: "50%",
       border: "2px solid white",
@@ -36,16 +38,14 @@ const GithubProfileCard = ({ prof }) => {
      },
      messageForm: {
       width: "100%",
-     }
+     },
     }));
-
   const classes = useStyles();
-
     return ( 
        <Card className="section pb-0 section-profile-cover" 
         style={{backgroundColor: "black" }}
         >
-       <Container className="" style={{filter: "drop-shadow(0px 0px 50px steelblue)" , justifyContent: "center"}}>
+       <Container className={classes.glowingCard}>
        <div className="p-2" style={{filter: "drop-shadow(0px 0px 10px black)"}}>
        <Row className="justify-content-center">
         <Col className={classes.card} lg="4">
@@ -74,5 +74,4 @@ const GithubProfileCard = ({ prof }) => {
         </Card>
      );
 }
- 
 export default GithubProfileCard;
