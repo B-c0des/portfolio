@@ -135,7 +135,7 @@ export const educationInfo = [{
   schoolLogo: schoollogo,
   schoolName: 'Portland Community College',
   subHeader: 'Computer Science',
-  duration: '2022',
+  duration: '2023',
   desc: 'Computer science is the study of information systems, their representation, architecture, and implementation, used for a variety of practical and theoretical purposes. Computer science addresses methods by which data is accessed, stored, and retrieved, which include areas such as representational computation, programming languages, algorithmic modeling, and software design, testing and development. Computer scientists apply their knowledge of mathematics, physics, and logic to solve a variety of problems using diverse technology.',
   descBullets: [
     // '',
