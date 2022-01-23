@@ -17,7 +17,7 @@ import Draggable from 'react-draggable';
 // import React, { Component } from 'react'
 const useStyles = makeStyles((theme) => ({
   description: {
-    background: 'linear-gradient(80deg,black -10%, steelblue 5%, steelblue 15%, #80e5ff 80%, white 95%)',
+    background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
     boxShadow: `inset 2px 00px 150px -100px #80e5ff,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px golden;`,
     borderTop: '1px solid white;',
     borderLeft: '1px solid white',
@@ -49,16 +49,17 @@ const useStyles = makeStyles((theme) => ({
     userSelect: "none",
   },
   text: {
-    border: 0,
-    fontSize: 20,
-    borderRadius: 10,
+    border: "0",
+    fontSize: "20",
+    borderRadius: "10",
     padding: '0px 5px 5px 5px',
     margin: '10px',
     textShadow: "0px 0px 10px white ",
     textAlign: 'justify',
     userSelect: "none",
     filter: 'drop-shadow(2px 4px 40px white)',
-    textShadow: "0px 0px 1px black ",
+    textShadow: "0px 0px 10px black",
+    color: "black",
   },
   row: {
     display: 'flex',
@@ -85,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     '@media only screen and (max-width: 800px)': {
-      flexDirection: "column"
+    flexDirection: "column"
     },
      filter: "drop-shadow(0px 0px 50px steelblue)"
   },
@@ -101,6 +102,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Augestina',
     fontSize: "28",
     textShadow: "0px 0px 1px black",
+    color: "white",
   },
   svgStyling: {
     '@media only screen and (max-width: 800px)': {

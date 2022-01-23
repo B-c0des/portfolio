@@ -35,22 +35,28 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'justify',
     userSelect: "none",
     borderRadius: '10px',
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: 'column',
   },
     subHeader:{
     border: 0,
+    color: "white",
     padding: '1px',
     margin:'3px',
-    textShadow: '0 2px 2px black',
+    textShadow: '0 2px 5px white',
     textAlign: 'center',
     userSelect: "none",
     borderRadius: '10px',
      },
-    duration:{
+    duration: {
+    fontSize: "12px",
+    width: "200px",
     border: 0,
     padding: '2px',
     margin: '3px',
     color: `white`,
-    textShadow: '0 2px 2px black',
+    textShadow: '0 2px 5px black',
     textAlign: 'center',
     userSelect: "none",
     borderRadius: '10px',
@@ -87,9 +93,11 @@ const [height, setHeight] = useState(800);
                 </div>
                 <h5 className="ml-4 text-center" className={classes.subHeader} >{education.subHeader}
                 <br/>
+
                 <Badge color="info" className={classes.duration}>
                 {education.duration}
                 </Badge>
+                            
                 </h5>
                 <p className="description mt-3 text-white">
                     {education.desc}

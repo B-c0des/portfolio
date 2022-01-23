@@ -81,8 +81,21 @@ const Skills = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 filter: 'drop-shadow(0px 10px 10px black)',
-              } 
-    }));
+        },
+        subHeader: {
+          border: 0,
+          color: "white",
+          padding: '1px',
+          margin: '3px',
+          textShadow: '0 2px 5px white',
+          textAlign: 'center',
+          userSelect: "none",
+          borderRadius: '10px',
+        },
+              
+              
+      }));
+  
 const classes = useStyles();
     return ( 
         <div className={classes.wrapperSkills} >
@@ -103,7 +116,7 @@ const classes = useStyles();
                         gyroscope={true}
                         glareEnable={false}
                         >   
-            <span className="lead shadow text-white ">{skillsSection.subTitle}</span>
+            <span className={classes.subHeader}>{skillsSection.subTitle}</span>
                <div lg="6" className="text-center" className={classes.card}>
                 <h3 className="h3 text-info" className={classes.textStyles}>{skillsSection.title}</h3>
                  <div className={classes.iconContainer} >

@@ -10,12 +10,9 @@ import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import Resume from "../components/Resume";
 const GithubProfileCard = ({ prof }) => {
   const useStyles = makeStyles((theme) => ({
-     
-    card: {
+      card: {
       background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
-  
-      boxShadow: `inset 2px 00px 150px -100px ,inset 2px 2px 10px -5px palegoldenrod, 0 0 3px -5px white`,
-      borderTop: '1px solid white;',      
+      borderTop: '1px solid white;',
       borderRight: '1px solid white',
     '&:hover': {
       cursor: 'pointer'},
@@ -36,6 +33,7 @@ const GithubProfileCard = ({ prof }) => {
      avatar: {
       width: "50%",
       border: "2px solid white",
+      filter: "drop-shadow(0px 0px 20px white)",
       borderRadius: "100%",
      },
      messageForm: {
@@ -45,8 +43,18 @@ const GithubProfileCard = ({ prof }) => {
        display: "flex",
        justifyContent: "center",
        color: "white",
-       filter: "drop-shadow(0px 0px 50px steelblue)",
-     }
+       filter: "drop-shadow(0px 0px 25px white)",
+    },
+         subHeader:{
+    border: 0,
+    color: "white",
+    padding: '1px',
+    margin:'3px',
+    textShadow: '0 2px 5px white',
+    textAlign: 'center',
+    userSelect: "none",
+    borderRadius: '10px',
+     },
    }));
   
   const classes = useStyles();
@@ -59,15 +67,15 @@ const GithubProfileCard = ({ prof }) => {
        <Row className="justify-content-center">
         <Col className={classes.card} lg="4">
          <img className={classes.avatar}   src={prof.avatar_url}  alt="" />
-          <h3 className="justify-content-center align-items-center text-white text-center" style={{filter: 'drop-shadow(0px 0px 5px black )' , textAlign: 'center'}}>
-           <span className="text-white text-center">{prof.name}</span>
+          <h3 className="" style={{filter: 'drop-shadow(0px 0px 5px black )' , textAlign: 'center'}}>
+           <span className={classes.subHeader}>{prof.name}</span>
            <br/>
-           <h3 className="text-white">{prof.bio}</h3>
+           <h3 className={classes.subHeader}>{prof.bio}</h3>
            <br/>
            {/* <h3 className="text-white">{prof.location}</h3>
           <br/> */}
-           <h5 className="text-white" >{'Github Profile Last Updated:'}</h5>
-           <h5 className="text-white">{prof.updated_at}</h5>
+           <h5 className={classes.subHeader} >{'Github Profile Last Updated:'}</h5>
+           <h5 className={classes.subHeader}>{prof.updated_at}</h5>
           </h3>
           <Resume />
           </Col>
