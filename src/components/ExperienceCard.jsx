@@ -9,10 +9,12 @@ import {
     CardHeader,
     Col
 } from "reactstrap"; 
+
 import ColorThief from "colorthief";
 import Tilt from 'react-parallax-tilt';
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import { Fade } from 'react-reveal';
+
 const ExperienceCard = ({data}) => {
     const [colorArrays, setColorArrays] = useState([]);
     const imgRef = createRef();
@@ -26,8 +28,8 @@ const ExperienceCard = ({data}) => {
     }
     const useStyles = makeStyles((theme) => ({
     card: {
-    background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
-    boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 20px steelblue;`,
+     background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
+    boxShadow: `inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, -2px 2px 4px steelblue, 2px -2px 20px steelblue;`,
     borderTop: '1px solid white;',
     borderRight: '1px solid white',
     '&:hover': {
