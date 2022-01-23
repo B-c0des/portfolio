@@ -57,8 +57,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: `${rgb(colorArrays)}`,
     },
     glowingCard: {
-       filter: "drop-shadow(0px 0px 50px steelblue)",
-       justifyContent: "center"
+    filter: "drop-shadow(0px 0px 50px steelblue)",
+    justifyContent: "center"
      },
  }));
 const classes = useStyles();
@@ -86,6 +86,7 @@ const [height, setHeight] = useState(800);
                 <h5 className="text-info text-center text-white" >{education.schoolName}</h5>
                 </div>
                 <h5 className="ml-4 text-center" className={classes.subHeader} >{education.subHeader}
+                <br/>
                 <Badge color="info" className={classes.duration}>
                 {education.duration}
                 </Badge>
