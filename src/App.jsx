@@ -8,7 +8,6 @@ import Education from "./containers/Education";
 import Experience from './containers/Experience';
 import Projects from './containers/Projects';
 import GithubProfile from './containers/GithubProfile'
-import ReactSnapScroll from 'react-snap-scroll';
 
 const App = () => {
     return ( 
@@ -16,7 +15,7 @@ const App = () => {
             <Switch>
                 <Route path="/" exact render={props => (
                     <>
-                       <Navigation />
+                        <Navigation />
                         <Greetings />
                         <Projects />
                         <Skills />
@@ -30,5 +29,4 @@ const App = () => {
         </BrowserRouter>
      );
 }
- 
 export default App;
