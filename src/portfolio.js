@@ -10,10 +10,10 @@ import truckDriver from './assets/img/icons/common/truckdriver.png'
 import schoollogo from './assets/img/icons/common/school-logo.png'
 let myLink = "http://at100devs.herokuapp.com/"
 export const greetings = {
-  "name": "Brian Reed",
+  "name": "brain.reed.software@outlook.com",
   "title": "Brian Reed",
   // "description": "  I'm a Software Engineer focused on Full-Stack Web Development. I am proficient in both Front-End and Back-End development. I have knowledge in Javascript, React, Node.js, MongoDB, CSS, HTML and GitHub. As a software engineer I aspire to help bring projects to life and demonstrate my commitment to developing world-class software solutions for companies and customers. I am also open to learning new languages, libraries and frameworks whichever enhances customers experience. Creating Cool Cross Platform Mobile Apps is my passion.",
-  "description": "I am a software engineer with a focus on web development using Javascript, React, Express, Node, and MongoDB. I have experience with styling using CSS and styling components using Material UI. I enjoy learning new languages, libraries, or frameworks. Please reach out to me if you have any questions, or would like to hire me as a web developer. Thanks!",
+  "description": "I am a software engineer with a focus on web development using Javascript, React, Express, Node, and MongoDB. I have experience with styling using CSS and styling components using Material UI. I enjoy learning new languages, libraries, or frameworks. Please reach out to me if you have any questions, or would like to hire me as a web developer. Thanks! ",
   "resumeLink": "contact.me"
 }
 export const openSource = {

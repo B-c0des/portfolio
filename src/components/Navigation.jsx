@@ -34,7 +34,7 @@ const Navigation = () => {
           >
             <Container>
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-                <h2 className="text-white" id="nav-title" style={{filter: "drop-shadow(0px 2px 3px black)"}}>{greetings.name}</h2>
+                <h2 className="text-white" style={{filter: "drop-shadow(0px 2px 3px black)"}}>{greetings.name}</h2>
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
                 <span className="navbar-toggler-icon" />
