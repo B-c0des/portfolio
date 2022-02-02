@@ -37,9 +37,8 @@ const useStyles = makeStyles((theme) => ({
     
 //    backgroundImage: "linearGradient (top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top,rgba(255, 255, 255, 0),rgba(255, 255, 255, .15) 50%,rgba(255, 255, 255, 0) 50%,rgba(255, 255, 255, 0))"
     },
-    border: 0,
-    fontSize: 16,
-    borderRadius: 20,
+    fontSize: "16px",
+    borderRadius: '10px',
     color: 'white',
     padding: '2px 20px 10px 20px',
     margin:'3px',

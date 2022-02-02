@@ -13,8 +13,8 @@ const GithubProfileCard = ({ prof }) => {
       card: {
    background: 'linear-gradient(80deg, steelblue 10%,rgb(106, 206, 206) 80%, #80e5ff 110%)',
     boxShadow: `inset 0px 0px 50px 2px black,inset 0px 0px 5px 5px black, 0 0 20px -5px black;`,
-     borderTop: '1px solid white;',
-      borderRight: '1px solid white',
+    borderBottom: '1px solid gray;',
+    borderRight: '1px solid gray',
     '&:hover': {
       cursor: 'pointer'},
       border: 0,

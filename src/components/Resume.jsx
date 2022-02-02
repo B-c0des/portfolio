@@ -25,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
     padding: '0 30px',
     margin:'3px',
     textShadow: '0 2px 2px black',
-    border: "1px solid white",
+        borderBottom: '1px solid gray;',
+    borderRight: '1px solid gray',
   },
   linkedin: {
     background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
