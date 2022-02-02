@@ -9,9 +9,9 @@ function openNew(link) {
 }
 const useStyles = makeStyles((theme) => ({
   twitter: {
-  background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
-     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 1px -1px 4px white;',
-    '&:hover': {
+  background: 'linear-gradient(80deg, steelblue 10%,rgb(106, 206, 206) 80%, #80e5ff 110%)',
+    boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
+      '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
       color: 'white',
       textShadow: '0 2px 10px white',
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid white",
   },
     linkedin: {
-    background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
+  background: 'linear-gradient(80deg, steelblue 10%,rgb(106, 206, 206) 80%, #80e5ff 110%)',
     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',
@@ -71,8 +71,8 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid white",
   },
   resume: {
-  background: 'linear-gradient(80deg, steelblue 10%, #80e5ff 80%, white 110%)',
-     boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
+ background: 'linear-gradient(80deg, steelblue 10%,rgb(106, 206, 206) 80%, #80e5ff 110%)',
+      boxShadow: 'inset 1px -0px 5px 0px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 4px white;',
 
     '&:hover': {
       background: 'linear-gradient(145deg,  #2196F3 10%, #b3f0ff 90%)',

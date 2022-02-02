@@ -1,14 +1,12 @@
 import React, { Suspense } from 'react';
 import Lottie from 'react-lottie';
 import Loading from './Loading'
-
 const GreetingLottie = ({animationData}) => {
     const defaultOptions = {
         loop: true,
         autoplay: true,
         animationData: animationData,
       };
-    
     return (
         <Suspense fallback={<Loading />}>
           {/* To override default onClick pause by Lottie */}
@@ -20,5 +18,4 @@ const GreetingLottie = ({animationData}) => {
         </Suspense>
     )
 }
- 
 export default GreetingLottie;

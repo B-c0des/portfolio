@@ -3,7 +3,6 @@ import Loading from '../components/Loading'
 import { openSource } from "../portfolio";
 import {get} from 'axios';
 import GithubProfileCard from 'components/GithubProfileCard';
-
 const GithubProfile = () => {
     const [prof, setProf] = useState({})
     async function  getProfileData()  {
@@ -20,7 +19,4 @@ const GithubProfile = () => {
         </Suspense>
      );
 }
-
-
- 
 export default GithubProfile;

@@ -6,7 +6,6 @@ import {
     Row,
     Col
 } from "reactstrap";
-
 const Education = () => {
     return ( 
         <section
@@ -49,5 +48,4 @@ const Education = () => {
           </section>
      );
 }
- 
 export default Education;

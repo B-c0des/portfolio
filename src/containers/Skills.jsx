@@ -18,13 +18,14 @@ import { textSpanIsEmpty } from 'typescript';
 const Skills = () => {
       const useStyles = makeStyles((theme) => ({
           card: {
-            background: 'linear-gradient(80deg, steelblue 30%, #80e5ff 90%)',
-            display: 'flex',
+         background: 'linear-gradient(80deg, steelblue 10%,rgb(106, 206, 206) 80%, #80e5ff 110%)',
+    boxShadow: `inset 0px 0px 50px 2px black,inset 0px 0px 5px 5px black, 0 0 20px -5px black;`,
+  
+          display: 'flex',
             alignItems: 'space-between',
             justifyContent: 'space-between',
             flexDirection: "column",
-            boxShadow: `inset 2px 00px 150px -100px white,inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, 0 0 5px -1px white, -2px 2px 4px steelblue, 2px -2px 100px steelblue;`,
-            borderTop: '1px solid white',
+             borderTop: '1px solid white',
             borderRight: '1px solid white',
             '&:hover': {
             cursor: 'pointer'},
@@ -91,9 +92,7 @@ const Skills = () => {
           textAlign: 'center',
           userSelect: "none",
           borderRadius: '10px',
-        },
-              
-              
+        },   
       }));
   
 const classes = useStyles();
@@ -145,7 +144,6 @@ const classes = useStyles();
                         </div>
                         {/* <h3 className="text-info">{skillsSection.portfolioName}</h3>
                         <div>
-                        
                         {
                             skillsSection.skills.map(skill => {
                                 return <Badge className="flex-wrap m-1 shadow" key={skill}>{skill}</Badge>

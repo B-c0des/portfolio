@@ -1,11 +1,9 @@
 import React from 'react';
-
 //import {  Button } from "reactstrap";
 import { ExternalLink } from 'react-external-link';
 import { socialLinks } from "../portfolio";
 import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
-
 import {Link} from 'react-scroll'
 // import ThemeNesting from './Button';
 const useStyles = makeStyles((theme) => ({
@@ -158,7 +156,4 @@ const Resume = () => {
         </div>
      );
 }
- 
-
-
 export default Resume;

@@ -7,8 +7,6 @@ import {
 } from "reactstrap";
 import ProjectsCard from "../components/ProjectsCard";
 import { Fade } from 'react-reveal';
-
-
 const Projects = () => {
     return ( 
         <section
@@ -53,5 +51,4 @@ const Projects = () => {
           </section>
      );
 }
- 
 export default Projects;

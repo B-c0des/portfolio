@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
-
 import { greetings, socialLinks } from "../portfolio";
 import Headroom from "headroom.js";
 import {
@@ -16,19 +15,15 @@ import {
 } from "reactstrap";
 import Tilt from 'react-parallax-tilt';
 import './Navigation.css'
-
 const Navigation = () => {
     const [collapseClasses, setCollapseClasses] = useState("");
     const onExiting = () => setCollapseClasses("collapsing-out");
-    
     const onExited = () => setCollapseClasses("");
-
     useEffect(() => {
       let headroom = new Headroom(document.getElementById("navbar-main"));
       // initialise
       headroom.init();
     })
-
     return ( 
         <>
         <header className="header-global">
@@ -107,8 +102,7 @@ const Navigation = () => {
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink
-                      
+                    <NavLink                      
                       className="nav-link-icon"
                       href={socialLinks.github}
                       target="_blank"
@@ -141,5 +135,4 @@ const Navigation = () => {
       </>
      );
 }
- 
 export default Navigation;

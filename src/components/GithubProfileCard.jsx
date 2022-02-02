@@ -11,9 +11,9 @@ import Resume from "../components/Resume";
 const GithubProfileCard = ({ prof }) => {
   const useStyles = makeStyles((theme) => ({
       card: {
-  background: `linear-gradient(85deg , black -10%, #005266 10%, #80e5ff  90%, white 110%)`,
-    boxShadow: `inset 2px 2px 10px -5px steelblue, 0 0 3px -5px white,inset 2px -2px 2px -1px white, -2px 2px 4px steelblue, 2px -2px 20px steelblue;`,
-      borderTop: '1px solid white;',
+   background: 'linear-gradient(80deg, steelblue 10%,rgb(106, 206, 206) 80%, #80e5ff 110%)',
+    boxShadow: `inset 0px 0px 50px 2px black,inset 0px 0px 5px 5px black, 0 0 20px -5px black;`,
+            borderTop: '1px solid white;',
       borderRight: '1px solid white',
     '&:hover': {
       cursor: 'pointer'},
@@ -82,9 +82,9 @@ const GithubProfileCard = ({ prof }) => {
           </Col>
            <Col lg="8" className={classes.messageForm} >
            <h2 id="contact" className={classes.textName}>
-            Reach Out to me
+            {/* Reach Out to me */}
            </h2>
-          <div data-netlify-recaptcha="true" data-netlify="true" class="mighty-form" id="mf-e9b1f4b8-0f47-41c1-a114-0c1eac9921d5" ></div> 
+          {/* <div data-netlify-recaptcha="true" data-netlify="true" class="mighty-form" id="mf-e9b1f4b8-0f47-41c1-a114-0c1eac9921d5" ></div>  */}
           </Col>                    
           </Row>
           </div>
