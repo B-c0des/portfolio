@@ -23,8 +23,8 @@ const useStyles = makeStyles((theme) => ({
     background: 'linear-gradient(80deg, steelblue 10%,rgb(106, 206, 206) 80%, #80e5ff 110%)',
     boxShadow: `inset 0px 0px 50px 2px black,inset 0px 0px 5px 5px black, 0 0 20px -5px black;`,
         //   boxShadow:     "inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 20px cyan, -10px 0 20px #f0f, 0px 0 2px cyan",
-    borderBottom: '1px solid gray;',
-    borderRight: '1px solid gray',
+   borderBottom: '1px solid white',
+    borderRight: '2px solid gray',
     '&:hover': {  
     cursor: 'pointer'},
     border: 0,

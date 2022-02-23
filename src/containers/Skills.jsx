@@ -24,8 +24,8 @@ const Skills = () => {
             alignItems: 'space-between',
             justifyContent: 'space-between',
           flexDirection: "column",
-          borderBottom: '1px solid gray;',
-          borderRight: '1px solid gray',
+          borderBottom: '1px solid white',
+          borderRight: '2px solid gray',
             '&:hover': {
             cursor: 'pointer'},
             border: 0,

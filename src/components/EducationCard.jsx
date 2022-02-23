@@ -36,8 +36,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     flexDirection: 'column',
-    borderBottom: '1px solid gray;',
-    borderRight: '1px solid gray',
+    borderBottom: '1px solid white',
+    borderRight: '2px solid gray',
   },
     subHeader:{
     border: 0,
