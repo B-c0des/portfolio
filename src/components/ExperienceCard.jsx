@@ -28,22 +28,22 @@ const ExperienceCard = ({data}) => {
     }
     const useStyles = makeStyles((theme) => ({
     card: {
-    background: 'linear-gradient(80deg, steelblue 10%,rgb(106, 206, 206) 80%, #80e5ff 110%)',
-    boxShadow: `inset 0px 0px 50px 2px black,inset 0px 0px 5px 5px black, 0 0 20px -5px black;`,
-   borderBottom: '1px solid white',
-    borderRight: '2px solid gray',
+      background: 'linear-gradient(80deg, steelblue 10%,rgb(106, 206, 206) 80%, #80e5ff 110%)',
+      boxShadow: `inset 0px 0px 50px 2px black,inset 0px 0px 5px 5px black, 0 0 20px -5px black;`,
+      borderBottom: '1px solid white',
+      borderRight: '2px solid gray',
     '&:hover': {
     cursor: 'pointer'},
-    border: 0,
-    fontSize: 16,
-    color: 'white',
-    padding: '10px',
-    margin:'3px',
-    textShadow: '0 2px 2px black',
-    textAlign: 'justify',
-    userSelect: "none",
-    borderRadius: '10px',
-    filter: "drop-shadow(0px 0px 50px steelblue)",
+      border: 0,
+      fontSize: 16,
+      color: 'white',
+      padding: '10px',
+      margin:'3px',
+      textShadow: '0 2px 2px black',
+      textAlign: 'justify',
+      userSelect: "none",
+      borderRadius: '10px',
+      filter: "drop-shadow(0px 0px 50px steelblue)",
     },
     }));
     const classes = useStyles();
