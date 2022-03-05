@@ -13,9 +13,9 @@ const EducationCard = ({education}) => {
     const [colorArrays, setColorArrays] = useState([]);
     const imgRef = createRef();
 
-    function getColorArrays() {
-        const colorThief = new ColorThief();
-        setColorArrays(colorThief.getColor(imgRef.current));
+function getColorArrays() {
+     const colorThief = new ColorThief();
+     setColorArrays(colorThief.getColor(imgRef.current));
     }
 const useStyles = makeStyles((theme) => ({
     card: {
