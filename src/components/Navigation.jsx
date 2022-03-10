@@ -34,7 +34,7 @@ const Navigation = () => {
           >
             <Container>
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-                <h5 className="text-info">{'brian.reed.software@outlook.com'}</h5>
+                <h6 className="text-info">{'brian.reed.software@outlook.com'}</h6>
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global" style={{filter: "drop-shadow(0px 2px 3px black)"}}>
                 <span className="navbar-toggler-icon" />
@@ -51,7 +51,7 @@ const Navigation = () => {
                     <Col className="collapse-brand" xs="6">
                       
                       <Link to="/">
-                        <h3 className="text-white" id="nav-title" style={{filter: "drop-shadow(0px 2px 3px black)"}}>{greetings.name}</h3>
+                        <h6 className="text-white" style={{filter: "drop-shadow(0px 2px 3px black)"}}>{greetings.name}</h6>
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">

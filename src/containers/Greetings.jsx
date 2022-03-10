@@ -173,7 +173,7 @@ const Greetings = () => {
           <Container>
               <div className={classes.wrapperSkills} >          
                 <div className={classes.textStyles}>
-                <p className="lead text-center nav-title" className={ classes.description} >
+                <h6 className="lead text-center nav-title" className={ classes.description} >
                   <h1 className="display- bg-black border-1 handle text-center" className={classes.title}>
                   {greetings.title}
                   </h1 >
@@ -184,7 +184,7 @@ const Greetings = () => {
                     <SocialLinks />
                   </h1>
                   </h5>
-                  </p>
+                  </h6>
                   </div>
                     <Col lg="6">
                       <GreetingLottie  animationData={code}/>
